@@ -1,0 +1,630 @@
+<html xmlns:rem="http://rem.lsi.us.es">
+<head>
+<title>Proyecto Documento de Análisis del sistema</title>
+<style type="text/css">
+<!--
+            body {
+                font-family: arial,verdana;
+                font-size: 10pt;
+                text-align: justify
+            }
+
+            h1 { font-size: 14pt }
+            h2 { font-size: 13pt }
+            h3 { font-size: 12pt }
+            h4 { font-size: 11pt }
+            h5 { font-size: 10pt }
+            h6 { font-size: 10pt }
+
+            h1.cover { font-size: 20pt }
+
+            tr { font-size: 10pt }
+
+            table { border: black solid; }
+            table.TOC { border: none; }
+            ul {
+                margin-top:    0pt;
+                margin-bottom: 0pt;
+                margin-left:   12pt
+            }
+        -->
+</style>
+</head>
+<body>
+<center>
+<h3>Proyecto Documento de Análisis del sistema</h3>
+<p />
+<h1 class="cover">Documento de Análisis del Sistema</h1>
+<p />
+<h3>Versión 1.0</h3>
+<h3>Fecha 08/12/2019</h3>
+<p />
+<h3>Preparado para:</h3>
+<a href="#ORG-0001" title="Autoescuela La Rasa">
+<p>
+Autoescuela La Rasa</p>
+</a>
+<p />
+<h3>Preparado por:</h3>
+<a href="#ORG-0002" title="Los Chemas">
+<p>
+Los Chemas</p>
+</a>
+<p />
+</center>
+<hr size="4" />
+<p />
+<h1 align="left">Índice</h1>
+<p />
+<table border="0" width="100%" class="TOC">
+<tr>
+<th align="left" valign="top">1 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0001">
+Introducción</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0002">
+Alcance del proyecto</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0003">
+Participantes del proyecto</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0004">
+Organizaciones participantes</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0005">
+Personas participantes</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0006">
+Copia de objetivos del proyecto</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">2 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0007">
+Arquitectura lógica del sistema</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0008">
+Diagramas de la arquitectura del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0009">
+Descripción de la arquitectura del sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">3 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0010">
+Modelo de clases del sistema</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0011">
+Diagramas de clases del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0012">
+Descripción de las clases del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0013">
+Diagramas de estado de las clases del sistema </a>
+</td>
+</tr>
+</table>
+<p />
+<hr size="4" />
+<p />
+<a name="PRG-0001" />
+<p>
+</p>
+<a name="PRG-0002" />
+<p>
+</p>
+<a name="PRG-0003" />
+<p>
+</p>
+<a name="SEC-0001" />
+<h1 align="left">1 
+Introducción</h1><a name="SEC-0002" />
+<h2 align="left">1.1 
+Alcance del proyecto</h2><a name="GLO-0004" />
+<p align="left">
+<b> Introducción del proyecto:</b>La autoescuela La Rasa es un grupo de profesionales con muchos años de experiencia en el sector de enseñanza y aprendizaje en conducción. En 2013 decidieron empezar este proyecto con el fin de crear un nuevo concepto de autoescuela, para que sus alumnos recibieran la mejor calidad y servicio en su formación.
+<br />
+<br />Con la implementación de este software se pretende facilitar la inscripción de los usuarios en la autoescuela de manera online. También se pretende habilitar la opción de gestionar la aplicación tanto en el establecimiento, como en otros lugares, además de permitir una mejor coordinación de horarios entre profesores y alumnos. </p>
+<a name="GRF-0001" />
+<p align="center">
+<img src=".\Fotos IR\Portal.jpg" title=".\Fotos IR\Portal.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Portal</p>
+<a name="SEC-0003" />
+<h2 align="left">1.2 
+Participantes del proyecto</h2><a name="SEC-0004" />
+<h3 align="left">1.2.1 
+Organizaciones participantes</h3><a name="ORG-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+Autoescuela La Rasa</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">Paez de Rivera</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">954094466</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ORG-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+Los Chemas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">Universidad de Sevilla</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">612345678</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0005" />
+<h3 align="left">1.2.2 
+Personas participantes</h3><a name="STK-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+María Jiménez Sánchez </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Gestora y profesora de teoría</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Elisa Ramírez Pérez </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Profesora de prácticas</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Ramón Fernández Borrás </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Profesor de prácticas</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Sergio Huertas Granadal </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Director de la autoescuela</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Carlos Romero Castilla</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Alumno</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Juan De la Torre</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Cliente</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Jose Delgado Serrano</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Los Chemas</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Analista</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0008" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Antonio Fernández Manzano</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Los Chemas</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Jefe del proyecto</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0009" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Chao Hu</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Los Chemas</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Desarrollador</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0006" />
+<h2 align="left">1.3 
+Copia de objetivos del proyecto</h2><a name="GLO-0005" />
+<p align="left">
+<b> Objetivos:</b>La Autoescuela La Rasa quiere a su disposición un software de uso fácil e intuitivo para sus alumnos, de manera que permita gestionar y almacenar todos los datos relacionados sobre sus alumnos (los exámenes realizados, clases asistidas, tests realizados, exámenes aprobados, ...). De esta forma se pretende facilitar la gestión de datos para la gestora de la autoescuela, y que los alumnos también puedan acceder a su propia información para una mejor organización y control.</p>
+<a name="SEC-0007" />
+<h1 align="left">2 
+Arquitectura lógica del sistema</h1><a name="SEC-0008" />
+<h2 align="left">2.1 
+Diagramas de la arquitectura del sistema</h2><a name="GRF-0002" />
+<p align="center">
+<img src=".\Fotos IR\Diagrama arquitectura logica.png" title=".\Fotos IR\Diagrama arquitectura logica.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Diagrama de la arquitectura del sistema</p>
+<a name="SEC-0009" />
+<h2 align="left">2.2 
+Descripción de la arquitectura del sistema</h2><a name="PRG-0006" />
+<p>La arquitectura del sistema usada es MVC, con las capas de Presentación, Persistencia y lógica de negocio. Como vista tendremos la página web donde el usuario podrá registrarse, acceder a sus datos? Y como controlador tendremos la base de datos SQL.</p>
+<a name="SEC-0010" />
+<h1 align="left">3 
+Modelo de clases del sistema</h1><a name="SEC-0011" />
+<h2 align="left">3.1 
+Diagramas de clases del sistema</h2><a name="GRF-0003" />
+<p align="center">
+<img src=".\Fotos IR\Modelo conceptual IR FINAL.jpg" title=".\Fotos IR\Modelo conceptual IR FINAL.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Diagrama de clases del sistema</p>
+<a name="SEC-0012" />
+<h2 align="left">3.2 
+Descripción de las clases del sistema</h2><a name="PRG-0007" />
+<p>En el diagrama encontramos las siguientes entidades que componen el sistema:
+<br />
+<br />Empresa: Entidad principal encargada de que todo funcione correctamente.  Contiene los datos especificados en el requisito de información correspondiente, los cuales son: nombre, razón social, ciudad, teléfono.
+<br />
+<br />Vehículo: Entidad que representa los vehículos usados durante las clases prácticas para preparar a los alumnos de cara a su examen práctico Contiene los datos especificados en el requisito de información correspondiente, los cuales son: marca, matrícula, seguro, fechaITV, estado.
+<br />
+<br />Factura: Entidad que representa las facturas emitidas en cualquier tramite de la empresa y pagadas por los clientes. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: número, fecha, tipoUsario, importe, empresa. 
+<br />
+<br />Cliente: Entidad que representa a una persona que acude a la autoescuela con el fin de repasar cualquier tema relacionado con la conducción, no necesita estar registrado en la autoescuela. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: carné, clases, importe, clasesPrácticas.
+<br />
+<br />Profesor: Entidad correspondiente a un profesor, el cual imparte clases teóricas, prácticas o ambas. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: clasesImpartidas, sueldo, pagaExtra, activo, vacaciones, numeroDiasBaja, tipo.
+<br />
+<br />Alumno: Entidad correspondiente a un alumno que recibe tanto clases teoricas como prácticas. Una vez se vea capacitado con los conocimientos necesarios se presentará a los correspondientes exámenes. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: nºmatricula, permiso, estado, clasesPrácticas.
+<br />
+<br />Examen: Entidad que corresponde al examen que deben realizar todos los alumnos que deseen obtener el permiso. Se divide en dos: Teórico y Práctico. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: fecha, nºalumnosPresentados, nºalumnosAptos.
+<br />
+<br />Bono: Entidad que representa los bonos que los alumnos compran en la autoescuela que luego canjean por clases prácticas. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: sello, nºreferencia, importe, duración.
+<br />
+<br />Examinador: Entidad correspondiente al examinador, el cual somete a los alumnos a una prueba de conducción y decidirá si es apto o no. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: nombre, código, observaciones.
+<br />
+<br />TipoEstado: Entidad que corresponde a los tipos de estado en los que se puede encontrar un alumno. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: finalizado, teórico, práctico, baja.
+<br />
+<br />TipoPermiso: Entidad que corresponde a los tipos de permisos que la autoescuela ofrece. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: AM, A1, A2, A, B
+<br />
+<br />Tarifa: Entidad que representan las tarifas impuestas por la autoescuela para poder iniciar las clases teóricas, prácticas, exámenes?etc. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: artículo, descuento, fechaInicio, fechaFin.
+<br />
+<br />Contrato: Entidad que representa el contrato a firmar por el alumno, donde se establecen los términos y condiciones. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: artículo, referencia, precio, IVA.
+<br />
+<br />TipoUsuario: Entidad que representa a un usuario general a vista de la base de datos, que después pasar a ser un profesor, cliente o alumno.
+<br />
+</p>
+<a name="SEC-0013" />
+<h2 align="left">3.3 
+Diagramas de estado de las clases del sistema </h2><a name="GRF-0004" />
+<p align="center">
+<img src=".\Fotos IR\Diagramas de estado matriculacion.png" title=".\Fotos IR\Diagramas de estado matriculacion.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Estado matriculación</p>
+<a name="GRF-0005" />
+<p align="center">
+<img src=".\Fotos IR\Estado Examen.jpg" title=".\Fotos IR\Estado Examen.jpg" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                
+Estado examen</p>
+<a name="GRF-0006" />
+<p align="center">
+<img src=".\Fotos IR\Estado vehículo.jpg" title=".\Fotos IR\Estado vehículo.jpg" />
+</p>
+<p align="center">
+<b>Figura 3</b>:
+                
+Estado vehículo</p>
+</body>
+</html>

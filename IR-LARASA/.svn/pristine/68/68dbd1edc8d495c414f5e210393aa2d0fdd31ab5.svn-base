@@ -1,0 +1,36 @@
+-Transformación de entidades:
+
+    Hemos transformado el modelo conceptual al modelo relacional, para ello cada entidad se ha trasformado en una relación cuyo nombre
+ha pasado a estar en plural, con sus correspondientes atributos necesarios.
+    Los atributos que eran claves sencillas, se han usado para crear claves primarias.En los que no se cumplía esto se crearon IDs para
+definir las claves primarias.
+    En las relaciones donde el atributo era clave semántica y no se definió como primaria, se ha usado como clave alternativa.
+
+    Los enumerados han pasado a ser restrincciones asociados al atributo de su correspondiente tabla.
+
+-Transformación de asociaciones:
+         
+    En las asociaciones con cardinalidad 1:X, se ha creado un atributo en la tabla con participación (X) que será una clave ajena
+apuntando al atributo con clave primaria de la tabla con participación (1). 
+   
+    En las asociaciones con cardinalidad 1:1, se ha creado un atributo en una de las tablas que será una clave ajena apuntando
+al atributo con clave primaria de la otra tabla.
+
+    En las asociaciones con cardinalidad X:Y,  se ha creado una tabla auxiliar que relacione ambas entidades, la cual tendrán atributos
+que serán una clave primaria compuesta y ajenas que apuntan al atributo con clave primaria de cada tabla de cada lado de la asociación. 
+
+-Transformación de clasificacones:
+    El modelo conceptual cuenta con entidades que son heredadas de otras entidades jerárquicamente superiores como es el caso de
+TipoUsuario, que hereda a Cliente, Profesor y Alumno, la cual se trata de una clasificació disjunta y completa.
+
+-Normalización del modelo relacional:
+
+    Está en 1FN porque los atributos son monovaluados. 
+
+    Está en 2FN porque está en 1FN y todos los atributos que no forman parte de ninguna clave candidata son completamente
+dependientes de las claves candidatas de la relación. 
+
+    Está en 3FN porque está en 2FN y no existen dependencias transitivas.
+
+
+

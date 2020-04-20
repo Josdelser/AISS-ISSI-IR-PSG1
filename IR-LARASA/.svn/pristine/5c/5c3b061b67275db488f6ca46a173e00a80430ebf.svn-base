@@ -1,0 +1,126 @@
+--trigger máx 4 alumnos
+alter trigger alumnos disable;
+CREATE OR REPLACE TRIGGER alumnos
+BEFORE INSERT ON Alumnos
+FOR EACH ROW 
+DECLARE numero INTEGER;
+BEGIN
+SELECT count(*) INTO numero
+FROM Alumnos WHERE profesor = :new.profesor;
+IF (numero > 4)
+THEN raise_application_error
+(-20600,:new.Profesor||'un profesor no `puede tener más de 4 alumnos');
+END IF;
+END;
+/
+INSERT INTO Alumnos VALUES ('Jose', 'Martínez Méndez', '78324681A', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', '5','1', '24356712K');
+INSERT INTO Alumnos VALUES ('Jorges', 'Martínez Méndez', '78324681B', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', '5','1', '24356712K');
+INSERT INTO Alumnos VALUES ('Jorger', 'Martínez Méndez', '78324681C', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', '5','1', '24356712K');
+INSERT INTO Alumnos VALUES ('Jorget', 'Martínez Méndez', '78324681D', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', '5','1', '24356712K');
+INSERT INTO Alumnos VALUES ('Jorgey', 'Martínez Méndez', '78324681E', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', '5','1', '24356712K');
+INSERT INTO Alumnos VALUES ('Jorgeu', 'Martínez Méndez', '78324681F', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', '5','1', '24356712K');
+INSERT INTO Alumnos VALUES ('Jorgei', 'Martínez Méndez', '78324681G', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', '5','1', '24356712K');
+INSERT INTO Alumnos VALUES ('Jorgeo', 'Martínez Méndez', '78324681I', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', '5','1', '24356712K');
+INSERT INTO Alumnos VALUES ('Jorgep', 'Martínez Méndez', '78324681J', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', '5','1', '24356712K');
+INSERT INTO Alumnos VALUES ('Jorgec', 'Martínez Méndez', '78324681K', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', '5','1', '24356712K');
+INSERT INTO Alumnos VALUES ('Jorgev', 'Martínez Méndez', '78324681L', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', '5','1', '24356712K');
+
+--Trigger sueldo máximo de todos los profesores 20.000
+Alter trigger sumaProf disable;
+CREATE OR REPLACE TRIGGER sumaProf
+BEFORE 
+INSERT ON Profesores
+FOR EACH ROW
+DECLARE
+suma NUMBER(12,2);
+BEGIN
+SELECT SUM(Sueldo) INTO suma FROM Profesores;
+suma := suma + :NEW.Sueldo;
+IF (suma > 20000) THEN 
+raise_application_error
+(-20600,:NEW.Sueldo||' La suma de salarios no puede ser superior a 20000');
+END IF;        
+END;
+INSERT INTO Profesores VALUES ('JuanCarlos2', 'Cáliz Maroto', '25356713K', '619642737', TO_DATE('27/04/1988', 'dd/mm/yyyy'), 'juanitoca@gmail.com', '876', '1200,00', '9000,00', 'S', '8', '4', 'Prácticas', '4157HJL');
+INSERT INTO Profesores VALUES ('Paula1', 'Molina Alonso', '71824584R', '612408142', TO_DATE('01/04/1956', 'dd/mm/yyyy'), 'paulina@gmail.com', '95', '1000,00', '9250,00', 'N', '13', '3', 'Teóricas', '7237HJL');
+INSERT INTO Profesores VALUES ('Paula2', 'Molina Alonso', '71824584Z', '612408142', TO_DATE('01/04/1956', 'dd/mm/yyyy'), 'paulina@gmail.com', '95', '9000,00', '9250,00', 'N', '13', '3', 'Teóricas', '7237HJL');
+INSERT INTO Profesores VALUES ('JuanCarlos3', 'Cáliz Maroto', '35356713K', '619642737', TO_DATE('27/04/1988', 'dd/mm/yyyy'), 'juanitoca@gmail.com', '876', '1200,00', '9000,00', 'S', '8', '4', 'Prácticas', '4157HJL');
+INSERT INTO Profesores VALUES ('JuanCarlosBueno', 'Cáliz Maroto', '25356753K', '619642737', TO_DATE('27/04/1988', 'dd/mm/yyyy'), 'juanitoca@gmail.com', '876', '800,00', '9000,00', 'S', '8', '4', 'Prácticas', '4157HJL');
+INSERT INTO Profesores VALUES ('JuanCarlos44', 'Cáliz Maroto', '25556753K', '619642737', TO_DATE('27/04/1988', 'dd/mm/yyyy'), 'juanitoca@gmail.com', '876', '800,00', '9000,00', 'S', '8', '4', 'Prácticas', '4157HJL');
+INSERT INTO Profesores VALUES ('JuanCarlosFallo2', 'Cáliz Maroto', '25656753K', '619642737', TO_DATE('27/04/1988', 'dd/mm/yyyy'), 'juanitoca@gmail.com', '876', '800,00', '9000,00', 'S', '8', '4', 'Prácticas', '4157HJL');
+
+--Trigger Profesor de prácticas recibe bono
+Drop trigger TR_BONOS_PROFESORES;
+CREATE OR REPLACE TRIGGER TR_BONOS_PROFESORES_Bueno
+BEFORE INSERT OR UPDATE ON ProfesorRecibeBono
+FOR EACH ROW
+DECLARE
+ v_DniProfesor CHAR(9) := :NEW.DniProfesor;
+ v_Tipo VARCHAR(10);
+BEGIN
+ SELECT Tipo INTO v_Tipo FROM Profesores WHERE Dni = v_DniProfesor;
+ IF v_Tipo <> 'Prácticas'  THEN RAISE_APPLICATION_ERROR(-20002, 'El profesor al que le entrega el bono, debe de ser de prácticas');
+ END IF;
+END;
+/
+INSERT INTO Bonos VALUES ('S', '7423986557', '31,42', '45', '78324681H');
+INSERT INTO Profesores VALUES ('CarlosBonoProfesor12', 'Cáliz Maroto', '78324681H', '619642737', TO_DATE('27/04/1988', 'dd/mm/yyyy'), 'juanitoca@gmail.com', '876', '1200,00', '300,00', 'S', '8', '4', 'Teóricas', '4157HJL');
+INSERT INTO ProfesorRecibeBono VALUES ('6','78324681H', '7423986557');
+
+--Trigger número máximo de vehículos para cada profesor
+
+drop trigger trigger_vehiculo_profesor_1;
+create or replace trigger trigger_vehiculo_profesor_1
+before insert or update on Profesores
+for each row
+declare
+v_Matricula char(9) := :new.Matricula_Vehiculo;
+cuenta number;
+begin
+select count(*) Matricula_Vehiculo into cuenta from Profesores where Tipo='Prácticas' and Matricula_Vehiculo = v_Matricula; 
+if cuenta > 1 then RAISE_APPLICATION_ERROR(-20002,'Solo puede haber un coche asignado para cada profesor de prácticas');
+end if;
+end;
+/
+INSERT INTO Profesores VALUES ('PruebaCoche', 'Cáliz Maroto', '12356712K', '619642737', TO_DATE('27/04/1988', 'dd/mm/yyyy'), 'juanitoca@gmail.com', '876', '1200,00', '300,00', 'S', '8', '4', 'Prácticas', '4157HJL');
+INSERT INTO Profesores VALUES ('MatriculaRep', 'Molina Alonso', '01824584T', '612408142', TO_DATE('01/04/1956', 'dd/mm/yyyy'), 'paulina@gmail.com', '95', '1000,00', '250,00', 'N', '13', '3', 'Prácticas', '4157HJL');
+
+
+--Trigger alumno a examen
+Alter trigger TR_Alumnos_examen disable;
+CREATE OR REPLACE TRIGGER TR_Alumnos_examen
+BEFORE INSERT OR UPDATE ON AlumnoRealizaExamen
+FOR EACH ROW
+DECLARE
+ v_DniAlumno CHAR(9) := :NEW.DniAlumno;
+ v_Estado VARCHAR(100);
+BEGIN
+ SELECT Estado INTO v_Estado FROM Alumnos WHERE Dni = v_DniAlumno;
+ IF v_Estado <> 'Práctico' THEN RAISE_APPLICATION_ERROR(-20002, 'El alumno no puede presentarse a examen porque aún no ha comenzado las clases prácticas');
+ END IF;
+END;
+/
+
+INSERT INTO Alumnos VALUES ('Antonio', 'Martínez Méndez', '78324681X', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Teórico', '5','1', '24356712K');
+INSERT INTO AlumnoRealizaExamen VALUES ('6', '78324681X','5');
+
+create or replace PROCEDURE PR_Alumnos_Matriculados
+IS
+CURSOR C IS
+SELECT DNI, Nombre, Apellidos, Fecha_Nac, Correo FROM Alumnos;
+v_Alumnos C%ROWTYPE;
+v_TotalAlumnos NUMBER;
+BEGIN
+SELECT COUNT(*) INTO v_TotalAlumnos FROM Alumnos;
+DBMS_OUTPUT.PUT_LINE(v_TotalAlumnos || ' alumnos matriculados en la autoescuela.' || CHR(13) || CHR(13));
+OPEN C;
+FETCH C INTO v_Alumnos;
+DBMS_OUTPUT.PUT_LINE(RPAD('DNI:', 25) || RPAD('Nombre:', 25) || RPAD('Apellidos:', 25) || RPAD('Fecha de nacimiento:', 25) || RPAD('Email:', 25));
+DBMS_OUTPUT.PUT_LINE(LPAD('-', 120, '-'));
+WHILE C%FOUND LOOP
+DBMS_OUTPUT.PUT_LINE(RPAD(v_Alumnos.Dni, 25) || RPAD(v_Alumnos.Nombre, 25) || RPAD(v_Alumnos.Apellidos, 25) || RPAD(v_Alumnos.Fecha_Nac, 25) ||
+RPAD(v_Alumnos.Correo, 25));
+FETCH C INTO v_Alumnos;
+END LOOP;
+CLOSE C;
+END;

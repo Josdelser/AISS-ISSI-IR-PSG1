@@ -1,0 +1,1638 @@
+<html xmlns:rem="http://rem.lsi.us.es">
+<head>
+<title>Proyecto Proyecto IR 1er entregable REM</title>
+<style type="text/css">
+<!--
+            body {
+                font-family: arial,verdana;
+                font-size: 10pt;
+                text-align: justify
+            }
+
+            h1 { font-size: 14pt }
+            h2 { font-size: 13pt }
+            h3 { font-size: 12pt }
+            h4 { font-size: 11pt }
+            h5 { font-size: 10pt }
+            h6 { font-size: 10pt }
+
+            h1.cover { font-size: 20pt }
+
+            tr { font-size: 10pt }
+
+            table { border: black solid; }
+            table.TOC { border: none; }
+            ul {
+                margin-top:    0pt;
+                margin-bottom: 0pt;
+                margin-left:   12pt
+            }
+        -->
+</style>
+</head>
+<body>
+<center>
+<h3>Proyecto Proyecto IR 1er entregable REM</h3>
+<p />
+<h1 class="cover">Documento de Requisitos del Sistema</h1>
+<p />
+<h3>Versión 1.0</h3>
+<h3>Fecha 25/10/2019</h3>
+<p />
+<h3>Preparado para:</h3>
+<a href="#ORG-0001" title="Autoescuela La Rasa">
+<p>
+Autoescuela La Rasa</p>
+</a>
+<p />
+<h3>Preparado por:</h3>
+<a href="#ORG-0002" title="Los Chemas">
+<p>
+Los Chemas</p>
+</a>
+<p />
+</center>
+<hr size="4" />
+<p />
+<h1 align="left">Índice</h1>
+<p />
+<table border="0" width="100%" class="TOC">
+<tr>
+<th align="left" valign="top">1 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0001">
+Introducción</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0002">
+Alcance del proyecto</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0003">
+Participantes en el proyecto</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0004">
+Organizaciones participantes</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0005">
+Personas participantes</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0006"> Objetivos del proyecto</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">2 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0007">
+Información sobre el dominio del problema</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0008">
+Introducción sobre el dominio del problema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0009">
+Glosario de términos del dominio del problema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">3 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0010">
+Descripcion de la situación actual</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0011">
+Pros y contras de la situación actual</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.1.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0012">
+Fortalezas de la situación actual</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.1.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0013">
+Debilidades de la situación actual</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0014">
+Modelos de proceso de negocio actuales</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0015">
+Descripción de actores de negocio actuales</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0016">
+Descripción de procesos de negocios actuales</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0017">
+Entorno tecnológico actual</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0018">
+Descripción del entorno de hardware actual</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0019">
+Descripción del entorno de software actual</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">4 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0020">
+Necesidades de negocio</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0021"> Objetivos de negocio</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0022">
+Modelos de procesos de negocio a implantar</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">4.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0023">
+Descripción de actores de negocio a implantar</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">4.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0024">
+Descripción de procesos de negocio a implantar</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">A </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0025">
+Actas de reuniones</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">B </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0026">
+Documentación relevante</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">C </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0027">
+Gloario de acrónimos y abreviaturas</a>
+</th>
+</tr>
+</table>
+<p />
+<hr size="4" />
+<p />
+<a name="PRG-0001" />
+<p>
+</p>
+<a name="PRG-0002" />
+<p>
+</p>
+<a name="PRG-0003" />
+<p>
+</p>
+<a name="SEC-0001" />
+<h1 align="left">1 
+Introducción</h1><a name="SEC-0002" />
+<h2 align="left">1.1 
+Alcance del proyecto</h2><a name="GLO-0004" />
+<p align="left">
+<b> Introducción del proyecto:</b>La autoescuela La Rasa es un grupo de profesionales con muchos años de experiencia en el sector de enseñanza y aprendizaje en conducción. En 2013 decidieron empezar este proyecto con el fin de abrir un nuevo concepto de autoescuela, para que sus alumnos reciban la mejor calidad y servicio en su formación.
+<br />
+<br />Con la implementación del software se pretende facilitar la inscripción de los usuarios para matricularse en la autoescuela de manera online, habilitar la opción de gestionar la aplicación tanto en el establecimiento, como en otros lugares, permitir una mejor coordinación de horarios entre profesores y alumnos, y poder crear un nuevo formato para crear bonos de tamaños más adecuados. 
+<br />
+</p>
+<a name="GRF-0001" />
+<p align="center">
+<img src="C:\Users\chaoh\Desktop\Repositorio\IR\Fotos-IR\Portal.jpg" title="C:\Users\chaoh\Desktop\Repositorio\IR\Fotos-IR\Portal.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Portal de la autoescuela</p>
+<a name="SEC-0003" />
+<h2 align="left">1.2 
+Participantes en el proyecto</h2><a name="SEC-0004" />
+<h3 align="left">1.2.1 
+Organizaciones participantes</h3><a name="ORG-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+Autoescuela La Rasa</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">Paez de Rivera</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">954094466</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Autoescuela el cual proporcionaremos ayuda</td>
+</tr>
+</table>
+<p />
+<a name="ORG-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+Los Chemas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">Universidad de Sevilla</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">612345678</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Grupo de desarrollo</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0005" />
+<h3 align="left">1.2.2 
+Personas participantes</h3><a name="STK-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+María Jiménez Sánchez </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Gestora y profesora de teoría</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Cargo administrativo</td>
+</tr>
+</table>
+<p />
+<a name="STK-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Elisa Ramírez Pérez </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Profesora de prácticas</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Enseñanza de clases prácticas</td>
+</tr>
+</table>
+<p />
+<a name="STK-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Ramón Fernández Borrás </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Profesor de prácticas</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Enseñanza de clases prácticas</td>
+</tr>
+</table>
+<p />
+<a name="STK-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Sergio Huertas Granadal </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Director de la autoescuela</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Máximo representante de la autoescuela</td>
+</tr>
+</table>
+<p />
+<a name="STK-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Jose Delgado Serrano</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Los Chemas</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Analista</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Analista del proyecto</td>
+</tr>
+</table>
+<p />
+<a name="STK-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Antonio Fernández Manzano</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Los Chemas</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Jefe del proyecto</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Jefe del proyecto</td>
+</tr>
+</table>
+<p />
+<a name="STK-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Chao Hu</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Los Chemas</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Desarrollador</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Desarrollador del proyecto</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0006" />
+<h2 align="left">1.3  Objetivos del proyecto</h2><a name="GLO-0005" />
+<p align="left">
+<b> Objetivos:</b>La Autoescuela La Rasa quiere a su disposición un software de uso fácil e intuitivo para sus alumnos, de manera que permita gestionar y almacenar todos los datos relacionados sobre sus alumnos (los exámenes realizados, clases asistidas, tests realizados, exámenes aprobados, ...), de forma que facilite la gestión de datos para la gestora de la autoescuela, y los alumnos también puedan acceder a su propia información para una mejor organización del propio alumno y poder saber el progreso que lleva en la autoescuela.</p>
+<a name="SEC-0007" />
+<h1 align="left">2 
+Información sobre el dominio del problema</h1><a name="SEC-0008" />
+<h2 align="left">2.1 
+Introducción sobre el dominio del problema</h2><a name="GLO-0006" />
+<p align="left">
+<b> Introducción del problema:</b>La Autoescuela La Rasa todavía no dispone de ninguna manera para realizar la matrícula de manera automatizada y online, ahora mismo sólo pueden realizarla de manera manual por el método tradicional de papel y rellenar, para ello el alumno debe acudir personalmente a la autoescuela, con el consiguiente gasto que implica el desplazamiento. Por todos los motivos expuestos a la autoescuela le convendría tener una opción para agilizar y facilitar la matrícula de los alumnos. 
+<br />
+<br />Las clases teóricas son impartidas por una profesora con un horario ya predeterminado, aunque en la autoescuela existe la posibilidad de flexibilizar este mismo horario, avisando con una cierta antelación.
+<br />
+<br />Las clases prácticas las imparten dos profesores, únicamente centrados en este dominio, es decir, no imparten clases teóricas. La duración de cada práctica es concordada con el profesor, teniendo siempre un continuo contacto con el alumno para conocer sus preferencias. Sin embargo, el horario que el alumno prefiere no siempre está disponible, por lo que una vista previa de las franjas horarias disponibles para la enseñanza de las prácticas es también uno de los <a href="#GLO-0005" title="La Autoescuela La Rasa quiere a su disposición un software de uso fácil e intuitivo para sus alumnos, de manera que permita gestionar y almacenar todos los datos relacionados sobre sus alumnos (los exámenes realizados, clases asistidas, tests realizados, exámenes aprobados, ...), de forma que facilite la gestión de datos para la gestora de la autoescuela, y los alumnos también puedan acceder a su propia información para una mejor organización del propio alumno y poder saber el progreso que lleva en la autoescuela.">objetivos</a> primordiales.
+<br />
+<br /> Además, la autoescuela quiere mejorar la utilización de los bienes usados para la creación de bonos, dado que el formato que tienen para la impresión de bonos necesita una cantidad de hojas de papel considerable, eso conlleva a tener que realizar un nuevo formato modificando el tamaño de los bonos para poder aprovechar de manera más razonada la cantidad de folios desperdiciados.
+<br />
+<br />Teniendo en cuenta los <a href="#GLO-0005" title="La Autoescuela La Rasa quiere a su disposición un software de uso fácil e intuitivo para sus alumnos, de manera que permita gestionar y almacenar todos los datos relacionados sobre sus alumnos (los exámenes realizados, clases asistidas, tests realizados, exámenes aprobados, ...), de forma que facilite la gestión de datos para la gestora de la autoescuela, y los alumnos también puedan acceder a su propia información para una mejor organización del propio alumno y poder saber el progreso que lleva en la autoescuela.">objetivos</a> planteados, el software a desarrollar se encargaría de gestionar la información relacionada a los alumnos, y ellos poder consultar esta información cuando lo necesiten, modificar el formato de los bonos y compenetrar de manera más eficiente los horarios entre profesores y alumnos.
+<br />
+</p>
+<a name="SEC-0009" />
+<h2 align="left">2.2 
+Glosario de términos del dominio del problema</h2><a name="PRG-0007" />
+<p>Accidente: Suceso imprevisto que tiene lugar en el desarrollo de las clases prácticas, en el que se ven involucrados uno o más vehículos. Normalmente sucede por un fallo de algún conductor/a o debido a una avería de uno o varios vehículos.
+<br />
+<br />Alumno/a: Cliente que está asistiendo a clases teóricas o clases prácticas en la autoescuela.
+<br />
+<br />Avería: Fallo en el vehículo usado para impartir las clases prácticas, puede ser tanto un fallo mecánico como eléctrico.
+<br />
+<br />Bono de Práctica: Cupón / ticket que le permite al alumno/a dar la clase práctica con su respectivo profesor/a de prácticas.
+<br />
+<br />Clases Prácticas: Clases impartidas por el profesor/a en el vehículo de la autoescuela. Puede variar su duración entre 30', 45', 1h, donde se enseña al alumno a manejar el vehículo por la vía pública cumpliendo todas sus normas para poder superar el examen práctico.
+<br />
+<br />Clases Teóricas: Clases impartidas por el profesor/a en la autoescuela de cara al examen teórico donde se explican distintos temas enfocados hacia el ámbito de las normas de circulación y conducción en la vía pública.
+<br />
+<br />Conductor/a: Persona que circula con un vehículo por las carreteras de la vía pública.
+<br />
+<br />Examen Oficial: Prueba que debe realizar el alumno/a para obtener el permiso correspondiente, realizado en la DGT. Se divide en examen teórico y práctico. La calificación será siempre de APTO o NO APTO.
+<br />
+<br />Examen Práctico: Examen que se realiza en el coche de la autoescuela donde un examinador/a de la DGT valorará si eres apto para la circulación en las carreteras de la vía pública. El profesor/a de prácticas te acompañará y actuará si lo cree necesario. Si el profesor/a tiene que intervenir el alumno/a será calificado automáticamente como no apto. 
+<br />
+<br />Examen Teórico: Examen que consta de 20 o 30 preguntas de las cuales solo puedes fallar un 10% como máximo para superar la prueba y al cual te preparas realizando unos test y asistiendo a las clases teóricas impartidas en la autoescuela. Una vez aprobado se podrá proceder a comenzar a preparar el examen práctico.
+<br />
+<br />Expediente de Prácticas: Documento que permite tener un seguimiento de las clases prácticas de cada alumno/a que se archiva junto a los bonos de prácticas correspondientes a cada alumno. 
+<br />
+<br />DGT: Las siglas significan Dirección General de Tráfico y es donde se presentará el alumno/a a los exámenes oficiales.
+<br />
+<br />Peatón: Persona que transita por la vía pública.
+<br />
+<br />Permiso de Conducción / Carnet: Documento oficial que se obtiene tras haber aprobado las distintas fases del examen y que te permite circular por las carreteras de la vía pública. Dependiendo del tipo de permiso obtenido se podrá circular con solo determinados vehículos. Los permisos impartidos son: B, AM, A1, A2, A.
+<br />
+<br />Profesor/a: Trabajador de la autoescuela que imparte clases teóricas o prácticas.
+<br />
+<br />Temario: Contenido que se debe aprender de cara al examen oficial.
+<br />
+<br />Test: Simulación del examen teórico que se hace recogiendo anteriores preguntas que han aparecido en exámenes oficiales anteriores. Puede contener, dependiendo del permiso, de 20 o 30 preguntas. Para superar el test debes tener un porcentaje de acierto igual o mayor del 90%.
+<br />
+<br />Vehículo: Herramienta de utilización en las clases prácticas para el desarrollo del aprendizaje del alumno para la circulación en vía pública. Existen diferentes tipos de vehículos entre los que se encuentran: turismos, camiones, ciclomotores, motocicletas, autocaravanas...
+<br />
+<br />Vía Pública:  Conjunto de carreteras y vías por donde se puede transitar cumpliendo ciertas normas preestablecidas. 
+<br />
+</p>
+<a name="SEC-0010" />
+<h1 align="left">3 
+Descripcion de la situación actual</h1><a name="SEC-0011" />
+<h2 align="left">3.1 
+Pros y contras de la situación actual</h2><a name="SEC-0012" />
+<h3 align="left">3.1.1 
+Fortalezas de la situación actual</h3><a name="GLO-0008" />
+<p align="left">
+<b> FOR-001:</b>El sistema actual lleva los registros de manera local y en la propia autoescuela evitando así cualquier fallo debido a la conexión o al servidor. Además, la gestora mete en un programa que le gestiona parte de la autoescuela todos los registros para evitar problemas si se diese el caso de que se perdiesen los papeles.</p>
+<a name="GLO-0009" />
+<p align="left">
+<b> FOR-002:</b>Las clases práctica también se llevan de manera local lo cual hace que la gestora se organice mejor y pueda avisar con antelación a los profesores de prácticas.</p>
+<a name="SEC-0013" />
+<h3 align="left">3.1.2 
+Debilidades de la situación actual</h3><a name="GLO-0010" />
+<p align="left">
+<b> DEB-001:</b>Debido a que todo se lleva de manera manual pueden ocurrir varios fallos humanos a la hora de pasar al programa los registros, también pueden extraviarse algunos registros y causar problemas.</p>
+<a name="GLO-0011" />
+<p align="left">
+<b> DEB-002:</b>A raíz de que las clases prácticas se lleven de manera local puede ser que algún alumno tenga que cancelar o cambiar alguna cita es un proceso muy lento, ya que tendría que llamar a la autoescuela o ir hasta allí, y luego la gestora volver a cuadrar el horario.</p>
+<a name="SEC-0014" />
+<h2 align="left">3.2 
+Modelos de proceso de negocio actuales</h2><a name="SEC-0015" />
+<h3 align="left">3.2.1 
+Descripción de actores de negocio actuales</h3><a name="PRG-0012" />
+<p>Alumno: persona externa que recibe enseñanzas de un profesor, tanto prácticas como teóricas.
+<br />
+<br />Cliente: persona externa, con permiso de conducir vigente, que recibe enseñanzas prácticas de un profesor.
+<br />
+<br />DGT: organismo autónomo del Gobierno español dependiente del Ministerio del Interior responsable de la ejecución de la política vial en las vías de titularidad estatal de España.
+<br />
+<br />Director: persona que dirige la empresa.
+<br />
+<br />Gestora: persona que administra y controla toda la información de la empresa.
+<br />
+<br />Página web: lugar donde queda guardada toda la información útil para el usuario.
+<br />
+<br />Profesor: persona que imparte clases dentro de la organización.
+<br />
+<br />
+<br />
+</p>
+<a name="SEC-0016" />
+<h3 align="left">3.2.2 
+Descripción de procesos de negocios actuales</h3><a name="GRF-0002" />
+<p align="center">
+<img src=".\Repositorio\IR\Diagrama punto 3\ClasePractica.png" title=".\Repositorio\IR\Diagrama punto 3\ClasePractica.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Clase práctica</p>
+<a name="GRF-0003" />
+<p align="center">
+<img src=".\Repositorio\IR\Diagrama punto 3\ClaseTeorica.png" title=".\Repositorio\IR\Diagrama punto 3\ClaseTeorica.png" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                
+Clasa teórica</p>
+<a name="GRF-0004" />
+<p align="center">
+<img src=".\Repositorio\IR\Diagrama punto 3\ExamenPractico.png" title=".\Repositorio\IR\Diagrama punto 3\ExamenPractico.png" />
+</p>
+<p align="center">
+<b>Figura 3</b>:
+                
+Examen práctico</p>
+<a name="GRF-0005" />
+<p align="center">
+<img src=".\Repositorio\IR\Diagrama punto 3\ExamenTeorico (1).png" title=".\Repositorio\IR\Diagrama punto 3\ExamenTeorico (1).png" />
+</p>
+<p align="center">
+<b>Figura 4</b>:
+                
+Examen teórico</p>
+<a name="GRF-0006" />
+<p align="center">
+<img src=".\Repositorio\IR\Diagrama punto 3\Matriculacion.png" title=".\Repositorio\IR\Diagrama punto 3\Matriculacion.png" />
+</p>
+<p align="center">
+<b>Figura 5</b>:
+                
+Matriculación</p>
+<a name="SEC-0017" />
+<h2 align="left">3.3 
+Entorno tecnológico actual</h2><a name="SEC-0018" />
+<h3 align="left">3.3.1 
+Descripción del entorno de hardware actual</h3><a name="PRG-0013" />
+<p>La autoescuela dispone de ordenadores propios, uno personal para la gestora y varios de ellos para los alumnos que vayan allí a preparase el examen teórico. También cuenta con un proyector para dar las clases teóricas de grupo</p>
+<a name="GRF-0007" />
+<p align="center">
+<img src=".\Repositorio\IR\Fotos-IR\WhatsApp Image 2018-10-17 at 17.00.09.jpeg" title=".\Repositorio\IR\Fotos-IR\WhatsApp Image 2018-10-17 at 17.00.09.jpeg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Aula de las clases teóricas</p>
+<a name="GRF-0008" />
+<p align="center">
+<img src=".\Repositorio\IR\Fotos-IR\Ordenador.png" title=".\Repositorio\IR\Fotos-IR\Ordenador.png" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                
+Ordenador principal administrativo</p>
+<a name="SEC-0019" />
+<h3 align="left">3.3.2 
+Descripción del entorno de software actual</h3><a name="PRG-0014" />
+<p>La autoescuela cuenta con un programa de privado llamado Fácil-Gestión, la cual le gestiona algunos recurso, pero los tiene que introducir la gestora de manera manual y solo se puede usar en el ordenador de la gestora, derivando en que cualquier cambio en los datos de algún alumno le suponga una gran pérdida de tiempo.</p>
+<a name="GRF-0009" />
+<p align="center">
+<img src=".\Repositorio\IR\Fotos-IR\programa recorte.jpeg" title=".\Repositorio\IR\Fotos-IR\programa recorte.jpeg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Programa software</p>
+<a name="SEC-0020" />
+<h1 align="left">4 
+Necesidades de negocio</h1><a name="SEC-0021" />
+<h2 align="left">4.1  Objetivos de negocio</h2><a name="OBJ-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0001</th>
+<th align="left" valign="top" width="100%">
+Propiedad del vehículo</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Como director de la autoescuela
+<br />Quiero que el vehículo solo pueda pertenecer al profesor de prácticas
+<br />Para garantizar un uso correcto.
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0002</th>
+<th align="left" valign="top" width="100%">
+Uso de la aplicación web</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Como director de la autoescuela
+<br />Quiero una forma extra de darse a conocer en Internet
+<br />Para que las personas puedan conocer todos los datos de nuestra autoescuela.
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0003</th>
+<th align="left" valign="top" width="100%">
+Registro de nuevos alumnos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Como gerente
+<br />Quiero que todo alumno pueda matricularse a través de nuestra aplicación web
+<br />Para facilitar el proceso de envío de expediente a la DGT.
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0004</th>
+<th align="left" valign="top" width="100%">
+Apuntarse a clases</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Como alumno de la autoescuela
+<br />Quiero una forma de apuntarme con antelación a las clases prácticas
+<br />Para que mi horario sea lo más adecuado posible.
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0005</th>
+<th align="left" valign="top" width="100%">
+Sistema de impresión de bonos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Como gestora
+<br />Quiero poder imprimir más de un bono por folio
+<br />Para agilizar el proceso de impresión y poder ahorrar en gasto de papel.
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0006</th>
+<th align="left" valign="top" width="100%">
+Uso del vehículo</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Como profesor de prácticas
+<br />Quiero que el vehículo sea de uso exclusivo para las prácticas
+<br />Para garantizar un buen mantenimiento del automóvil.
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0007</th>
+<th align="left" valign="top" width="100%">
+Notificaciones de alumnos</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Como profesor de prácticas
+<br />Quiero un sistema de notificaciones
+<br />Para corregir cualquier cambio de horario de los alumnos.
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="OBJ-0008" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">OBJ-0008</th>
+<th align="left" valign="top" width="100%">
+Prácticas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    El sistema deberá 
+<em>
+Como gestora
+<br />Quiero una forma de registrar los alumnos que asisten a las prácticas
+<br />Para saber quienes están asistiendo y pagando sus prácticas.
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Subobjetivos</th>
+<td align="left" valign="top">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>PD</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0022" />
+<h2 align="left">4.2 
+Modelos de procesos de negocio a implantar</h2><a name="SEC-0023" />
+<h3 align="left">4.2.1 
+Descripción de actores de negocio a implantar</h3><a name="ACT-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0001</th>
+<th align="left" valign="top" width="100%">
+Director</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a la persona que drige la empresa, en este caso la autoescuela</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0002</th>
+<th align="left" valign="top" width="100%">
+Gestora</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a la persona que administra y controla toda la información de la empresa</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0003</th>
+<th align="left" valign="top" width="100%">
+Página web</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>al lugar donde queda guardada toda la información útil para el usuario</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0004</th>
+<th align="left" valign="top" width="100%">
+Alumno</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a la persona externa que recibe enseñanzas de un profesor, tanto prácticas como teóricas</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0005</th>
+<th align="left" valign="top" width="100%">
+DGT</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>al organismo autónomo del Gobierno español dependiente del Ministerio del Interior responsable de la ejecución de la política vial en las vías de titularidad estatal de España</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0006</th>
+<th align="left" valign="top" width="100%">
+Profesor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a la persona que imparte clases dentro de la organización</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0007</th>
+<th align="left" valign="top" width="100%">
+Cliente</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a la persona externa, con permiso de conducir vigente, que recibe enseñanzas prácticas de un profesor</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0024" />
+<h3 align="left">4.2.2 
+Descripción de procesos de negocio a implantar</h3><a name="GRF-0010" />
+<p align="center">
+<img src=".\Repositorio\IR\Diagrama punto 4\EnviarHorario.png" title=".\Repositorio\IR\Diagrama punto 4\EnviarHorario.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Enviar horario</p>
+<a name="GRF-0011" />
+<p align="center">
+<img src=".\Repositorio\IR\Diagrama punto 4\ImprimirBono.png" title=".\Repositorio\IR\Diagrama punto 4\ImprimirBono.png" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                
+Imprimir bono</p>
+<a name="GRF-0012" />
+<p align="center">
+<img src=".\Repositorio\IR\Diagrama punto 4\MatriculacionOnline.png" title=".\Repositorio\IR\Diagrama punto 4\MatriculacionOnline.png" />
+</p>
+<p align="center">
+<b>Figura 3</b>:
+                
+Matriculación online</p>
+<a name="SEC-0025" />
+<h1 align="left">A 
+Actas de reuniones</h1><a name="SEC-0026" />
+<h1 align="left">B 
+Documentación relevante</h1><a name="SEC-0027" />
+<h1 align="left">C 
+Gloario de acrónimos y abreviaturas</h1></body>
+</html>

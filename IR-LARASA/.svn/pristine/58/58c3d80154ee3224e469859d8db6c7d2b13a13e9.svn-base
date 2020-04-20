@@ -1,0 +1,105 @@
+INSERT INTO Examinadores VALUES ('123657165', 'Carmen', 'asdg1237','la bella del salón')
+INSERT INTO Examinadores VALUES ('987123976', 'Carlos', 'zxcyugt12', 'puntúa de manera rara')
+INSERT INTO Examinadores VALUES ('876123888', 'Josema', 'uytuyta74', 'le gustan las cabras')
+INSERT INTO Examinadores VALUES ('123879817', 'Chema', 'asd7yihg', 'es muy estricto')
+INSERT INTO Examinadores VALUES ('897987683', 'Pablo', 'asuidhu887', 'buen examinador')
+
+INSERT INTO Examenes VALUES ('51275476', TO_DATE('06/11/1998', 'dd/mm/yyyy'), '20', '12', '123657165')
+INSERT INTO Examenes VALUES ('12312456', TO_DATE('12/08/2014', 'dd/mm/yyyy'), '32', '20', '987123976')
+INSERT INTO Examenes VALUES ('76512868', TO_DATE('06/03/2018', 'dd/mm/yyyy'), '26', '15', '876123888')
+INSERT INTO Examenes VALUES ('29357065', TO_DATE('23/11/2008', 'dd/mm/yyyy'), '29', '19', '987123976')
+INSERT INTO Examenes VALUES ('23498732', TO_DATE('28/05/2016', 'dd/mm/yyyy'), '16', '15', '897987683')
+
+INSERT INTO Facturas VALUES ('97432401', TO_DATE('09/01/2012', 'dd/mm/yyyy'), 'Ramón', '123,00', 'Anemia S.L.')
+INSERT INTO Facturas VALUES ('12498712', TO_DATE('27/02/1999', 'dd/mm/yyyy'), 'Candi', '88,00', 'ADDACARRITO')
+INSERT INTO Facturas VALUES ('09784124', TO_DATE('11/11/2011', 'dd/mm/yyyy'), 'Jose', '215,50', 'ANGELA')
+INSERT INTO Facturas VALUES ('69732492', TO_DATE('02/10/2016', 'dd/mm/yyyy'), 'Pepa', '188,00', 'TARFIA')
+INSERT INTO Facturas VALUES ('79234023', TO_DATE('13/07/2007', 'dd/mm/yyyy'), 'Nuria', '93,00', 'ADDACARRITO')
+
+INSERT INTO Alumnos VALUES ('Sonia', 'Padilla Granadal', '12349861F', '683742184', TO_DATE('06/11/1993', 'dd/mm/yyyy'), 'tumorenita@htomail.com', '26384762', 'AM', 'Teórico', '12345', 'Julián')
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez méndez', '78324681H', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', '09876', 'Paco')
+INSERT INTO Alumnos VALUES ('Antonia', 'Fernández Mari', '23857697J', '612409711', TO_DATE('06/12/1988', 'dd/mm/yyyy'), 'Antonia@gmail.com', '23467587', 'A1', 'Finalizado', '452234', 'Robeto')
+INSERT INTO Alumnos VALUES ('Juanjo', 'Alonso Huertas', '51325781V', '612080031', TO_DATE('21/02/2000', 'dd/mm/yyyy'), 'juanito@gmail.com', '12437869', 'B', 'Finalizado', '452234', 'Lucía')
+INSERT INTO Alumnos VALUES ('María', 'Merchan López', '72935691S', '661298712', TO_DATE('24/05/1976', 'dd/mm/yyyy'), 'marieta@hotmail.com, '69823765', 'B', 'Baja', '12345', 'Andrea')
+
+INSERT INTO Profesores VALUES ('JuanCarlos', 'Cáliz Maroto', '24356712K', '619642737', TO_DATE('27/04/1988', 'dd/mm/yyyy'), 'juanitoca@gmail.com', '876', '1200,00', '300,00', 's', '8', '4', 'Prácticas', '1463XXX');
+INSERT INTO Profesores VALUES ('Paula', 'Molina Alonso', '71824584T', 612408142', TO_DATE('01/04/1956', 'dd/mm/yyyy'), 'paulina@gmail.com', '95', '1000,00', '250,00', 'n', '13', '3', 'Teóricas', '7812DEF');
+INSERT INTO Profesores VALUES ('Juanjo', 'Ferrero Rocher', '23498107Q', '691256623', TO_DATE('16/07/1975', 'dd/mm/yyyy'), 'Juanito@hotmail.com', '147', '1200,00', '300,00', 's', '6', '5', 'Prácticas', '1239TDH');
+INSERT INTO Profesores VALUES ('Aitana', 'Barba Roque', '34581294O', '712818761', TO_DATE('22/11/1981', 'dd/mm/yyyy'), 'aitañona@gmail.com', '410', '1000,00', '250', 's', '10', '1', 'Teóricas', '2347GHA');
+INSERT INTO Profesores VALUES ('David', 'Lozano De La Torre', '52734812L', '612398781', TO_DATE('12/10/1991', 'dd/mm/yyyy', 'DavidPetit@hotmail.com', '10', '1000,00', 's', '0', '0', 'Teóricas', '3428TAN'));
+
+INSERT INTO Clientes VALUES ('María', 'Franco CuloAbierto', '93617824U', '712301846', TO_DATE('18/09/1972', 'dd/mm/yyyy'), 'franquito@gmail.com', 's', '0', '300,00', '10', 'Paula');
+INSERT INTO Clientes VALUES ('Dani', 'Chen Hu ', '38723648B', '691496921', TO_DATE('02/10/1988', 'dd/mm/yyyy'), 'dani@hotmail.com', 's', '3', '80,00', '4', 'JuanCarlos');
+INSERT INTO Clientes VALUES ('Lourdes', 'Martínez Ruiz', '56896182E', '612837421', TO_DATE('08/03/1981', 'dd/mm/yyyy'), 'lour@gmail.com', 'n', '21', '130,00', '0', 'Paula');
+INSERT INTO Clientes VALUES ('Martin', 'Alonso Borrás', '76123924Y', '692391612', TO_DATE('20/11/1950', 'dd/mm/yyyy'), 'Marti@gmail.com', 's', '0', '40,00', '6', 'David');
+INSERT INTO Clientes VALUES ('Marina', 'Ming Tian', '12164589F', '612859324', TO_DATE('29/10/1986', 'dd/mm/yyyy'), 'marinita01@gmail.com', 's', '0', '80,00', '9', 'JuanCarlos');
+
+INSERT INTO ProfesorRecibeBono VALUES ();
+INSERT INTO ProfesorRecibeBono VALUES ();
+INSERT INTO ProfesorRecibeBono VALUES ();
+INSERT INTO ProfesorRecibeBono VALUES ();
+INSERT INTO ProfesorRecibeBono VALUES ();
+
+INSERT INTO AlumnoRealizaExamen VALUES ();
+INSERT INTO AlumnoRealizaExamen VALUES ();
+INSERT INTO AlumnoRealizaExamen VALUES ();
+INSERT INTO AlumnoRealizaExamen VALUES ();
+INSERT INTO AlumnoRealizaExamen VALUES ();
+
+
+CREATE OR REPLACE TRIGGER TR_PROFESORES_VEHICULOS
+AFTER INSERT OR UPDATE OF Profesores ON Matricula_Vehiculo  
+FOR EACH ROW
+DECLARE
+ v_Matricula CHAR(7) := :NEW.Matricula;
+ v_Matricula_Vehiculo CHAR(7) := :NEW Matricula_Vehiculo;
+BEGIN
+ SELECT Matricula FROM Vehiculos INTO v_Matricula;
+ SELECT Matricula_Vehiculo FROM Profesores INTO     v_Matricula_Vehiculo;
+ IF v_Matricula != v_Matricula_Vehiculo THEN
+ RAISE_APPLICATION_ERROR(-20001, 'El vehiculo tiene que corresponder con el asignado al profesor de practicas');
+ END IF;
+END;
+/
+
+CREATE OR REPLACE TRIGGER TR_BONOS_PROFESORES
+AFTER INSERT OR UPDATE OF N_ref, Dni ON ProfesorRecibeBono
+FOR EACH ROW
+DECLARE
+ v_Dni CHAR(9) := :NEW.DNI;
+ v_N_ref NUMBER := :NEW.N_ref;
+ v_DniProfesor CHAR(9);
+ v_N_referencia NUMBER;
+BEGIN
+ SELECT Dni FROM Profesores INTO v_Dni;
+ SELECT DniProfesor FROM ProfesorRecibeBono INTO v_DniProfesor;
+ SELECT N_ref FROM Bonos INTO v_N_ref;
+ SELECT N_referencia FROM ProfesorRecibeBono INTO v_N_referencia;
+ IF v_Dni = v_DniProfesor AND v_N_ref != v_N_referencia THEN RAISE_APPLICATION_ERROR(-20017, 'El profesor que imparte la clase es el que debe recibir el bono que se le entrega al alumno');
+ END IF;
+END;
+/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

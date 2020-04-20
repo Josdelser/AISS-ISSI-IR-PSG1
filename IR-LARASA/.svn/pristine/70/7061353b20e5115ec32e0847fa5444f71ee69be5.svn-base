@@ -1,0 +1,1116 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files (x86)\REM 1.2.2\xml\REM_1_2_2.dtd">
+<rem:requirementsProject
+xmlns:rem="http://rem.lsi.us.es">
+<rem:name>Documento de Análisis del sistema</rem:name>
+<rem:c_requirementsSpecification oid = "CRS-0001">
+<rem:name>Documento de Requisitos del Sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:c_requirementsSpecification>
+<rem:d_requirementsSpecification oid = "DRS-0002">
+<rem:name>Documento de Análisis del Sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+	 <rem:preparedFor organizations = "ORG-0001 "/>
+	 <rem:preparedBy organizations = "ORG-0002 "/>
+<rem:paragraph
+ oid = "PRG-0001">
+<rem:name>
+Portada</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text></rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0002">
+<rem:name>
+Lista de control de cambios</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text></rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0003">
+<rem:name>
+Índice y lista de tablas y figuras</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text></rem:text>
+</rem:paragraph>
+<rem:section
+ oid = "SEC-0001">
+<rem:name>
+Introducción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>1 </rem:number>
+<rem:section
+ oid = "SEC-0002">
+<rem:name>
+Alcance del proyecto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.1 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0004">
+<rem:name>
+<rem:ref oid="GLO-0004">Introducción del proyecto</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La autoescuela La Rasa es un grupo de profesionales con muchos años de experiencia en el sector de enseñanza y aprendizaje en conducción. En 2013 decidieron empezar este proyecto con el fin de crear un nuevo concepto de autoescuela, para que sus alumnos recibieran la mejor calidad y servicio en su formación.<br/><br/>Con la implementación de este software se pretende facilitar la inscripción de los usuarios en la autoescuela de manera online. También se pretende habilitar la opción de gestionar la aplicación tanto en el establecimiento, como en otros lugares, además de permitir una mejor coordinación de horarios entre profesores y alumnos. </rem:text>
+</rem:glossaryItem>
+<rem:graphicFile
+ oid = "GRF-0001">
+<rem:name>
+Portal</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\Portal.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+<rem:section
+ oid = "SEC-0003">
+<rem:name>
+Participantes del proyecto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.2 </rem:number>
+<rem:section
+ oid = "SEC-0004">
+<rem:name>
+Organizaciones participantes</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>1.2.1 </rem:number>
+<rem:organization
+ oid = "ORG-0001">
+<rem:name>
+Autoescuela La Rasa</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:address>Paez de Rivera</rem:address>
+<rem:telephone>954094466</rem:telephone>
+<rem:fax>Ninguno</rem:fax>
+</rem:organization>
+<rem:organization
+ oid = "ORG-0002">
+<rem:name>
+Los Chemas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:address>Universidad de Sevilla</rem:address>
+<rem:telephone>612345678</rem:telephone>
+<rem:fax>Ninguno</rem:fax>
+</rem:organization>
+</rem:section>
+<rem:section
+ oid = "SEC-0005">
+<rem:name>
+Personas participantes</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>1.2.2 </rem:number>
+<rem:stakeholder
+ oid = "STK-0001">
+<rem:name>
+María Jiménez Sánchez </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Gestora y profesora de teoría</rem:stakeholderRole>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0002">
+<rem:name>
+Elisa Ramírez Pérez </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Profesora de prácticas</rem:stakeholderRole>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0003">
+<rem:name>
+Ramón Fernández Borrás </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Profesor de prácticas</rem:stakeholderRole>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0004">
+<rem:name>
+Sergio Huertas Granadal </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Director de la autoescuela</rem:stakeholderRole>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0005">
+<rem:name>
+Carlos Romero Castilla</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Alumno</rem:stakeholderRole>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0006">
+<rem:name>
+Juan De la Torre</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Cliente</rem:stakeholderRole>
+<rem:isCustomer/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0007">
+<rem:name>
+Jose Delgado Serrano</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Analista</rem:stakeholderRole>
+<rem:isDeveloper/>
+<rem:worksFor organization = "ORG-0002"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0008">
+<rem:name>
+Antonio Fernández Manzano</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Jefe del proyecto</rem:stakeholderRole>
+<rem:isDeveloper/>
+<rem:worksFor organization = "ORG-0002"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0009">
+<rem:name>
+Chao Hu</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole>Desarrollador</rem:stakeholderRole>
+<rem:isDeveloper/>
+<rem:worksFor organization = "ORG-0002"/>
+</rem:stakeholder>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0006">
+<rem:name>
+Copia de <rem:ref oid="GLO-0005">objetivos</rem:ref> del proyecto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.3 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0005">
+<rem:name>
+<rem:ref oid="GLO-0005">Objetivos</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La Autoescuela La Rasa quiere a su disposición un software de uso fácil e intuitivo para sus alumnos, de manera que permita gestionar y almacenar todos los datos relacionados sobre sus alumnos (los exámenes realizados, clases asistidas, tests realizados, exámenes aprobados, ...). De esta forma se pretende facilitar la gestión de datos para la gestora de la autoescuela, y que los alumnos también puedan acceder a su propia información para una mejor organización y control.</rem:text>
+</rem:glossaryItem>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0007">
+<rem:name>
+Arquitectura lógica del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>2 </rem:number>
+<rem:section
+ oid = "SEC-0008">
+<rem:name>
+Diagramas de la arquitectura del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.1 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0002">
+<rem:name>
+Diagrama de la arquitectura del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\Diagrama arquitectura logica.png]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+<rem:section
+ oid = "SEC-0009">
+<rem:name>
+Descripción de la arquitectura del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0006">
+<rem:name>
+Descripción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La arquitectura del sistema usada es MVC, con las capas de Presentación, Persistencia y lógica de negocio. Como vista tendremos la página web donde el usuario podrá registrarse, acceder a sus datos… Y como controlador tendremos la base de datos SQL.</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0010">
+<rem:name>
+Modelo de clases del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>3 </rem:number>
+<rem:section
+ oid = "SEC-0011">
+<rem:name>
+Diagramas de clases del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.1 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0003">
+<rem:name>
+Diagrama de clases del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\Modelo conceptual IR FINAL.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+<rem:section
+ oid = "SEC-0012">
+<rem:name>
+Descripción de las clases del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0007">
+<rem:name>
+Entidades del diagrama de clases</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>En el diagrama encontramos las siguientes entidades que componen el sistema:<br/><br/>Empresa: Entidad principal encargada de que todo funcione correctamente.  Contiene los datos especificados en el requisito de información correspondiente, los cuales son: nombre, razón social, ciudad, teléfono.<br/><br/>Vehículo: Entidad que representa los vehículos usados durante las clases prácticas para preparar a los alumnos de cara a su examen práctico Contiene los datos especificados en el requisito de información correspondiente, los cuales son: marca, matrícula, seguro, fechaITV, estado.<br/><br/>Factura: Entidad que representa las facturas emitidas en cualquier tramite de la empresa y pagadas por los clientes. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: número, fecha, tipoUsario, importe, empresa. <br/><br/>Cliente: Entidad que representa a una persona que acude a la autoescuela con el fin de repasar cualquier tema relacionado con la conducción, no necesita estar registrado en la autoescuela. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: carné, clases, importe, clasesPrácticas.<br/><br/>Profesor: Entidad correspondiente a un profesor, el cual imparte clases teóricas, prácticas o ambas. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: clasesImpartidas, sueldo, pagaExtra, activo, vacaciones, numeroDiasBaja, tipo.<br/><br/>Alumno: Entidad correspondiente a un alumno que recibe tanto clases teoricas como prácticas. Una vez se vea capacitado con los conocimientos necesarios se presentará a los correspondientes exámenes. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: nºmatricula, permiso, estado, clasesPrácticas.<br/><br/>Examen: Entidad que corresponde al examen que deben realizar todos los alumnos que deseen obtener el permiso. Se divide en dos: Teórico y Práctico. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: fecha, nºalumnosPresentados, nºalumnosAptos.<br/><br/>Bono: Entidad que representa los bonos que los alumnos compran en la autoescuela que luego canjean por clases prácticas. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: sello, nºreferencia, importe, duración.<br/><br/>Examinador: Entidad correspondiente al examinador, el cual somete a los alumnos a una prueba de conducción y decidirá si es apto o no. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: nombre, código, observaciones.<br/><br/>TipoEstado: Entidad que corresponde a los tipos de estado en los que se puede encontrar un alumno. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: finalizado, teórico, práctico, baja.<br/><br/>TipoPermiso: Entidad que corresponde a los tipos de permisos que la autoescuela ofrece. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: AM, A1, A2, A, B<br/><br/>Tarifa: Entidad que representan las tarifas impuestas por la autoescuela para poder iniciar las clases teóricas, prácticas, exámenes…etc. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: artículo, descuento, fechaInicio, fechaFin.<br/><br/>Contrato: Entidad que representa el contrato a firmar por el alumno, donde se establecen los términos y condiciones. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: artículo, referencia, precio, IVA.<br/><br/>TipoUsuario: Entidad que representa a un usuario general a vista de la base de datos, que después pasar a ser un profesor, cliente o alumno.<br/></rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0013">
+<rem:name>
+Diagramas de estado de las clases del sistema </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.3 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0004">
+<rem:name>
+Estado matriculación</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\Diagramas de estado matriculacion.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0005">
+<rem:name>
+Estado examen</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\Estado Examen.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0006">
+<rem:name>
+Estado vehículo</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\Estado vehículo.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+</rem:section>
+</rem:d_requirementsSpecification>
+<rem:defectsSpecification oid = "DFS-0003">
+<rem:name>Registro de Conflictos y Defectos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:defectsSpecification>
+<rem:changeRequestsSpecification oid = "CHS-0004">
+<rem:name>Registro de Peticiones de Cambio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:changeRequestsSpecification>
+<rem:predefinedValueTypes>
+<rem:predefinedValueType
+ oid = "PVT-0001">
+<rem:name>
+Real</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Real numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0002">
+<rem:name>
+Integer</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Integer numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0003">
+<rem:name>
+Natural</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Natural numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0004">
+<rem:name>
+String</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Alphanumeric strings</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0005">
+<rem:name>
+Date</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type (non-standard)</rem:comments>
+<rem:description>
+Dates</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0006">
+<rem:name>
+Time</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type (non-standard)</rem:comments>
+<rem:description>
+Hour:minutes:seconds</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+</rem:predefinedValueTypes>
+<rem:predefinedValues>
+<rem:changeRequestStatusValue oid = "CRV-0006">
+<rem:name>rechazado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0005">
+<rem:name>verificado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0002">
+<rem:name>pendiente de análisis</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0003">
+<rem:name>pendiente de aprobar/rechazar</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0004">
+<rem:name>pendiente de realización</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0001">
+<rem:name>PD</rem:name>
+</rem:changeRequestStatusValue>
+<rem:conflictStatusValue oid = "CSV-0001">
+<rem:name>PD</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0004">
+<rem:name>resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0003">
+<rem:name>en proceso de negociación</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0002">
+<rem:name>no resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:defectStatusValue oid = "DSV-0003">
+<rem:name>en proceso de negociación</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0002">
+<rem:name>no eliminado</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0004">
+<rem:name>eliminado</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
+</rem:defectStatusValue>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
+<rem:description>
+<![CDATA[Por Determinar]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0004">
+<rem:name>Incomprensibilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0005">
+<rem:name>No verificabilidad</rem:name>
+<rem:description>
+<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0015">
+<rem:name>Nivel incorrecto de detalle</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0009">
+<rem:name>Dependiente del diseño</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0010">
+<rem:name>Redundancia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0017">
+<rem:name>Organización incorrecta</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0011">
+<rem:name>Imprecisión</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0008">
+<rem:name>Verbosidad excesiva</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0016">
+<rem:name>No rastreabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0014">
+<rem:name>Estabilidad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0023">
+<rem:name>Otro</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0007">
+<rem:name>No implementabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:importanceValue oid = "IMV-0004">
+<rem:name>quedaría bien</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0002">
+<rem:name>vital</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0003">
+<rem:name>importante</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0001">
+<rem:name>PD</rem:name>
+</rem:importanceValue>
+<rem:stabilityValue oid = "SBV-0003">
+<rem:name>media</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0002">
+<rem:name>baja</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0001">
+<rem:name>PD</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0004">
+<rem:name>alta</rem:name>
+</rem:stabilityValue>
+<rem:statusValue oid = "STV-0003">
+<rem:name>pendiente de verificación</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0004">
+<rem:name>pendiente de validación</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0005">
+<rem:name>validado</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0001">
+<rem:name>PD</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0002">
+<rem:name>en construcción</rem:name>
+</rem:statusValue>
+<rem:terminationValue oid = "TEV-0002">
+<rem:name>continúa</rem:name>
+</rem:terminationValue>
+<rem:terminationValue oid = "TEV-0001">
+<rem:name>PD</rem:name>
+</rem:terminationValue>
+<rem:terminationValue oid = "TEV-0003">
+<rem:name>queda sin efecto</rem:name>
+</rem:terminationValue>
+<rem:timeUnitValue oid = "TUV-0013">
+<rem:name>centésima(s) de segundo</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0010">
+<rem:name>minuto(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0014">
+<rem:name>milisegundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0011">
+<rem:name>segundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0012">
+<rem:name>décima(s) de segundo</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0008">
+<rem:name>día(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0002">
+<rem:name>año(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0009">
+<rem:name>hora(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0007">
+<rem:name>semana(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0001">
+<rem:name>PD</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
+</rem:timeUnitValue>
+<rem:urgencyValue oid = "URV-0002">
+<rem:name>inmediatamente</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0001">
+<rem:name>PD</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0003">
+<rem:name>hay presión</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0004">
+<rem:name>puede esperar</rem:name>
+</rem:urgencyValue>
+</rem:predefinedValues>
+</rem:requirementsProject>

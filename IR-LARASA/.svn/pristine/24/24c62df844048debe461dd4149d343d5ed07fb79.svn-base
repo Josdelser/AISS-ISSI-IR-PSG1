@@ -1,0 +1,33 @@
+<Logearse en git>
+
+$ git config --global user.name "NAME"  #Configura tu nombre#
+
+$ git config --globla user.email "EMAIL ADRESS" #Configura email#
+
+<Repositorios>
+
+$ git init PROJECT NAME #Crea un nuevo repositorio#
+
+$ git clone URL #Descarga un projecto ya creado#
+
+$ git touch NAME #Crea un archivo vacio#
+
+$ echo "TEXTO" > NAME #Introduce el texto en el archivo seleccionado#
+
+<Cambios>
+
+$ git status #Ver todos los commits que se han realizado#
+
+$ git add FILE #Captura el archivo que esta preparado para ser subido#
+
+$ git commit -m "MENSAJE DESCRIPTIVO" #Sube los cambios al repositorio#
+
+<Hacer ramas distintas del master(El master es la parte principal del programa y las ramas son para modificarlo sin hacer cambios en el programa principal)>
+
+$ git branch NAME #Crea una nueva rama#
+
+$ git checkout NAME #Cambia a la rama especificada#
+
+$ git branch -d NAME #Elimina la rama seleccionada#
+
+$ git merge NAME #Fusiona la rama en la que estas con la que especificas# 

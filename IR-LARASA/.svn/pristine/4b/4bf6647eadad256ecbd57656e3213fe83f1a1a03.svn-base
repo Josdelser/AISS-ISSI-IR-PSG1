@@ -1,0 +1,56 @@
+--Tarifa que no se haya seleccionado nunca
+INSERT INTO Tarifas VALUES ('6','Descuento por guapos', '32,99', TO_DATE('11/04/2015', 'dd/mm/yyyy'),TO_DATE('13/10/2016', 'dd/mm/yyyy'));
+select Articulo from Tarifas where Id_t NOT IN (select Tarifa from Alumnos);
+
+--Tipo de alumno más usual
+select Estado, count(*) from Alumnos group by Estado
+having count(*) = (select max(mas) from (select Estado, count(*) as mas
+from Alumnos group by Estado));
+select Estado, count(*) from Alumnos group by Estado
+having count(*) >= All (select count(*)
+from Alumnos group by Estado);
+
+--Alumnos con clases prácticas más de 15
+select  Nombre, Apellidos ,Dni from Alumnos where Clases_Practicas >15;
+
+--Profesor que tiene más alumnos asignados
+
+select Profesor, count(*) from Alumnos group by Profesor
+having count(*) = (select max(mas) from (select Profesor, count(*) as mas
+from Alumnos group by Profesor));
+select Profesor, count(*) from Alumnos group by Profesor
+having count(*) >= All (select count(*)
+from Alumnos group by Profesor);
+
+--Vehiculos con fecha itv pasada
+INSERT INTO Vehiculos VALUES ('Audi', '4159HJL', 'S', TO_DATE('02/02/2018', 'dd/mm/yyyy'),'Vehículo en perfectas condiciones para su uso');
+select Matricula, Fecha_ITV from Vehiculos where Fecha_ITV < sysdate;
+
+--Sueldo total a pagar profesores prácticas
+select sum(Sueldo) from Profesores where Tipo = 'Prácticas';
+
+--Sueldo total a pagar profesores teóricos
+select sum(Sueldo) from Profesores where Tipo = 'Teóricas';
+
+CREATE OR REPLACE PROCEDURE PR_Alumnos_Matriculados
+IS
+CURSOR C IS
+SELECT DNI, Nombre, Apellidos, Fecha_Nac, Correo FROM Alumnos;
+v_Alumnos C%ROWTYPE;
+v_TotalAlumnos NUMBER;
+BEGIN
+SELECT COUNT(*) INTO v_TotalAlumnos FROM Alumnos;
+DBMS_OUTPUT.PUT_LINE(v_TotalAlumnos || ' alumnos matriculados en la autoescuela.' || CHR(13) || CHR(13));
+OPEN C;
+FETCH C INTO v_Alumnos;
+DBMS_OUTPUT.PUT_LINE(RPAD('DNI:', 25) || RPAD('Nombre:', 25) || RPAD('Apellidos:', 25) || RPAD('Fecha de nacimiento:', 25) || RPAD('Email:', 25));
+DBMS_OUTPUT.PUT_LINE(LPAD('-', 120, '-'));
+WHILE C%FOUND LOOP
+DBMS_OUTPUT.PUT_LINE(RPAD(v_Alumnos.Dni, 25) || RPAD(v_Alumnos.Nombre, 25) || RPAD(v_Alumnos.Apellidos, 25) || RPAD(v_Alumnos.Fecha_Nac, 25) ||
+RPAD(v_Alumnos.Correo, 25));
+FETCH C INTO v_Alumnos;
+END LOOP;
+CLOSE C;
+END;
+/
+

@@ -1,0 +1,597 @@
+DROP TABLE VEHICULOS;
+DROP TABLE EMPRESAS;
+DROP TABLE CONTRATOS;
+DROP TABLE TARIFAS;
+DROP TABLE BONOS;
+DROP TABLE EXAMENES;
+DROP TABLE EXAMINADORES;
+DROP TABLE PROFESORES;
+DROP TABLE FACTURAS;
+DROP TABLE ALUMNOS;
+DROP TABLE CLIENTES;
+DROP TABLE PROFESORRECIBEBONO;
+DROP TABLE ALUMNOREALIZAEXAMEN;
+
+CREATE TABLE Vehiculos 
+(
+Marca VARCHAR(50) NOT NULL,
+Matricula CHAR(7) NOT NULL,
+Seguro CHAR(1) NOT NULL,
+Fecha_ITV DATE NOT NULL,
+Estado VARCHAR(200) NOT NULL,
+PRIMARY KEY (Matricula)
+);
+CREATE TABLE Empresas 
+(
+Id_e NUMBER NOT NULL,
+Nombre VARCHAR(20) NOT NULL,
+Razon_Social VARCHAR(20),
+Ciudad VARCHAR(50) NOT NULL,
+Telefono CHAR(9) NOT NULL,
+PRIMARY KEY (Id_e),
+UNIQUE (Nombre)
+);
+CREATE TABLE Contratos
+(
+Articulo VARCHAR(200) NOT NULL,
+Referencia NUMBER NOT NULL,
+Precio NUMBER(12,2) NOT NULL, 
+Iva VARCHAR(5) NOT NULL,
+Tarifa NUMBER NOT NULL,
+Alumno CHAR(9) NOT NULL,
+PRIMARY KEY (Referencia),
+FOREIGN KEY(Alumno) REFERENCES Alumnos (Dni),
+FOREIGN KEY(Tarifa) REFERENCES Tarifas (Id_t)
+);
+CREATE TABLE Tarifas
+(
+Id_t NUMBER NOT NULL,
+Articulo VARCHAR(200) NOT NULL,
+Descuento NUMBER(12,2) NOT NULL, 
+Fecha_Inicio DATE NOT NULL,
+Fecha_Fin DATE NOT NULL,
+CONSTRAINT fechas CHECK (Fecha_Inicio<Fecha_Fin),
+
+PRIMARY KEY (Id_t),
+UNIQUE (Articulo)
+);
+CREATE TABLE Bonos 
+(
+Sello CHAR(1) NOT NULL,
+N_ref NUMBER NOT NULL,
+Importe NUMBER (12,2) NOT NULL,
+Duracion NUMBER NOT NULL,
+Alumno CHAR(9) NOT NULL,
+PRIMARY KEY (N_ref),
+FOREIGN KEY (Alumno) REFERENCES Alumnos (Dni)
+);
+CREATE TABLE Examinadores
+(
+Id_examinador NUMBER NOT NULL,
+Nombre VARCHAR(20) NOT NULL,
+Codigo VARCHAR(10) NOT NULL,
+Observaciones VARCHAR(200),
+PRIMARY KEY (Id_examinador),
+UNIQUE (Nombre)
+);
+CREATE TABLE Examenes
+(
+Id_ex NUMBER NOT NULL,
+Fecha DATE NOT NULL,
+Alum_present NUMBER NOT NULL,
+Alum_aptos NUMBER NOT NULL,
+Examinador NUMBER NOT NULL,
+PRIMARY KEY (Id_ex),
+FOREIGN KEY (Examinador) REFERENCES Examinadores (Id_examinador)
+);
+CREATE TABLE Facturas
+(
+Numero NUMBER NOT NULL,
+Fecha DATE NOT NULL,
+Usuario CHAR(9) NOT NULL,
+Importe NUMBER(12,2) NOT NULL,
+Empresa NUMBER NOT NULL,
+PRIMARY KEY (Numero),
+FOREIGN KEY (Empresa) REFERENCES Empresas (Id_e),
+FOREIGN KEY (Usuario) REFERENCES Clientes (Dni)
+);
+CREATE TABLE Alumnos
+(
+Nombre VARCHAR(20) NOT NULL,
+Apellidos VARCHAR(100) NOT NULL,
+Dni CHAR(9) NOT NULL,
+Telefono CHAR(9) NOT NULL,
+Fecha_Nac Date NOT NULL,
+Correo VARCHAR(100) NOT NULL,
+Num_Matricula NUMBER NOT NULL,
+Permiso VARCHAR(100) NOT NULL CHECK( Permiso IN ('AM','A1','A2','A','B')),
+Estado VARCHAR(100) NOT NULL CHECK (Estado IN ('Finalizado','Teórico','Práctico', 'Baja')),
+Clases_Practicas NUMBER NOT NULL,
+Tarifa NUMBER NOT NULL,
+Profesor CHAR(9) NOT NULL,
+PRIMARY KEY (Dni),
+UNIQUE (Nombre),
+FOREIGN KEY (Tarifa) REFERENCES Tarifas (Id_t),
+FOREIGN KEY (Profesor) REFERENCES Profesores (Dni)
+);
+CREATE TABLE Profesores
+(
+Nombre VARCHAR(20) NOT NULL,
+Apellidos VARCHAR(100) NOT NULL,
+Dni CHAR(9) NOT NULL,
+Telefono CHAR(9) NOT NULL,
+Fecha_Nac Date NOT NULL,
+Correo VARCHAR(100),
+Clases_Imp NUMBER NOT NULL,
+Sueldo NUMBER(12,2) NOT NULL,
+Paga_Extra NUMBER(12,2),
+Activo CHAR(1) NOT NULL,
+Vacaciones NUMBER NOT NULL,
+Dias_Baja NUMBER,
+Tipo VARCHAR(10) NOT NULL,
+Matricula_Vehiculo CHAR(7) NOT NULL,
+PRIMARY KEY (Dni),
+UNIQUE (Nombre),
+FOREIGN KEY (Matricula_Vehiculo) REFERENCES Vehiculos (Matricula)
+);
+CREATE TABLE Clientes
+(
+Nombre VARCHAR(20) NOT NULL,
+Apellidos VARCHAR(100) NOT NULL,
+Dni CHAR(9) NOT NULL,
+Telefono CHAR(9),
+Fecha_Nac Date NOT NULL,
+Correo VARCHAR(100),
+Carnet CHAR(1) NOT NULL,
+Clases NUMBER  NOT NULL,
+Importe NUMBER(12,2) NOT NULL,
+Clases_Pract NUMBER NOT NULL,
+Profesor CHAR(9) NOT NULL,
+PRIMARY KEY (Dni),
+UNIQUE (Nombre),
+FOREIGN KEY (Profesor) REFERENCES Profesores (Dni)
+);
+CREATE TABLE ProfesorRecibeBono 
+(
+Id_r NUMBER NOT NULL,
+DniProfesor CHAR(9) NOT NULL,
+N_referencia NUMBER NOT NULL,
+PRIMARY KEY (Id_r),
+UNIQUE(DniProfesor),
+UNIQUE(N_referencia),
+FOREIGN KEY (DniProfesor) REFERENCES Profesores(Dni),
+FOREIGN KEY (N_referencia) REFERENCES Bonos(N_ref)
+);
+CREATE TABLE AlumnoRealizaExamen 
+(
+Id_realiza NUMBER NOT NULL,
+DniAlumno CHAR(9) NOT NULL,
+Id_ex NUMBER NOT NULL,
+PRIMARY KEY (Id_realiza),
+UNIQUE(DniAlumno),
+UNIQUE(Id_ex),
+FOREIGN KEY (DniAlumno) REFERENCES Alumnos(Dni),
+FOREIGN KEY (Id_ex) REFERENCES Examenes(Id_ex)
+);
+INSERT INTO Vehiculos VALUES ('Audi', '4157HJL', 'S', TO_DATE('02/02/2019', 'dd/mm/yyyy'),'Vehículo en perfectas condiciones para su uso');
+INSERT INTO Vehiculos VALUES ('Volswagen', '5177DGR', 'S', TO_DATE('03/04/2019', 'dd/mm/yyyy'),'Vehículo en perfectas condiciones para su uso');
+INSERT INTO Vehiculos VALUES ('Toyota', '7237HJL', 'S', TO_DATE('12/02/2019', 'dd/mm/yyyy'),'Vehículo en perfectas condiciones para su uso');
+INSERT INTO Vehiculos VALUES ('Audi', '4128FJV', 'S', TO_DATE('22/10/2019', 'dd/mm/yyyy'),'Vehículo en perfectas condiciones para su uso');
+INSERT INTO Vehiculos VALUES ('Suzuki', '1127GJM', 'S', TO_DATE('21/05/2019', 'dd/mm/yyyy'),'Rueda delatera derecha con presión baja, pero apto para su uso');
+
+INSERT INTO Empresas VALUES ('Anemia.S.L', 'gasolina', 'Guatemala', '631942195');
+INSERT INTO Empresas VALUES ('ADDACARRITO', 'Miguel Toro', 'US', '613849120');
+INSERT INTO Empresas VALUES ('TARFIA', 'Mala Vida', 'Sevilla', '631948301');
+INSERT INTO Empresas VALUES ('GALLO', 'polvorón', 'Estepa', '758291402');
+INSERT INTO Empresas VALUES ('ANGELA', 'PADILLA', 'MI CAMA', '656421240');  
+
+INSERT INTO Contratos VALUES ('Descuento Teórico', '1245741', '150', '21','12345','12349861F');
+INSERT INTO Contratos VALUES ('Descuento Teórico+Práctico', '1324785', '150', '21','452234','78324681H');
+INSERT INTO Contratos VALUES ('Descuento por guapo', '2147184', '150', '21','09876','23857697J');
+INSERT INTO Contratos VALUES ('Descuento por acompañante', '0124742', '150', '21','15467','51325781V');
+INSERT INTO Contratos VALUES ('Descuento folletos', '9875423', '150', '21','0198327','72935691S');
+
+INSERT INTO Tarifas VALUES ('Descuento Teórico', '21,21', TO_DATE('06/11/1999', 'dd/mm/yyyy'),TO_DATE('02/07/2040', 'dd/mm/yyyy'));
+INSERT INTO Tarifas VALUES ('Descuento Teórico+Práctico', '50', TO_DATE('22/06/2015', 'dd/mm/yyyy'),TO_DATE('09/07/2016', 'dd/mm/yyyy'));
+INSERT INTO Tarifas VALUES ('Descuento por acompañante', '10,1', TO_DATE('31/01/2006', 'dd/mm/yyyy'),TO_DATE('02/07/2010', 'dd/mm/yyyy'));
+INSERT INTO Tarifas VALUES ('Descuento folletos', '45,6', TO_DATE('15/08/2009', 'dd/mm/yyyy'),TO_DATE('14/11/20011', 'dd/mm/yyyy'));
+INSERT INTO Tarifas VALUES ('Descuento por guapo', '32,99', TO_DATE('11/04/2015', 'dd/mm/yyyy'),TO_DATE('13/10/2016', 'dd/mm/yyyy'));
+
+INSERT INTO Examinadores VALUES ('Carmen', 'asdg1237','la bella del salón');
+INSERT INTO Examinadores VALUES ('Carlos', 'zxcyugt12', 'puntúa de manera rara');
+INSERT INTO Examinadores VALUES ('Josema', 'uytuyta74', 'le gustan las cabras');
+INSERT INTO Examinadores VALUES ('Chema', 'asd7yihg', 'es muy estricto');
+INSERT INTO Examinadores VALUES ('Pablo', 'asuidhu887', 'buen examinador');
+
+INSERT INTO Examenes VALUES (TO_DATE('06/11/1998', 'dd/mm/yyyy'), '20', '12');
+INSERT INTO Examenes VALUES (TO_DATE('12/08/2014', 'dd/mm/yyyy'), '32', '20');
+INSERT INTO Examenes VALUES (TO_DATE('06/03/2018', 'dd/mm/yyyy'), '26', '15');
+INSERT INTO Examenes VALUES (TO_DATE('23/11/2008', 'dd/mm/yyyy'), '29', '19');
+INSERT INTO Examenes VALUES (TO_DATE('28/05/2016', 'dd/mm/yyyy'), '16', '15');
+
+INSERT INTO Facturas VALUES ('97432401', TO_DATE('09/01/2012', 'dd/mm/yyyy'), 'María', '123,00', 'Anemia S.L.');
+INSERT INTO Facturas VALUES ('12498712', TO_DATE('27/02/1999', 'dd/mm/yyyy'), 'Dani', '88,00', 'ADDACARRITO');
+INSERT INTO Facturas VALUES ('09784124', TO_DATE('11/11/2011', 'dd/mm/yyyy'), 'Martín', '215,50', 'ANGELA');
+INSERT INTO Facturas VALUES ('69732492', TO_DATE('02/10/2016', 'dd/mm/yyyy'), 'Lourdes', '188,00', 'TARFIA');
+INSERT INTO Facturas VALUES ('79234023', TO_DATE('13/07/2007', 'dd/mm/yyyy'), 'Marina', '93,00', 'ADDACARRITO');
+
+INSERT INTO Alumnos VALUES ('Sonia', 'Padilla Granadal', '12349861F', '683742184', TO_DATE('06/11/1993', 'dd/mm/yyyy'), 'tumorenita@htomail.com', '26384762', 'AM', 'Teórico', 'Paula');
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez Méndez', '78324681H', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', 'JuanCarlos');
+INSERT INTO Alumnos VALUES ('Antonia', 'Fernández Mari', '23857697J', '612409711', TO_DATE('06/12/1988', 'dd/mm/yyyy'), 'Antonia@gmail.com', '23467587', 'A1', 'Finalizado', 'Juanjo');
+INSERT INTO Alumnos VALUES ('Juanjo', 'Alonso Huertas', '51325781V', '612080031', TO_DATE('21/02/2000', 'dd/mm/yyyy'), 'juanito@gmail.com', '12437869', 'B', 'Finalizado', 'Aitana');
+INSERT INTO Alumnos VALUES ('María', 'Merchan López', '72935691S', '661298712', TO_DATE('24/05/1976', 'dd/mm/yyyy'), 'marieta@hotmail.com','698237654' , 'B', 'Baja', 'David');
+
+INSERT INTO Bonos VALUES ('S', '742398798', '31,42', '45', 'Sonia');
+INSERT INTO Bonos VALUES ('S', '5452', '45,4', '30', 'Antonia');
+INSERT INTO Bonos VALUES ('N', '78798', '99,99', '45', 'Juanjo');
+INSERT INTO Bonos VALUES ('S', '09812312', '32,5', '60', 'María');
+INSERT INTO Bonos VALUES ('N', '423', '32,2', '90', 'Jorge');
+
+INSERT INTO Profesores VALUES ('JuanCarlos', 'Cáliz Maroto', '24356712K', '619642737', TO_DATE('27/04/1988', 'dd/mm/yyyy'), 'juanitoca@gmail.com', '876', '1200,00', '300,00', 's', '8', '4', 'Practicas', '4157HJL');
+INSERT INTO Profesores VALUES ('Paula', 'Molina Alonso', '71824584T', '612408142', TO_DATE('01/04/1956', 'dd/mm/yyyy'), 'paulina@gmail.com', '95', '1000,00', '250,00', 'n', '13', '3', 'Teoricas', '7237HJL');
+INSERT INTO Profesores VALUES ('Juanjo', 'Ferrero Rocher', '23498107Q', '691256623', TO_DATE('16/07/1975', 'dd/mm/yyyy'), 'Juanito@hotmail.com', '147', '1200,00', '300,00', 's', '6', '5', 'Practicas', '5177DGR');
+INSERT INTO Profesores VALUES ('Aitana', 'Barba Roque', '34581294O', '712818761', TO_DATE('22/11/1981', 'dd/mm/yyyy'), 'aitañona@gmail.com', '410', '1000,00', '250', 's', '10', '1', 'Teoricas', '1127GJM');
+INSERT INTO Profesores VALUES ('David', 'Lozano De La Torre', '52734812L', '612398781', TO_DATE('12/10/1991', 'dd/mm/yyyy', 'DavidPetit@hotmail.com', '10', '1000,00', 's', '0', '0', 'Teoricas', '4128FJV'));
+
+
+INSERT INTO ProfesorRecibeBono VALUES ('24356712K', '742398798');
+INSERT INTO ProfesorRecibeBono VALUES ('71824584T', '78798');
+INSERT INTO ProfesorRecibeBono VALUES ('23498107Q', '5452');
+INSERT INTO ProfesorRecibeBono VALUES ('34581294O', '09812312');
+INSERT INTO ProfesorRecibeBono VALUES ('52734812L', '423');
+
+
+INSERT INTO  AlumnoRealizaExamen VALUES ('12349861F');
+INSERT INTO  AlumnoRealizaExamen VALUES ('78324681H');
+INSERT INTO  AlumnoRealizaExamen VALUES ('72935691S');
+INSERT INTO  AlumnoRealizaExamen VALUES ('51325781V');
+INSERT INTO  AlumnoRealizaExamen VALUES ('23857697J');
+
+INSERT INTO Clientes VALUES ('María', 'Franco CuloAbierto', '93617824U', '712301846', TO_DATE('18/09/1972', 'dd/mm/yyyy'), 'franquito@gmail.com', 's', '0', '300,00', '10', 'Paula');
+INSERT INTO Clientes VALUES ('Dani', 'Chen Hu ', '38723648B', '691496921', TO_DATE('02/10/1988', 'dd/mm/yyyy'), 'dani@hotmail.com', 's', '3', '80,00', '4', 'JuanCarlos');
+INSERT INTO Clientes VALUES ('Lourdes', 'Martínez Ruiz', '56896182E', '612837421', TO_DATE('08/03/1981', 'dd/mm/yyyy'), 'lour@gmail.com', 'n', '21', '130,00', '0', 'Paula');
+INSERT INTO Clientes VALUES ('Martin', 'Alonso Borrás', '76123924Y', '692391612', TO_DATE('20/11/1950', 'dd/mm/yyyy'), 'Marti@gmail.com', 's', '0', '40,00', '6', 'David');
+INSERT INTO Clientes VALUES ('Marina', 'Ming Tian', '12164589F', '612859324', TO_DATE('29/10/1986', 'dd/mm/yyyy'), 'marinita01@gmail.com', 's', '0', '80,00', '9', 'JuanCarlos');
+
+CREATE SEQUENCE SEC_Empresas
+INCREMENT BY 1
+START WITH 1
+MAXVALUE 99999;
+CREATE SEQUENCE SEC_Tarifas
+INCREMENT BY 1
+START WITH 1
+MAXVALUE 99999;
+CREATE SEQUENCE SEC_Examinadores
+INCREMENT BY 1
+START WITH 1
+MAXVALUE 99999;
+CREATE SEQUENCE SEC_Examenes
+INCREMENT BY 1
+START WITH 1
+MAXVALUE 99999;
+CREATE SEQUENCE SEC_ProfesorRecibeBono
+INCREMENT BY 1
+START WITH 1
+MAXVALUE 99999;
+CREATE SEQUENCE SEC_AlumnoRealizaExamen
+INCREMENT BY 1
+START WITH 1
+MAXVALUE 99999;
+
+CREATE OR REPLACE TRIGGER TR_SEC_Empresas
+BEFORE INSERT ON Empresas
+FOR EACH ROW
+DECLARE
+valorSec NUMBER := 0;
+BEGIN
+SELECT SEC_Empresas.NEXTVAL INTO valorSec FROM DUAL;
+:NEW.Id_e := valorSec;
+END;
+/
+CREATE OR REPLACE TRIGGER TR_SEC_Tarifas
+BEFORE INSERT ON Tarifas
+FOR EACH ROW
+DECLARE
+valorSec NUMBER := 0;
+BEGIN
+SELECT SEC_Departamentos.NEXTVAL INTO valorSec FROM DUAL;
+:NEW.Id_t := valorSec;
+END;
+/
+CREATE OR REPLACE TRIGGER TR_SEC_Examinadores
+BEFORE INSERT ON Examinadores
+FOR EACH ROW
+DECLARE
+valorSec NUMBER := 0;
+BEGIN
+SELECT SEC_Examinadores.NEXTVAL INTO valorSec FROM DUAL;
+:NEW.Id_examinador := valorSec;
+END;
+/
+
+CREATE OR REPLACE TRIGGER TR_SEC_Examenes
+BEFORE INSERT ON Examenes
+FOR EACH ROW
+DECLARE
+valorSec NUMBER := 0;
+BEGIN
+SELECT SEC_Examenes.NEXTVAL INTO valorSec FROM DUAL;
+:NEW.Id_ex := valorSec;
+END;
+/
+
+CREATE OR REPLACE TRIGGER TR_SEC_ProfesorRecibeBono
+BEFORE INSERT ON ProfesorRecibeBono
+FOR EACH ROW
+DECLARE
+valorSec NUMBER := 0;
+BEGIN
+SELECT SEC_ProfesorRecibeBono.NEXTVAL INTO valorSec FROM DUAL;
+:NEW.Id_r := valorSec;
+END;
+/
+
+CREATE OR REPLACE TRIGGER TR_SEC_AlumnoRealizaExamen
+BEFORE INSERT ON AlumnoRealizaExamen
+FOR EACH ROW
+DECLARE
+valorSec NUMBER := 0;
+BEGIN
+SELECT SEC_AlumnoRealizaExamen.NEXTVAL INTO valorSec FROM DUAL;
+:NEW.Id_realiza := valorSec;
+END;
+/
+
+--before insert on Vehiculos
+CREATE OR REPLACE TRIGGER TR_VEHICULOS_PROFESORES
+BEFORE INSERT OR UPDATE ON Vehiculos
+FOR EACH ROW
+DECLARE
+ v_Matricula CHAR(7);
+ v_Matricula_Vehiculo CHAR(7);
+
+BEGIN
+ SELECT Matricula INTO v_Matricula FROM Vehiculos;
+ SELECT Matricula_Vehiculo INTO v_Matricula_Vehiculo FROM Profesores WHERE Tipo='Practicas';
+ IF v_Matricula != v_Matricula_Vehiculo THEN RAISE_APPLICATION_ERROR(-20001, 
+ 'La matricula del vehiculo debe coincidir con la matricula del vehiculo asociado al profesor de tipo practicas');
+ END IF;
+END;
+/   
+
+INSERT INTO Vehiculos VALUES ('Audi', '4157CZC', 'S', TO_DATE('02/02/2019', 'dd/mm/yyyy'),'Vehículo en perfectas condiciones para su uso');
+INSERT INTO Profesores VALUES ('Paco', 'Lopez Romero', '23143476K', '619642737', TO_DATE('27/04/1988', 'dd/mm/yyyy'), 'pacolopez@gmail.com', '876', '1200,00', '300,00', 's', '8', '4', 'Practicas', '4157CZS');
+
+
+--before insert on bono
+CREATE OR REPLACE TRIGGER TR_BONOS_PROFESORES
+BEFORE INSERT OR UPDATE ON Bonos
+FOR EACH ROW
+DECLARE
+ v_Dni CHAR(9) := :NEW.DNI;
+ v_N_ref NUMBER := :NEW.N_ref;
+ v_DniProfesor CHAR(9);
+ v_N_referencia NUMBER;
+BEGIN
+ SELECT Dni INTO v_DniProfesor FROM Profesores WHERE Tipo='Practicas' and Dni=v_Dni ;
+ SELECT N_referencia INTO v_N_referencia FROM Bonos where N_ref = v_N_ref;
+ IF v_Dni != v_DniProfesor OR v_N_ref != v_N_referencia THEN RAISE_APPLICATION_ERROR(-20002, 'El profesor que imparte la clase es el que debe recibir el bono que se le entrega al alumno');
+ END IF;
+END;
+/
+
+INSERT INTO Bonos VALUES ('S', '742398699', '31,42', '45', 'Sonia');
+INSERT INTO ProfesorRecibeBono VALUES ('71824765T', '742398655');
+INSERT INTO Profesores VALUES ('Paula', 'Molina Alonso', '71824584T', '612408142', TO_DATE('01/04/1956', 'dd/mm/yyyy'), 'paulina@gmail.com', '95', '1000,00', '250,00', 'n', '13', '3', 'Teoricas', '7237HJL');
+
+
+--before insert on Vehiculos
+create or replace trigger TR_VEHICULOS_PROFESORES_1
+before insert or update on Vehiculos
+for each row
+declare
+ v_Matricula CHAR(7);
+ v_Matricula_Vehiculo char(7);
+begin
+ select Matricula INTO v_Matricula FROM Vehiculos WHERE Estado='Vehículo en perfectas condiciones para su uso';
+ select Matricula_Vehiculo into v_Matricula_Vehiculo from Profesores where Tipo='Practicas';
+ if v_Matricula_Vehiculo.count > 1 then RAISE_APPLICATION_ERROR(-20003,'Un profesor de tipo practicas solo puede tener un vehiculo asociado');
+ end if;
+ end;
+/
+
+INSERT INTO Vehiculos VALUES ('Audi', '4157OKL', 'S', TO_DATE('02/02/2019', 'dd/mm/yyyy'),'Vehículo en perfectas condiciones para su uso');
+INSERT INTO Profesores VALUES ('JuanCarlos', 'Cáliz Maroto', '24356712K', '619642737', TO_DATE('27/04/1988', 'dd/mm/yyyy'), 'juanitoca@gmail.com', '876', '1200,00', '300,00', 's', '8', '4', 'Practicas', '4157OKL');
+
+--before insert on Alumnos
+CREATE OR REPLACE TRIGGER TR_ALUMNOS_PROFESORES
+BEFORE INSERT OR UPDATE OF Profesor,Estado ON Alumnos
+FOR EACH ROW
+DECLARE
+ v_Profesor VARCHAR(20);
+ v_NombreP VARCHAR(20);
+ v_NombreA VARCHAR(20);
+ 
+BEGIN
+ SELECT Profesor INTO v_Profesor FROM Alumnos WHERE Estado='Práctico';
+ SELECT Nombre INTO v_NombreP FROM Profesores WHERE Tipo='Practicas' AND Activo='s';
+ IF v_NombreP = v_Profesor THEN SELECT Nombre INTO v_NombreA FROM Alumnos;
+ IF v_NombreA.count > 10 THEN RAISE_APPLICATION_ERROR(-20004,'Un mismo profesor de practicas no puede tener mas de 10 alumnos');
+ END IF;
+ END IF;
+END;
+/
+
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez Méndez1', '78324681A', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', 'JuanCarlos');
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez Méndez2', '78324681B', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', 'JuanCarlos');
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez Méndez3', '78324681C', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', 'JuanCarlos');
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez Méndez4', '78324681D', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', 'JuanCarlos');
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez Méndez5', '78324681E', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', 'JuanCarlos');
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez Méndez6', '78324681F', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', 'JuanCarlos');
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez Méndez7', '78324681G', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', 'JuanCarlos');
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez Méndez8', '78324681I', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', 'JuanCarlos');
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez Méndez9', '78324681J', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', 'JuanCarlos');
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez Méndez10', '78324681K', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', 'JuanCarlos');
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez Méndez11', '78324681L', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', 'JuanCarlos');
+
+CREATE OR REPLACE PACKAGE BODY PCK_Vehiculos
+IS
+    CURSOR C IS
+        SELECT * FROM Vehiculos;
+    x_Salida BOOLEAN := TRUE;
+    x_Vehiculos Vehiculos%ROWTYPE;
+PROCEDURE Inicializar
+    IS
+    BEGIN
+        DELETE FROM Vehiculos;
+    END Inicializar;
+PROCEDURE Consultar
+    IS
+    BEGIN
+        OPEN C;
+        FETCH C INTO v_Vehiculos;
+        DBMS_OUTPUT.PUT_LINE(RPAD('Marca:', 25) || RPAD('Matricula:', 25) || RPAD('Seguro:', 25) || RPAD('Fecha_ITV:', 25) || RPAD('Estado:', 25));
+        DBMS_OUTPUT.PUT_LINE(LPAD('-', 120, '-'));
+        WHILE C%FOUND LOOP
+            DBMS_OUTPUT.PUT_LINE(RPAD(x_Vehiculos.Marca, 25) || RPAD(x_Vehiculos.Matricula, 25) || RPAD(x_Vehiculos.Seguro, 25) || RPAD(x_Vehiculos.Fecha_ITV, 25) ||
+RPAD(x_Vehiculos.Estado, 25));
+        FETCH C INTO x_Vehiculos;
+        END LOOP;
+        CLOSE C;
+    END Consultar;
+PROCEDURE Insertar (nombrePrueba VARCHAR2, x_Marca IN Vehiculos.Marca%TYPE, x_Matricula IN vehiculos.Matricula%TYPE, x_Seguro IN Vehiculos.Seguro%TYPE, x_FechaITV IN Vehiculos.Fecha_ITV%TYPE, x_Estado IN Vehiculos.Estado%TYPE, salidaEsperada BOOLEAN)
+    IS
+    BEGIN
+        INSERT INTO Vehiculos (Marca, Matricula, Seguro, Fecha_ITV, Estado) VALUES (x_Marca, x_Matricula, x_Seguro, x_Fecha_ITV, x_Estado);
+        SELECT * INTO x_Vehiculos FROM Vehiculos WHERE Matricula = x_Matricula;
+        IF x_Vehiculos.Marca != x_Marca AND x_Vehiculos.Seguro != x_Seguro AND x_Vehiculos.Fecha_ITV != x_FechaITV AND x_Vehiculos.Estado != x_Estado THEN
+            v_Salida := FALSE;
+        END IF;
+        COMMIT;
+        DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(x_Salida, salidaEsperada));
+        EXCEPTION
+            WHEN OTHERS THEN
+                DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(FALSE, salidaEsperada));
+            ROLLBACK;
+    END Insertar;
+PROCEDURE Actualizar (nombrePrueba VARCHAR2, x_Matricula IN Vehiculos.Matricula%TYPE, x_Marca IN Vehiculos.Marca%TYPE, x_Seguro IN Vehiculos.Seguro%TYPE, x_FechaITV IN
+Vehiculos.Fecha_ITV%TYPE, x_Estado IN Vehiculos.Estado%TYPE, salidaEsperada BOOLEAN)
+    IS
+    BEGIN
+        UPDATE Vehiculos SET Marca = x_Marca, Seguro = x_Seguro, Fecha_ITV = x_FechaITV, Estado = x_Estado WHERE Matricula = x_Matricula;
+        SELECT * INTO x_Vehiculos FROM Vehiculos WHERE Matricula = x_Matricula;
+        IF x_Vehiculos.Marca != x_Marca AND x_Vehiculos.Seguro != x_Seguro AND x_Vehiculos.Fecha_ITV!= x_FechaITV AND x_Vehiculos.Estado != x_Estado THEN
+            v_Salida := FALSE;
+        END IF;
+        COMMIT;
+        DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(x_Salida, salidaEsperada));
+        EXCEPTION
+            WHEN OTHERS THEN
+                DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(FALSE, salidaEsperada));
+                ROLLBACK;
+    END Actualizar;
+PROCEDURE Eliminar (nombrePrueba VARCHAR2, x_Matricula IN Vehiculos.Matricula%TYPE, salidaEsperada BOOLEAN)
+    IS
+        x_NumeroVehiculos NUMBER := 0;
+    BEGIN
+        DELETE FROM Vehiculos WHERE Matricula = x_Matricula;
+        SELECT COUNT(*) INTO x_NumeroVehiculos FROM Vehiculos WHERE Matricula = x_Matricula;
+        IF x_NumeroVehiculos != 0 THEN
+            x_Salida := FALSE;
+        END IF;
+        COMMIT;
+        DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(x_Salida, salidaEsperada));
+        EXCEPTION
+            WHEN OTHERS THEN
+                DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(FALSE, salidaEsperada));
+                ROLLBACK;
+    END Eliminar;
+END;
+/
+
+CREATE OR REPLACE PACKAGE PCK_Bonos
+IS
+PROCEDURE Inicializar;
+PROCEDURE Consultar;
+PROCEDURE Insertar (nombrePrueba VARCHAR2, x_Sello IN Bonos.Sello%TYPE, x_N_ref IN Bonos.N_ref%TYPE, x_Importe IN
+Bonos.Importe%TYPE, x_Duracion IN Bonos.Duracion%TYPE, x_Alumno IN Bonos.Alumno%TYPE, salidaEsperada BOOLEAN);
+PROCEDURE Actualizar (nombrePrueba VARCHAR2, x_Sello IN Bonos.Sello%TYPE, x_N_ref IN Bonos.N_ref%TYPE, x_Importe IN
+Bonos.Importe%TYPE, x_Duracion IN Bonos.Duracion%TYPE, x_Alumno IN Bonos.Alumno%TYPE, salidaEsperada BOOLEAN);
+PROCEDURE Eliminar (nombrePrueba VARCHAR2, x_N_ref IN Bonos.N_ref%TYPE, salidaEsperada BOOLEAN);
+END;
+/
+
+CREATE OR REPLACE PACKAGE BODY PCK_Becas
+IS
+    CURSOR C IS
+        SELECT * FROM Becas;
+    x_Salida BOOLEAN := TRUE;
+    x_Bonos Bonos%ROWTYPE;
+PROCEDURE Inicializar
+    IS
+    BEGIN
+        DELETE FROM Bonos;
+    END Inicializar;
+PROCEDURE Consultar
+    IS
+    BEGIN
+        OPEN C;
+        FETCH C INTO x_Bonos;
+        DBMS_OUTPUT.PUT_LINE(RPAD('Sello:', 25) || RPAD('N_ref:', 25) || RPAD('Importe:', 25) || RPAD('Duracion:', 25)|| RPAD('Alumno:', 25));
+        DBMS_OUTPUT.PUT_LINE(LPAD('-', 100, '-'));
+        WHILE C%FOUND LOOP
+        DBMS_OUTPUT.PUT_LINE(RPAD(x_Bonos.Sello, 25) || RPAD(x_Bonos.N_ref, 25) || RPAD(x_Bonos.Importe, 25) || RPAD(x_Bonos.Duracion, 25)|| RPAD(x_Bonos.Alumno, 25));
+        FETCH C INTO x_Bonos;
+        END LOOP;
+        CLOSE C;
+    END Consultar;
+PROCEDURE Insertar (nombrePrueba VARCHAR2, x_Sello IN Bonos.Sello%TYPE, x_N_ref IN Bonos.N_ref%TYPE, x_Duracion IN
+Bonos.Duracion%TYPE, x_Importe IN Bonos.Importe%TYPE, x_Alumno IN Bonos.Alumno%TYPE,salidaEsperada BOOLEAN)
+    IS
+    BEGIN
+        INSERT INTO Bonos (Sello, N_ref, Importe, Duracion, Alumno) VALUES (x_Sello, x_N_ref, x_Importe, x_Duracion, x_Alumno);
+        SELECT * INTO x_Bonos FROM Bonos WHERE N_ref = x_N_ref;
+        IF x_Bonos.Sello != x_Sello AND x_Bonos.Importe = x_Importe AND x_Bonos.Duracion = x_Duracion AND x_Bonos.Alumno = x_Alumno THEN
+            x_Salida := FALSE;
+        END IF;
+        COMMIT;
+        DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(x_Salida, salidaEsperada));
+        EXCEPTION
+            WHEN OTHERS THEN
+                DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(FALSE, salidaEsperada));
+                ROLLBACK;
+    END Insertar;
+PROCEDURE Actualizar (nombrePrueba VARCHAR2, x_Sello IN Bonos.Sello%TYPE, x_N_ref IN Bonos.N_ref%TYPE, x_Importe IN
+Bonos.Importe%TYPE, x_Duracion IN Bonos.Duracion%TYPE, x_Alumno IN Bonos.Alumno%TYPE, salidaEsperada BOOLEAN)
+    IS
+    BEGIN
+        UPDATE Bonos SET Sello = x_Sello, Importe = x_Importe, Alumno = x_Alumno WHERE N_ref = x_N_ref;
+        SELECT * INTO x_Bonos FROM Bonos WHERE N_ref = x_N_ref;
+        IF x_Bonos.Sello != x_Sello AND x_Bonos.Importe != x_Importe AND x_Bonos.Duracion != x_Duracion AND x_Bonos.Alumno != x_Alumno THEN
+            x_Salida := FALSE;
+        END IF;
+        COMMIT;
+        DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(x_Salida, salidaEsperada));
+        EXCEPTION
+            WHEN OTHERS THEN
+                DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(FALSE, salidaEsperada));
+                ROLLBACK;
+    END Actualizar;
+PROCEDURE Eliminar (nombrePrueba VARCHAR2, x_N_ref IN Bonos.N_ref%TYPE, salidaEsperada BOOLEAN)
+    IS
+    x_NumeroBonos NUMBER := 0;
+    BEGIN
+        DELETE FROM Bonos WHERE N_ref = x_N_ref;
+        SELECT COUNT(*) INTO x_NumeroBonos FROM Bonos WHERE N_ref = x_N_ref;
+        IF x_NumeroBonos != 0 THEN
+        x_Salida := FALSE;
+        END IF;
+        COMMIT;
+        DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(x_Salida, salidaEsperada));
+        EXCEPTION
+            WHEN OTHERS THEN
+                DBMS_OUTPUT.PUT_LINE(nombrePrueba || ': ' || ASSERT_EQUALS(FALSE, salidaEsperada));
+                ROLLBACK;
+    END Eliminar;
+END;
+/

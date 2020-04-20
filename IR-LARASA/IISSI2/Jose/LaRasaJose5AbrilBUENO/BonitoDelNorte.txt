@@ -1,0 +1,1 @@
+Registros2.php= Hacer que las dos contraseñas sean la misma, que salga la fuerza de la contraseña ,poner bien el tipo alum/profe y que se pueda ver la contraseña.

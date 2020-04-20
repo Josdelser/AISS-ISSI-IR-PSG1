@@ -1,0 +1,2801 @@
+<html xmlns:rem="http://rem.lsi.us.es">
+<head>
+<title>Proyecto Proyecto IR 2º entregable REM</title>
+<style type="text/css">
+<!--
+            body {
+                font-family: arial,verdana;
+                font-size: 10pt;
+                text-align: justify
+            }
+
+            h1 { font-size: 14pt }
+            h2 { font-size: 13pt }
+            h3 { font-size: 12pt }
+            h4 { font-size: 11pt }
+            h5 { font-size: 10pt }
+            h6 { font-size: 10pt }
+
+            h1.cover { font-size: 20pt }
+
+            tr { font-size: 10pt }
+
+            table { border: black solid; }
+            table.TOC { border: none; }
+            ul {
+                margin-top:    0pt;
+                margin-bottom: 0pt;
+                margin-left:   12pt
+            }
+        -->
+</style>
+</head>
+<body>
+<center>
+<h3>Proyecto Proyecto IR 2º entregable REM</h3>
+<p />
+<h1 class="cover">Documento de Requisitos del Sistema</h1>
+<p />
+<h3>Versión 1.0</h3>
+<h3>Fecha 25/10/2019</h3>
+<p />
+<h3>Preparado para:</h3>
+<a href="#ORG-0001" title="Autoescuela La Rasa">
+<p>
+Autoescuela La Rasa</p>
+</a>
+<p />
+<h3>Preparado por:</h3>
+<a href="#ORG-0002" title="Los Chemas">
+<p>
+Los Chemas</p>
+</a>
+<p />
+</center>
+<hr size="4" />
+<p />
+<h1 align="left">Índice</h1>
+<p />
+<table border="0" width="100%" class="TOC">
+<tr>
+<th align="left" valign="top">1 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0001">
+Introducción</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0002">
+Alcance del proyecto</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0003">
+Participantes en el proyecto</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0004">
+Organizaciones participantes</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0005">
+Personas participantes</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0006"> Objetivos del proyecto</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">2 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0007">
+Información sobre el dominio del problema</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0008">
+Introducción sobre el dominio del problema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0009">
+Glosario de términos del dominio del problema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">3 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0010">
+Descripcion de la situación actual</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0011">
+Pros y contras de la situación actual</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.1.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0012">
+Fortalezas de la situación actual</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.1.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0013">
+Debilidades de la situación actual</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0014">
+Modelos de proceso de negocio actuales</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0015">
+Descripción de actores de negocio actuales</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0016">
+Descripción de procesos de negocios actuales</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0017">
+Entorno tecnológico actual</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0018">
+Descripción del entorno de hardware actual</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">3.3.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0019">
+Descripción del entorno de software actual</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">4 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0020">
+Necesidades de negocio</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0021"> Objetivos de negocio</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0022">
+Modelos de procesos de negocio a implantar</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">4.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0023">
+Descripción de actores de negocio a implantar</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">4.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0024">
+Descripción de procesos de negocio a implantar</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">5 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0028">
+Descripción de los subsistemas del sistema a desarrollar</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">6 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0029">
+Catálogo de requisitos del sistema a desarrollar </a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0030">
+Requisitos generales del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0031">
+Casos de uso del sistema </a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0032">
+Diagrama de casos de uso del sistema </a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0033">
+Especificación de actores del sistema </a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.2.3 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0034">
+Especificación de casos de uso del sistema </a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0035">
+ Requisitos funcionales del sistema </a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.3.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0036">
+Requisitos de información del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.3.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0037">
+Requisitos de reglas de negocio del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.3.3 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0038">
+Requisistos de conducta del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.4 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0039">
+Requisitos no funcionales del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0040">
+Requisitos de fiabilidad del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0041">
+Requisistos de usbilidad del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.3 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0042">
+Requisitos de mantenibilidad del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.4 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0043">
+Requisitos de eficiencia del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.5 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0044">
+Requisitos de portabilidad del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.6 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0045">
+Requisitos de seguridad del sistema</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">6.4.7 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0046">
+Otros requisitos no funcionales del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.5 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0047">
+Restricciones técnicas del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.6 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0048">
+Requisistos de integración del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.7 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0049">
+Información sobre trazabilidad</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">A </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0025">
+Actas de reuniones</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">B </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0026">
+Documentación relevante</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">C </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0027">
+Gloario de acrónimos y abreviaturas</a>
+</th>
+</tr>
+</table>
+<p />
+<hr size="4" />
+<p />
+<a name="PRG-0001" />
+<p>
+</p>
+<a name="PRG-0002" />
+<p>
+</p>
+<a name="PRG-0003" />
+<p>
+</p>
+<a name="SEC-0001" />
+<h1 align="left">1 
+Introducción</h1><a name="SEC-0002" />
+<h2 align="left">1.1 
+Alcance del proyecto</h2><a name="GLO-0004" />
+<p align="left">
+<b> Introducción del proyecto:</b>La autoescuela La Rasa es un grupo de profesionales con muchos años de experiencia en el sector de enseñanza y <a href="#GLO-0022" title="Como alumno Quiero una herramienta de aprendizaje Para poder obtener el carné">aprendizaje</a> en conducción. En 2013 decidieron empezar este proyecto con el fin de crear un nuevo concepto de autoescuela, para que sus alumnos recibieran la mejor calidad y servicio en su formación.
+<br />
+<br />Con la implementación de este software se pretende facilitar la inscripción de los usuarios en la autoescuela de manera online. También se pretende habilitar la opción de gestionar la aplicación tanto en el establecimiento, como en otros lugares, además de permitir una mejor coordinación de horarios entre profesores y alumnos. Finalmente también se busca optimizar el formato para crear bonos de tamaños más adecuados. 
+<br />
+</p>
+<a name="GRF-0001" />
+<p align="center">
+<img src=".\Fotos IR\Portal.jpg" title=".\Fotos IR\Portal.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Portal de la autoescuela</p>
+<a name="SEC-0003" />
+<h2 align="left">1.2 
+Participantes en el proyecto</h2><a name="SEC-0004" />
+<h3 align="left">1.2.1 
+Organizaciones participantes</h3><a name="ORG-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+Autoescuela La Rasa</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">Paez de Rivera</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">954094466</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Autoescuela con la que colaboramos</td>
+</tr>
+</table>
+<p />
+<a name="ORG-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+Los Chemas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">Universidad de Sevilla</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">612345678</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Grupo de desarrollo</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0005" />
+<h3 align="left">1.2.2 
+Personas participantes</h3><a name="STK-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+María Jiménez Sánchez </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Gestora y profesora de teoría</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Cargo administrativo</td>
+</tr>
+</table>
+<p />
+<a name="STK-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Elisa Ramírez Pérez </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Profesora de prácticas</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Enseñanza de clases prácticas</td>
+</tr>
+</table>
+<p />
+<a name="STK-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Ramón Fernández Borrás </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Profesor de prácticas</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Enseñanza de clases prácticas</td>
+</tr>
+</table>
+<p />
+<a name="STK-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Sergio Huertas Granadal </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">
+<a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">Director</a> de la autoescuela</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Máximo representante de la autoescuela</td>
+</tr>
+</table>
+<p />
+<a name="STK-0008" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Carlos Romero Castilla</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">
+<a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">Alumno</a>
+</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0009" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Juan De la Torre</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">Freelance</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">
+<a href="#GLO-0044" title="Actor que representa una persona la cual no está matriculada en la autoescuela pero asiste a clases de la misma.">Cliente</a>
+</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Jose Delgado Serrano</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Los Chemas</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Analista</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Analista del proyecto</td>
+</tr>
+</table>
+<p />
+<a name="STK-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Antonio Fernández Manzano</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Los Chemas</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Jefe del proyecto</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Jefe del proyecto</td>
+</tr>
+</table>
+<p />
+<a name="STK-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Chao Hu</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Los Chemas</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Desarrollador</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Desarrollador del proyecto</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0006" />
+<h2 align="left">1.3  Objetivos del proyecto</h2><a name="GLO-0005" />
+<p align="left">
+<b> Objetivos:</b>La Autoescuela La Rasa quiere a su disposición un software de uso fácil e intuitivo para sus alumnos, de manera que permita gestionar y almacenar todos los datos relacionados sobre sus alumnos (los exámenes realizados, clases asistidas, tests realizados, exámenes aprobados, ...). De esta forma se pretende facilitar la <a href="#GLO-0024" title="Como director Quiero un sistema de gestión barato y óptimo para poder obtener un mayor rendimiento económico">gestión</a> de datos para la gestora de la autoescuela, y que los alumnos también puedan acceder a su propia información para una mejor organización y control.</p>
+<a name="SEC-0007" />
+<h1 align="left">2 
+Información sobre el dominio del problema</h1><a name="SEC-0008" />
+<h2 align="left">2.1 
+Introducción sobre el dominio del problema</h2><a name="GLO-0006" />
+<p align="left">
+<b> Introducción del problema:</b>La Autoescuela La Rasa todavía no dispone de ninguna forma de <a href="#GLO-0029" title="En este proceso intervienen el alumno que rellena el formulario de matriculación, la gestora que es la encargada tanto de su elaboración como de validar, y además de dar de alta dicho formulario. Por último la DGT recibe el formulario y prosigue con el proceso fuera del alcance de la autoescuela.">matriculación</a> online. Acutalmente sólo pueden realizarla de manera manual por el método tradicional de firma de contrato presencial, con el consiguiente gasto que implica el desplazamiento y el uso de papel. Uno de los probemas expuestos por autoescuela es la pérdida de tiempo en este proceso, por lo que le convendría tener una opción para agilizar y facilitar la matrícula de los alumnos. 
+<br />
+<br />Las clases teóricas son impartidas por una profesora con un horario ya predeterminado, aunque en la autoescuela existe la posibilidad de flexibilizar este mismo horario, avisando con una cierta antelación. En este apartado nuestro software no entrará.
+<br />
+<br />Las clases prácticas las imparten dos profesores, únicamente centrados en este dominio, es decir, no imparten clases teóricas. La duración de cada práctica es concertada con el profesor, teniendo siempre un continuo contacto con el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> para conocer sus preferencias. Sin embargo, el horario que el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> prefiere no siempre está disponible, por lo que una vista previa de las franjas horarias disponibles para la enseñanza de las prácticas es también uno de los <a href="#GLO-0005" title="La Autoescuela La Rasa quiere a su disposición un software de uso fácil e intuitivo para sus alumnos, de manera que permita gestionar y almacenar todos los datos relacionados sobre sus alumnos (los exámenes realizados, clases asistidas, tests realizados, exámenes aprobados, ...). De esta forma se pretende facilitar la gestión de datos para la gestora de la autoescuela, y que los alumnos también puedan acceder a su propia información para una mejor organización y control.">objetivos</a> primordiales.
+<br />
+<br />Además, la autoescuela quiere mejorar la utilización de los bienes requeridos para la creación de bonos, estos son papel y tinta, dado que el formato que tienen para la impresión de bonos necesita una cantidad de hojas de papel considerable. Esto conlleva a tener que realizar un nuevo formato modificando el tamaño de los bonos para poder aprovechar de manera más razonable la cantidad de folios usados.
+<br />
+<br />Teniendo en cuenta los <a href="#GLO-0005" title="La Autoescuela La Rasa quiere a su disposición un software de uso fácil e intuitivo para sus alumnos, de manera que permita gestionar y almacenar todos los datos relacionados sobre sus alumnos (los exámenes realizados, clases asistidas, tests realizados, exámenes aprobados, ...). De esta forma se pretende facilitar la gestión de datos para la gestora de la autoescuela, y que los alumnos también puedan acceder a su propia información para una mejor organización y control.">objetivos</a> planteados, el software a desarrollar se encargaría de gestionar la información relacionada a los alumnos, que incluiría su consulta y modificación, mejorar el formato de los bonos y compenetrar de manera más eficiente los horarios entre profesores y alumnos.
+<br />
+</p>
+<a name="SEC-0009" />
+<h2 align="left">2.2 
+Glosario de términos del dominio del problema</h2><a name="PRG-0007" />
+<p>Accidente: Suceso imprevisto que tiene lugar en el desarrollo de las clases prácticas, en el que se ven involucrados uno o más vehículos. Normalmente sucede por un fallo de algún conductor/a o debido a una avería de uno o varios vehículos.
+<br />
+<br />
+<a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">Alumno</a>/a: <a href="#GLO-0044" title="Actor que representa una persona la cual no está matriculada en la autoescuela pero asiste a clases de la misma.">Cliente</a> que está asistiendo a clases teóricas o clases prácticas en la autoescuela.
+<br />
+<br />Avería: Fallo en el vehículo usado para impartir las clases prácticas, puede ser tanto un fallo mecánico como eléctrico.
+<br />
+<br />Bono de Práctica: Cupón / ticket que le permite al <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>/a dar la <a href="#GLO-0030" title="En este proceso intervienen el alumno, la gestora y el profesor. El alumno compra un bono, elaborada por la gestora. El profesor al recibir el bono ya imparte la lcase y sella el bono para entregársela a la gestora como que el alumno ya ha dado la clase de ese bono. Por último la gestora actualiza el perfil del alumno al haber cursado una clase más.">clase práctica</a> con su respectivo profesor/a de prácticas.
+<br />
+<br />Clases Prácticas: Clases impartidas por el profesor/a en el vehículo de la autoescuela. Puede variar su duración entre 30', 45', 1h, donde se enseña al <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> a manejar el vehículo por la vía pública cumpliendo todas sus normas para poder superar el <a href="#GLO-0027" title="Este proceso es realizado por un alumno, la gestora, un examinador, y la DGT. En primer lugar el alumno rellena el formulario para realizar el examen, que lo recibe la gestora y lo envía a la DGT. La DGT comprueba la disponibilidad de fechas. Si hay fecha próxima, envía un comunicado al examinador y a la gestora. Si no hay fecha, únicamente a la gestora, que se encarga de devolver el aviso al alumno.">examen práctico</a>.
+<br />
+<br />Clases Teóricas: Clases impartidas por el profesor/a en la autoescuela de cara al <a href="#GLO-0028" title="En este proceso interviene el alumno que solicita fecha de examen. Para ello envia el formulario correspondiente a la gestora, que se encarga de tramitarlo hacia la DGT, donde se comprueba las fechas disponibles. Una vez comprobado, notifica de vuelta a la gestora, que se encarga de responder al alumno con la fecha del examen.">examen teórico</a> donde se explican distintos temas enfocados hacia el ámbito de las normas de circulación y conducción en la vía pública.
+<br />
+<br />Conductor/a: Persona que circula con un vehículo por las carreteras de la vía pública.
+<br />
+<br />Examen Oficial: Prueba que debe realizar el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>/a para obtener el permiso correspondiente, realizado en la <a href="#GLO-0017" title="Dirección General del Tráfico">DGT</a>. Se divide en <a href="#GLO-0028" title="En este proceso interviene el alumno que solicita fecha de examen. Para ello envia el formulario correspondiente a la gestora, que se encarga de tramitarlo hacia la DGT, donde se comprueba las fechas disponibles. Una vez comprobado, notifica de vuelta a la gestora, que se encarga de responder al alumno con la fecha del examen.">examen teórico</a> y práctico. La calificación será siempre de APTO o NO APTO.
+<br />
+<br />
+<a href="#GLO-0027" title="Este proceso es realizado por un alumno, la gestora, un examinador, y la DGT. En primer lugar el alumno rellena el formulario para realizar el examen, que lo recibe la gestora y lo envía a la DGT. La DGT comprueba la disponibilidad de fechas. Si hay fecha próxima, envía un comunicado al examinador y a la gestora. Si no hay fecha, únicamente a la gestora, que se encarga de devolver el aviso al alumno.">Examen Práctico</a>: Examen que se realiza en el coche de la autoescuela donde un examinador/a de la <a href="#GLO-0017" title="Dirección General del Tráfico">DGT</a> valorará si eres apto para la circulación en las carreteras de la vía pública. El profesor/a de prácticas te acompañará y actuará si lo cree necesario. Si el profesor/a tiene que intervenir el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>/a será calificado automáticamente como no apto. 
+<br />
+<br />
+<a href="#GLO-0028" title="En este proceso interviene el alumno que solicita fecha de examen. Para ello envia el formulario correspondiente a la gestora, que se encarga de tramitarlo hacia la DGT, donde se comprueba las fechas disponibles. Una vez comprobado, notifica de vuelta a la gestora, que se encarga de responder al alumno con la fecha del examen.">Examen Teórico</a>: Examen que consta de 20 o 30 preguntas de las cuales solo puedes fallar un 10% como máximo para superar la prueba y al cual te preparas realizando unos test y asistiendo a las clases teóricas impartidas en la autoescuela. Una vez aprobado se podrá proceder a comenzar a preparar el <a href="#GLO-0027" title="Este proceso es realizado por un alumno, la gestora, un examinador, y la DGT. En primer lugar el alumno rellena el formulario para realizar el examen, que lo recibe la gestora y lo envía a la DGT. La DGT comprueba la disponibilidad de fechas. Si hay fecha próxima, envía un comunicado al examinador y a la gestora. Si no hay fecha, únicamente a la gestora, que se encarga de devolver el aviso al alumno.">examen práctico</a>.
+<br />
+<br />Expediente de Prácticas: Documento que permite tener un seguimiento de las clases prácticas de cada <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>/a que se archiva junto a los bonos de prácticas correspondientes a cada <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>. 
+<br />
+<br />
+<a href="#GLO-0017" title="Dirección General del Tráfico">DGT</a>: Las siglas significan Dirección General de Tráfico y es donde se presentará el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>/a a los exámenes oficiales.
+<br />
+<br />Peatón: Persona que transita por la vía pública.
+<br />
+<br />Permiso de Conducción / Carnet: Documento oficial que se obtiene tras haber aprobado las distintas fases del examen y que te permite circular por las carreteras de la vía pública. Dependiendo del tipo de permiso obtenido se podrá circular con solo determinados vehículos. Los permisos impartidos son: B, AM, A1, A2, A.
+<br />
+<br />Profesor/a: Trabajador de la autoescuela que imparte clases teóricas o prácticas.
+<br />
+<br />Temario: Contenido que se debe aprender de cara al examen oficial.
+<br />
+<br />Test: Simulación del <a href="#GLO-0028" title="En este proceso interviene el alumno que solicita fecha de examen. Para ello envia el formulario correspondiente a la gestora, que se encarga de tramitarlo hacia la DGT, donde se comprueba las fechas disponibles. Una vez comprobado, notifica de vuelta a la gestora, que se encarga de responder al alumno con la fecha del examen.">examen teórico</a> que se hace recogiendo anteriores preguntas que han aparecido en exámenes oficiales anteriores. Puede contener, dependiendo del permiso, de 20 o 30 preguntas. Para superar el test debes tener un porcentaje de acierto igual o mayor del 90%.
+<br />
+<br />Vehículo: Herramienta de utilización en las clases prácticas para el desarrollo del <a href="#GLO-0022" title="Como alumno Quiero una herramienta de aprendizaje Para poder obtener el carné">aprendizaje</a> del <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> para la circulación en vía pública. Existen diferentes tipos de vehículos entre los que se encuentran: turismos, camiones, ciclomotores, motocicletas, autocaravanas...
+<br />
+<br />Vía Pública:  Conjunto de carreteras y vías por donde se puede transitar cumpliendo ciertas normas preestablecidas. 
+<br />
+</p>
+<a name="SEC-0010" />
+<h1 align="left">3 
+Descripcion de la situación actual</h1><a name="SEC-0011" />
+<h2 align="left">3.1 
+Pros y contras de la situación actual</h2><a name="SEC-0012" />
+<h3 align="left">3.1.1 
+Fortalezas de la situación actual</h3><a name="GLO-0008" />
+<p align="left">
+<b> FOR-001:</b>El sistema actual lleva los registros de manera local y en la propia autoescuela evitando así cualquier fallo debido a la conexión o al servidor. Además, la gestora mete en un programa que le gestiona parte de la autoescuela todos los registros para evitar problemas si se diese el caso de que se perdiesen los papeles.</p>
+<a name="GLO-0009" />
+<p align="left">
+<b> FOR-002:</b>Las clases práctica también se llevan de manera local lo cual hace que la gestora se organice mejor y pueda avisar con antelación a los profesores de prácticas.</p>
+<a name="SEC-0013" />
+<h3 align="left">3.1.2 
+Debilidades de la situación actual</h3><a name="GLO-0010" />
+<p align="left">
+<b> DEB-001:</b>Debido a que todo se lleva de manera manual pueden ocurrir varios fallos humanos a la hora de pasar al programa los registros, también pueden extraviarse algunos registros y causar problemas.</p>
+<a name="GLO-0011" />
+<p align="left">
+<b> DEB-002:</b>A raíz de que las clases prácticas se lleven de manera local puede ser que algún <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> tenga que cancelar o cambiar alguna cita es un proceso muy lento, ya que tendría que llamar a la autoescuela o ir hasta allí, y luego la gestora volver a cuadrar el horario.</p>
+<a name="SEC-0014" />
+<h2 align="left">3.2 
+Modelos de proceso de negocio actuales</h2><a name="SEC-0015" />
+<h3 align="left">3.2.1 
+Descripción de actores de negocio actuales</h3><a name="PRG-0012" />
+<p>
+<a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">Alumno</a>: persona externa que recibe enseñanzas de un profesor, tanto prácticas como teóricas.
+<br />
+<br />
+<a href="#GLO-0044" title="Actor que representa una persona la cual no está matriculada en la autoescuela pero asiste a clases de la misma.">Cliente</a>: persona externa, con permiso de conducir vigente, que recibe enseñanzas prácticas de un profesor.
+<br />
+<br />
+<a href="#GLO-0017" title="Dirección General del Tráfico">DGT</a>: organismo autónomo del Gobierno español dependiente del Ministerio del Interior responsable de la ejecución de la política vial en las vías de titularidad estatal de España.
+<br />
+<br />
+<a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">Director</a>: persona que dirige la empresa.
+<br />
+<br />Gestora: persona que administra y controla toda la información de la empresa.
+<br />
+<br />Página web: lugar donde queda guardada toda la información útil para el <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a>.
+<br />
+<br />Profesor: persona que imparte clases dentro de la organización.
+<br />
+<br />
+<br />
+</p>
+<a name="SEC-0016" />
+<h3 align="left">3.2.2 
+Descripción de procesos de negocios actuales</h3><a name="GLO-0030" />
+<p align="left">
+<b> Clase práctica:</b>
+<br />
+<br />En este proceso intervienen el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>, la gestora y el profesor. El <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> compra un bono, elaborada por la gestora. El profesor al recibir el bono ya imparte la lcase y sella el bono para entregársela a la gestora como que el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> ya ha dado la clase de ese bono. Por último la gestora actualiza el perfil del <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> al haber cursado una clase más.</p>
+<a name="GRF-0002" />
+<p align="center">
+<img src=".\Fotos IR\ClasePractica-Page-2.png" title=".\Fotos IR\ClasePractica-Page-2.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                 Clase práctica</p>
+<a name="GLO-0026" />
+<p align="left">
+<b> Clase teórica:</b>
+<br />
+<br />En este proceso intervienen el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> que elige el horario y se lo comunica al profesor. El otro actor protagonista, actualiza el perfil del <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> con la nueva clase dada.
+<br />
+<br />
+</p>
+<a name="GRF-0003" />
+<p align="center">
+<img src=".\Fotos IR\ClaseTeorica.png" title=".\Fotos IR\ClaseTeorica.png" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                 Clase teórica</p>
+<a name="GLO-0027" />
+<p align="left">
+<b> Examen práctico:</b>
+<br />
+<br />Este proceso es realizado por un <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>, la gestora, un examinador, y la <a href="#GLO-0017" title="Dirección General del Tráfico">DGT</a>.
+<br />En primer lugar el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> rellena el formulario para realizar el examen, que lo recibe la gestora y lo envía a la <a href="#GLO-0017" title="Dirección General del Tráfico">DGT</a>.
+<br />La <a href="#GLO-0017" title="Dirección General del Tráfico">DGT</a> comprueba la disponibilidad de fechas. Si hay fecha próxima, envía un comunicado al examinador y a la gestora. Si no hay fecha, únicamente a la gestora, que se encarga de devolver el aviso al <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>.</p>
+<a name="GRF-0004" />
+<p align="center">
+<img src=".\Fotos IR\ExamenPractico.png" title=".\Fotos IR\ExamenPractico.png" />
+</p>
+<p align="center">
+<b>Figura 3</b>:
+                 Examen práctico</p>
+<a name="GLO-0028" />
+<p align="left">
+<b> Examen teórico:</b>
+<br />
+<br />En este proceso interviene el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> que solicita fecha de examen. Para ello envia el formulario correspondiente a la gestora, que se encarga de tramitarlo hacia la <a href="#GLO-0017" title="Dirección General del Tráfico">DGT</a>, donde se comprueba las fechas disponibles. Una vez comprobado, notifica de vuelta a la gestora, que se encarga de responder al <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> con la fecha del examen.</p>
+<a name="GRF-0005" />
+<p align="center">
+<img src=".\Fotos IR\ExamenTeorico (1).png" title=".\Fotos IR\ExamenTeorico (1).png" />
+</p>
+<p align="center">
+<b>Figura 4</b>:
+                 Examen teórico</p>
+<a name="GLO-0029" />
+<p align="left">
+<b> Matriculación:</b>En este proceso intervienen el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> que rellena el formulario de <a href="#GLO-0029" title="En este proceso intervienen el alumno que rellena el formulario de matriculación, la gestora que es la encargada tanto de su elaboración como de validar, y además de dar de alta dicho formulario. Por último la DGT recibe el formulario y prosigue con el proceso fuera del alcance de la autoescuela.">matriculación</a>, la gestora que es la encargada tanto de su elaboración como de validar, y además de dar de alta dicho formulario. Por último la <a href="#GLO-0017" title="Dirección General del Tráfico">DGT</a> recibe el formulario y prosigue con el proceso fuera del alcance de la autoescuela.</p>
+<a name="GRF-0006" />
+<p align="center">
+<img src=".\Fotos IR\Nuevo matriculacion.png" title=".\Fotos IR\Nuevo matriculacion.png" />
+</p>
+<p align="center">
+<b>Figura 5</b>:
+                 Matriculación</p>
+<a name="SEC-0017" />
+<h2 align="left">3.3 
+Entorno tecnológico actual</h2><a name="SEC-0018" />
+<h3 align="left">3.3.1 
+Descripción del entorno de hardware actual</h3><a name="PRG-0013" />
+<p>La autoescuela dispone de ordenadores propios, uno personal para la gestora y varios de ellos para los alumnos que vayan allí a preparase el <a href="#GLO-0028" title="En este proceso interviene el alumno que solicita fecha de examen. Para ello envia el formulario correspondiente a la gestora, que se encarga de tramitarlo hacia la DGT, donde se comprueba las fechas disponibles. Una vez comprobado, notifica de vuelta a la gestora, que se encarga de responder al alumno con la fecha del examen.">examen teórico</a>. También cuenta con un proyector para dar las clases teóricas de grupo</p>
+<a name="GRF-0007" />
+<p align="center">
+<img src=".\Fotos IR\Aula.jpeg" title=".\Fotos IR\Aula.jpeg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Aula de las clases teóricas</p>
+<a name="GRF-0008" />
+<p align="center">
+<img src=".\Fotos IR\Ordenador.png" title=".\Fotos IR\Ordenador.png" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                
+Ordenador principal administrativo</p>
+<a name="SEC-0019" />
+<h3 align="left">3.3.2 
+Descripción del entorno de software actual</h3><a name="PRG-0014" />
+<p>La autoescuela cuenta con un programa de privado llamado Fácil-<a href="#GLO-0024" title="Como director Quiero un sistema de gestión barato y óptimo para poder obtener un mayor rendimiento económico">Gestión</a>, la cual le gestiona algunos recurso, pero los tiene que introducir la gestora de manera manual y solo se puede usar en el ordenador de la gestora, derivando en que cualquier cambio en los datos de algún <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> le suponga una gran pérdida de tiempo.</p>
+<a name="GRF-0009" />
+<p align="center">
+<img src=".\Fotos IR\programa recorte.jpeg" title=".\Fotos IR\programa recorte.jpeg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Programa software</p>
+<a name="SEC-0020" />
+<h1 align="left">4 
+Necesidades de negocio</h1><a name="SEC-0021" />
+<h2 align="left">4.1  Objetivos de negocio</h2><a name="GLO-0018" />
+<p align="left">
+<b> Sistema atractivo:</b>
+<br />Como <a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">director</a> de la autoescuela
+<br />Quiero tener un <a href="#GLO-0018" title="Como director de la autoescuela Quiero tener un sistema atractivo Para atraer a clientes y obtener más beneficios por ello">sistema atractivo</a>
+<br />Para atraer a clientes y obtener más beneficios por ello</p>
+<a name="GLO-0019" />
+<p align="left">
+<b> Sistema intuitivo:</b>
+<br />Como gerente
+<br />Quiero poder gestionar un <a href="#GLO-0019" title="Como gerente Quiero poder gestionar un sistema intuitivo Para realizar mejor mis tareas">sistema intuitivo</a>
+<br />Para realizar mejor mis tareas</p>
+<a name="GLO-0020" />
+<p align="left">
+<b> Sistema optimizado:</b>
+<br />Como gerente 
+<br />Quiero un <a href="#GLO-0020" title="Como gerente Quiero un sistema optimizado Para gestionar la aplicación de forma más eficiente">sistema optimizado</a>
+<br />Para gestionar la aplicación de forma más eficiente</p>
+<a name="GLO-0021" />
+<p align="left">
+<b> Popularidad en Internet:</b>
+<br />Como <a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">director</a> de la autoescuela
+<br />Quiero una forma extra de darse a conocer en Internet
+<br />Para que las personas puedan conocer todos los datos de nuestra autoescuela.</p>
+<a name="GLO-0022" />
+<p align="left">
+<b> Aprendizaje:</b>
+<br />Como <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>
+<br />Quiero una herramienta de <a href="#GLO-0022" title="Como alumno Quiero una herramienta de aprendizaje Para poder obtener el carné">aprendizaje</a>
+<br />Para poder obtener el carné</p>
+<a name="GLO-0023" />
+<p align="left">
+<b> conexión estable:</b>
+<br />Como profesor
+<br />Quiero un sistema de <a href="#GLO-0023" title="Como profesor Quiero un sistema de conexión estable Para poder dar correctamente las clases">conexión estable</a>
+<br />Para poder dar correctamente las clases</p>
+<a name="GLO-0024" />
+<p align="left">
+<b> Gestión:</b>
+<br />Como <a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">director</a>
+<br />Quiero un sistema de <a href="#GLO-0024" title="Como director Quiero un sistema de gestión barato y óptimo para poder obtener un mayor rendimiento económico">gestión</a> barato y óptimo 
+<br />para poder obtener un mayor rendimiento económico
+<br />
+</p>
+<a name="GLO-0025" />
+<p align="left">
+<b> Sistema portable:</b>
+<br />Como gerente
+<br />Quiero un <a href="#GLO-0025" title="Como gerente Quiero un sistema portable Para poder trabajar deade casa">sistema portable</a>
+<br />Para poder trabajar deade casa</p>
+<a name="SEC-0022" />
+<h2 align="left">4.2 
+Modelos de procesos de negocio a implantar</h2><a name="SEC-0023" />
+<h3 align="left">4.2.1 
+Descripción de actores de negocio a implantar</h3><a name="ACT-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0001</th>
+<th align="left" valign="top" width="100%">
+<a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">Director</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0006">
+Antonio Fernández Manzano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0006">
+Antonio Fernández Manzano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a la persona que drige la empresa, en este caso la autoescuela</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0002</th>
+<th align="left" valign="top" width="100%">
+Gestora</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Jose Delgado Serrano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Jose Delgado Serrano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a la persona que administra y controla toda la información de la empresa</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0003</th>
+<th align="left" valign="top" width="100%">
+Página web</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0007">
+Chao Hu</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0007">
+Chao Hu</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>al lugar donde queda guardada toda la información útil para el <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a>
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0004</th>
+<th align="left" valign="top" width="100%">
+<a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">Alumno</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0006">
+Antonio Fernández Manzano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0006">
+Antonio Fernández Manzano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a la persona externa que recibe enseñanzas de un profesor, tanto prácticas como teóricas</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0005</th>
+<th align="left" valign="top" width="100%">
+<a href="#GLO-0017" title="Dirección General del Tráfico">DGT</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Jose Delgado Serrano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Jose Delgado Serrano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>al organismo autónomo del Gobierno español dependiente del Ministerio del Interior responsable de la ejecución de la política vial en las vías de titularidad estatal de España</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0006</th>
+<th align="left" valign="top" width="100%">
+Profesor</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0007">
+Chao Hu</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0007">
+Chao Hu</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a la persona que imparte clases dentro de la organización</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0007</th>
+<th align="left" valign="top" width="100%">
+<a href="#GLO-0044" title="Actor que representa una persona la cual no está matriculada en la autoescuela pero asiste a clases de la misma.">Cliente</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 27/10/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0006">
+Antonio Fernández Manzano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0006">
+Antonio Fernández Manzano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a la persona externa, con permiso de conducir vigente, que recibe enseñanzas prácticas de un profesor</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0008" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0008</th>
+<th align="left" valign="top" width="100%">
+<a href="#GLO-0045" title="Actor que tiene el derecho de consultar la información de la autoescuela para una posible matriculación o asistir a clases de ella.">Persona Ajena</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 08/12/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Jose Delgado Serrano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0005">
+Jose Delgado Serrano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>Este actor representa una apersona ajena a la autoescuela</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ACT-0009" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">ACT-0009</th>
+<th align="left" valign="top" width="100%">
+<a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">Usuario</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top">1.0 
+			( 28/12/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0006">
+Antonio Fernández Manzano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="1">
+<ul>
+<li>
+<a href="#STK-0006">
+Antonio Fernández Manzano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td align="left" valign="top">
+    Este actor representa
+<em>a una persona registrada en la autoescuela</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0024" />
+<h3 align="left">4.2.2 
+Descripción de procesos de negocio a implantar</h3><a name="GRF-0010" />
+<p align="center">
+<img src=".\Fotos IR\EnviarHorario.png" title=".\Fotos IR\EnviarHorario.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Enviar horario</p>
+<a name="GRF-0011" />
+<p align="center">
+<img src=".\Fotos IR\ImprimirBono.png" title=".\Fotos IR\ImprimirBono.png" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                
+Imprimir bono</p>
+<a name="GRF-0012" />
+<p align="center">
+<img src=".\Fotos IR\MatriculacionOnline.png" title=".\Fotos IR\MatriculacionOnline.png" />
+</p>
+<p align="center">
+<b>Figura 3</b>:
+                 Matriculación online</p>
+<a name="SEC-0028" />
+<h1 align="left">5 
+Descripción de los subsistemas del sistema a desarrollar</h1><a name="PRG-0031" />
+<p>Sólo habrá un sistema principal por lo que no será necesario implementar ningún otro subsistema. </p>
+<a name="SEC-0029" />
+<h1 align="left">6 
+Catálogo de requisitos del sistema a desarrollar </h1><a name="SEC-0030" />
+<h2 align="left">6.1 
+Requisitos generales del sistema</h2><a name="GLO-0033" />
+<p align="left">
+<b> Gestión del profesorado:</b>
+<br />La base de datos llevará a cabo la distinción de profesores prácticos de los teóricos, las clases impartidas, el sueldo, las pagas extras, la actividad actual (distinción entre profesor que está de alta y de baja) y las vacaciones. </p>
+<a name="GLO-0034" />
+<p align="left">
+<b> Gestión de clases:</b>
+<br />El sistema de información permitirá registrar según las distintas clases: el número de prácticas dadas y el profesor que las imparte. </p>
+<a name="GLO-0035" />
+<p align="left">
+<b> Gestión de matriculación:</b>
+<br />El sistema permitirá la <a href="#GLO-0029" title="En este proceso intervienen el alumno que rellena el formulario de matriculación, la gestora que es la encargada tanto de su elaboración como de validar, y además de dar de alta dicho formulario. Por último la DGT recibe el formulario y prosigue con el proceso fuera del alcance de la autoescuela.">matriculación</a> online de un <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> de manera rápida. </p>
+<a name="GLO-0036" />
+<p align="left">
+<b> Gestión del cliente:</b>
+<br />La base de datos mostrará las clases que le imparten al <a href="#GLO-0044" title="Actor que representa una persona la cual no está matriculada en la autoescuela pero asiste a clases de la misma.">cliente</a>, el importe recibido. También diferenciará entre clases teóricas y prácticas que se le darán al <a href="#GLO-0044" title="Actor que representa una persona la cual no está matriculada en la autoescuela pero asiste a clases de la misma.">cliente</a> y distinguirá si el <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a> ya obtuvo el carné o no.</p>
+<a name="GLO-0037" />
+<p align="left">
+<b> Gestión del alumno:</b>
+<br />Se conocerá con el sistema de información: el número de matrícula del <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>, el permiso al que está matriculado para su obtención, el estado en que está dicho <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> (parte teórica, práctica, finalizado o baja) y el número de clases prácticas realizadas. </p>
+<a name="GLO-0038" />
+<p align="left">
+<b> Gestión de bonos:</b>
+<br />La base de datos dará a conocer si éste está sellado, si el número de referencia es correcto, su importe y la duración de la práctica a la que se puede acudir con dicho bono. </p>
+<a name="SEC-0031" />
+<h2 align="left">6.2 
+Casos de uso del sistema </h2><a name="SEC-0032" />
+<h3 align="left">6.2.1 
+Diagrama de casos de uso del sistema </h3><a name="GRF-0013" />
+<p align="center">
+<img src=".\Fotos IR\Diagrama de casos de uso del sistema.jpg" title=".\Fotos IR\Diagrama de casos de uso del sistema.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Diagrama de casos de uso del sistema </p>
+<a name="SEC-0033" />
+<h3 align="left">6.2.2 
+Especificación de actores del sistema </h3><a name="GLO-0042" />
+<p align="left">
+<b> Director:</b> Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado. </p>
+<a name="GLO-0039" />
+<p align="left">
+<b> Gestor:</b> Actor que representa la persona la cual dirige toda la <a href="#GLO-0024" title="Como director Quiero un sistema de gestión barato y óptimo para poder obtener un mayor rendimiento económico">gestión</a> del programa informático, como la actualización de la base de datos o las estadísticas de los alumnos.</p>
+<a name="GLO-0040" />
+<p align="left">
+<b> Profesor teórico:</b> Actor que representa a quien imparte clases teóricas en las aulas de la autoescuela.</p>
+<a name="GLO-0041" />
+<p align="left">
+<b> Profesor Práctico:</b> Actor que representa a quien imparte clases prácticas en los vehículos que les corresponde.</p>
+<a name="GLO-0043" />
+<p align="left">
+<b> Alumno:</b> Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.</p>
+<a name="GLO-0044" />
+<p align="left">
+<b> Cliente:</b> Actor que representa una persona la cual no está matriculada en la autoescuela pero asiste a clases de la misma.</p>
+<a name="GLO-0045" />
+<p align="left">
+<b> Persona ajena:</b> Actor que tiene el derecho de consultar la información de la autoescuela para una posible <a href="#GLO-0029" title="En este proceso intervienen el alumno que rellena el formulario de matriculación, la gestora que es la encargada tanto de su elaboración como de validar, y además de dar de alta dicho formulario. Por último la DGT recibe el formulario y prosigue con el proceso fuera del alcance de la autoescuela.">matriculación</a> o asistir a clases de ella.</p>
+<a name="GLO-0094" />
+<p align="left">
+<b> Usuario:</b> Actor que representa al <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a> de la página web, matriculado en la autoescuela</p>
+<a name="SEC-0034" />
+<h3 align="left">6.2.3 
+Especificación de casos de uso del sistema </h3><a name="UC-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0001</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Actualizar datos personales</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 07/12/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0007">
+Chao Hu</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0007">
+Chao Hu</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+el <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a> desee actualizar su propia información</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+El <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a> tiene información errónea o anticuada en el sistema</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0004" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0009" title="Este actor representa a una persona registrada en la autoescuela"> Usuario (ACT-0009)
+    </a>
+<em>
+inicia sesión en la página web</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0015" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0009" title="Este actor representa a una persona registrada en la autoescuela"> Usuario (ACT-0009)
+    </a>
+<em>
+consulta su perfil y reescribe los campos a actualizar</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0016" />
+<td align="center" valign="top">3</td>
+<td>El
+     
+    sistema<em>
+valida los campos y comprueba que sean correctos</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0017" />
+<td align="center" valign="top">4</td>
+<td>El
+     
+    sistema<em>
+actualiza los datos</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+La información es actualizada y correctamente registrada en el sistema</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0009" />
+<td align="center" valign="top">3</td>
+<td>Si<em>
+hay datos incorrectos,
+                            </em>el
+     
+    sistema<em>
+vuelve a pedir los datos</em>,
+                            a continuación este caso de uso
+                             
+                            <em>continúa</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+1
+veces por
+                         
+                        mes(es)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">vital</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de verificación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0002</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Reserva de clases</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 08/12/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0006">
+Antonio Fernández Manzano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0006">
+Antonio Fernández Manzano</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> desee reservar clases prácticas</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+El <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> quiere reservar clases para un horario cómodo para él</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="4">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0006" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a la persona externa que recibe enseñanzas de un profesor, tanto prácticas como teóricas"> Alumno (ACT-0004)
+    </a>
+<em>
+inicia sesión en la página web</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0018" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0004" title="Este actor representa a la persona externa que recibe enseñanzas de un profesor, tanto prácticas como teóricas"> Alumno (ACT-0004)
+    </a>
+<em>
+selecciona los tramos horarios disponibles más adecuados
+<br />
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0019" />
+<td align="center" valign="top">3</td>
+<td>El
+     
+    sistema<em>
+actualiza la información del horario y marca ese tramo como ocupado</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+La <a href="#GLO-0030" title="En este proceso intervienen el alumno, la gestora y el profesor. El alumno compra un bono, elaborada por la gestora. El profesor al recibir el bono ya imparte la lcase y sella el bono para entregársela a la gestora como que el alumno ya ha dado la clase de ese bono. Por último la gestora actualiza el perfil del alumno al haber cursado una clase más.">clase práctica</a> es reservada y se actualiza en el sistema, mostrando ese bloque de tiempo como ya ocupado</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+1
+veces por
+                         
+                        día(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">puede esperar</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de verificación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0004</th>
+<th align="left" valign="top" width="100%" colspan="2">
+<a href="#GLO-0029" title="En este proceso intervienen el alumno que rellena el formulario de matriculación, la gestora que es la encargada tanto de su elaboración como de validar, y además de dar de alta dicho formulario. Por último la DGT recibe el formulario y prosigue con el proceso fuera del alcance de la autoescuela.">Matriculación</a> Online</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 08/12/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0007">
+Chao Hu</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0007">
+Chao Hu</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+una <a href="#GLO-0045" title="Actor que tiene el derecho de consultar la información de la autoescuela para una posible matriculación o asistir a clases de ella.">persona ajena</a> quiere matricularse a la autoescuela</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+Una persona quiere matricularse a la autoescuela</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="4">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0009" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0008" title="Este actor representa Este actor representa una apersona ajena a la autoescuela"> Persona Ajena (ACT-0008)
+    </a>
+<em>
+rellena los datos para el registro</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0021" />
+<td align="center" valign="top">2</td>
+<td>El
+     
+    sistema<em>
+valida los datos introducidos</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0023" />
+<td align="center" valign="top">3</td>
+<td>El
+     
+    sistema<em>
+dará de alta al nuevo <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a>
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+Realiza la matrícula online correctamente y el sistema responde a ello</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="3">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0005" />
+<td align="center" valign="top">1</td>
+<td>Si<em>
+el formulario de <a href="#GLO-0029" title="En este proceso intervienen el alumno que rellena el formulario de matriculación, la gestora que es la encargada tanto de su elaboración como de validar, y además de dar de alta dicho formulario. Por último la DGT recibe el formulario y prosigue con el proceso fuera del alcance de la autoescuela.">matriculación</a> no es rellenado correctamente o no es completado,
+                            </em>el
+     
+    sistema<em>
+no realiza la <a href="#GLO-0029" title="En este proceso intervienen el alumno que rellena el formulario de matriculación, la gestora que es la encargada tanto de su elaboración como de validar, y además de dar de alta dicho formulario. Por último la DGT recibe el formulario y prosigue con el proceso fuera del alcance de la autoescuela.">matriculación</a>
+</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<a name="STX-0010" />
+<td align="center" valign="top">2</td>
+<td>Si<em>
+los datos no son válidos,
+                            </em>el
+     
+    sistema<em>
+el sistema volverá a pedri los datos</em>,
+                            a continuación este caso de uso
+                             
+                            <em>continúa</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+1
+veces por
+                         
+                        día(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0005</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Dar de baja a un <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 28/12/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0007">
+Chao Hu</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<ul>
+<li>
+<a href="#STK-0007">
+Chao Hu</a>
+<br />
+</li>
+</ul>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+un <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> ha obtenido el carnet y debe ser dado de baja</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+El <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> ha obtenido el carnet</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="5">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0028" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0002" title="Este actor representa a la persona que administra y controla toda la información de la empresa">
+Gestora (ACT-0002)
+    </a>
+<em>
+informa de que el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> ha obtenido el carnet</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0029" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0006" title="Este actor representa a la persona que imparte clases dentro de la organización">
+Profesor (ACT-0006)
+    </a>
+<em>
+selecciona el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> a dar de baja</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0030" />
+<td align="center" valign="top">3</td>
+<td>El
+     
+    sistema<em>
+comprueba que el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> puede ser dado de baja</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0031" />
+<td align="center" valign="top">4</td>
+<td>Si<em>
+el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> puede ser dado de baja,
+                                </em>el
+     
+    sistema<em>
+da de baja al <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>
+</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+El <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> es eliminado correctamente</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STX-0013" />
+<td align="center" valign="top">3</td>
+<td>Si<em>
+no puede ser dado de baja,
+                            </em>el
+     
+    sistema<em>
+el sistema informará</em>,
+                            a continuación este caso de uso
+                             
+                            <em>queda sin efecto</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+1
+veces por
+                         
+                        día(s)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">hay presión</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">en construcción</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">alta</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="UC-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">UC-0006</th>
+<th align="left" valign="top" width="100%" colspan="2">
+Actualizar datos del estado del examen</th>
+</tr>
+<tr>
+<th align="left" valign="top">Versión</th>
+<td align="left" valign="top" colspan="2">1.0
+            ( 28/12/2019 )
+        </td>
+</tr>
+<tr>
+<th align="left" valign="top">Autores</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fuentes</th>
+<td align="left" valign="top" colspan="2">
+<font color="red"><b>?</b></font>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Dependencias</th>
+<td align="left" valign="top" colspan="2">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Descripción</th>
+<td colspan="2">
+    El sistema deberá comportarse tal como se describe en el siguiente
+
+    caso de uso cuando
+<em>
+un <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> realice un examen</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Precondición</th>
+<td align="left" valign="top" colspan="2">
+el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> realiza un examen</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="4">Secuencia normal</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<a name="STP-0032" />
+<td align="center" valign="top">1</td>
+<td>El actor<a href="#ACT-0006" title="Este actor representa a la persona que imparte clases dentro de la organización">
+Profesor (ACT-0006)
+    </a>
+<em>
+recibe las notas del examen del <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0033" />
+<td align="center" valign="top">2</td>
+<td>El actor<a href="#ACT-0006" title="Este actor representa a la persona que imparte clases dentro de la organización">
+Profesor (ACT-0006)
+    </a>
+<em>
+introduce el nuevo estado del examen del <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>
+</em>
+</td>
+</tr>
+<tr>
+<a name="STP-0034" />
+<td align="center" valign="top">3</td>
+<td>El
+     
+    sistema<em>
+actualiza el estado del examen</em>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Postcondición</th>
+<td align="left" valign="top" colspan="2">
+el estado del examen es actualizado</td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Excepciones</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Acción</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top" rowspan="2">Rendimiento</th>
+<th align="center" valign="top">Paso</th>
+<th align="left" valign="top" width="100%">Tiempo máximo</th>
+</tr>
+<tr>
+<td align="center" valign="top">
+                        -
+                    </td>
+<td>
+                        -
+                    </td>
+</tr>
+<tr>
+<th align="left" valign="top">Frecuencia esperada</th>
+<td colspan="2">
+1
+veces por
+                         
+                        mes(es)</td>
+</tr>
+<tr>
+<th align="left" valign="top">Importancia</th>
+<td align="left" valign="top" colspan="2">importante</td>
+</tr>
+<tr>
+<th align="left" valign="top">Urgencia</th>
+<td align="left" valign="top" colspan="2">puede esperar</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estado</th>
+<td align="left" valign="top" colspan="2">pendiente de verificación</td>
+</tr>
+<tr>
+<th align="left" valign="top">Estabilidad</th>
+<td align="left" valign="top" colspan="2">media</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="2">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0035" />
+<h2 align="left">6.3 
+ Requisitos funcionales del sistema </h2><a name="SEC-0036" />
+<h3 align="left">6.3.1 
+Requisitos de información del sistema</h3><a name="GLO-0046" />
+<p align="left">
+<b> RI 001 - Información de los alumnos :</b>
+<br />Como profesor 
+<br />Quiero disponer de la información de mis alumnos 
+<br />Para poder apuntarlos al examen. </p>
+<a name="GLO-0047" />
+<p align="left">
+<b> RI 002 - Información sobre los horarios :</b>
+<br />Como directora de la autoescuela 
+<br />Quiero disponer de las horas de trabajo de mis empleados 
+<br />Para llevar un control exhaustivo de las horas trabajadas </p>
+<a name="GLO-0048" />
+<p align="left">
+<b> RI 003 - Información sobre fechas de exámenes :</b>
+<br />Como <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>
+<br />Quiero conocer la fecha de los exámenes
+<br />Para elegir la que mejor me convenga </p>
+<a name="GLO-0049" />
+<p align="left">
+<b> RI 004 - Información sobre ingresos :</b>
+<br />Como <a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">director</a>
+<br />Quiero disponer de los ingresos generados
+<br />Para llevar un control de la liquidez de la autoescuela </p>
+<a name="GLO-0050" />
+<p align="left">
+<b> RI 005 - Información sobre profesores :</b>
+<br />Como <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a>
+<br />Quiero conocer los profesores entre los que puedo elegir 
+<br />Para seleccionar al que prefiera 
+<br />
+</p>
+<a name="GLO-0051" />
+<p align="left">
+<b> RI 006 - Información sobre el vehículo :</b>
+<br />Como <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>
+<br />Quiero conocer el estado del vehículo que voy a usar para las prácticas
+<br />Para asegurarme de dar las clases con un vehículo en buenas condiciones </p>
+<a name="GLO-0052" />
+<p align="left">
+<b> RI 007 - Información sobre persmisos de conducir :</b>
+<br />Como <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a>
+<br />Quiero conocer los tipos de permisos que imparte la autoescuela
+<br />Para poder elegir el adecuado</p>
+<a name="GLO-0053" />
+<p align="left">
+<b> RI 008 - Información sobre el número de alumnos :</b>
+<br />Como gestora 
+<br />Quiero conocer el número de alumnos de los distintos permisos
+<br />Para saber el número de profesores que voy a necesitar </p>
+<a name="GLO-0054" />
+<p align="left">
+<b> RI 009 - Información sobre las clases impartidas:</b>
+<br />Como profesor 
+<br />Quiero conocer el número de clases que voy a impartir
+<br />Para optimizar el tiempo empleado</p>
+<a name="GLO-0055" />
+<p align="left">
+<b> RI 010 - Información sobre aprobados :</b>
+<br />Como <a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">director</a>
+<br />Quiero conocer el porcentaje de aprobados 
+<br />Para controlar el rendimiento de los profesores</p>
+<a name="GLO-0056" />
+<p align="left">
+<b> RI 011 - Información sobre vacaciones :</b>
+<br />Como profesor 
+<br />Quiero conocer el número de días de vacaciones de las que dispongo
+<br />Para poder organizar los días a lo largo del año </p>
+<a name="GLO-0057" />
+<p align="left">
+<b> RI 012 - Información sobre tarifas :</b>
+<br />Como <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>
+<br />Quiero disponer de las tarifas que ofrece la autoescuela 
+<br />Para elegir la que más se adapate a mi situación</p>
+<a name="GLO-0058" />
+<p align="left">
+<b> RI 013 - Información de importes :</b>
+<br />Como <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>
+<br />Quiero conocer el importe total pagado
+<br />Para controlar el dinero invertido</p>
+<a name="GLO-0059" />
+<p align="left">
+<b> RI 014 - Información sobre el sueldo y pagas extras :</b>
+<br />Como profesor 
+<br />Quiero acceder a la información de mis pagas extras
+<br />Para llevar un control sobre mi sueldo </p>
+<a name="SEC-0037" />
+<h3 align="left">6.3.2 
+Requisitos de reglas de negocio del sistema</h3><a name="GLO-0060" />
+<p align="left">
+<b> RN 001 - Uso del vehículo :</b>
+<br />Como <a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">director</a>
+<br />Quiero que el vehículo solo pueda pertenecer al profesor de prácticas
+<br />Para garantizar un uso correcto </p>
+<a name="GLO-0061" />
+<p align="left">
+<b> RN 002 - Entrega de bonos :</b>
+<br />Como <a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">director</a>
+<br />Quiero que el bono solo pueda ser entregado a un profesor de prácticas 
+<br />Para que no haya un exceso de bonos </p>
+<a name="GLO-0062" />
+<p align="left">
+<b> RN 003 - Control de vacaciones :</b>
+<br />Como gestora 
+<br />Quiero que los días de vaciones sean máximo de 30 días
+<br />Para que cumpla lo estipulado por el contrato </p>
+<a name="GLO-0063" />
+<p align="left">
+<b> RN 004 - Días de baja :</b>
+<br />Como gestora 
+<br />Quiero que los días de baja sean máximo 60 días, salvo excepciones
+<br />Para tener un control sobre los trabajadores </p>
+<a name="GLO-0064" />
+<p align="left">
+<b> RN 005 - Clases impartidas :</b>
+<br />Como <a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">director</a>
+<br />Quiero que se cumpla: las clases máximas impartidas sean 40 clases/semana 
+<br />Para garantizar que cumple lo estipulado por ley </p>
+<a name="GLO-0065" />
+<p align="left">
+<b> RN 006 - Tarifa única :</b>
+<br />Como <a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">director</a>
+<br />Quiero que a cada contrato se le asigne una sola tarifa 
+<br />Para administrar los descuentos elegidos por los alumnos</p>
+<a name="GLO-0066" />
+<p align="left">
+<b> RN 007 - Alumnos examinados :</b>
+<br />Como gestora 
+<br />Quiero que el <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> solo pueda presentarse a examen si ha aprobado el teórico 
+<br />Para llevar un control sobre el alumnado 
+<br />
+</p>
+<a name="SEC-0038" />
+<h3 align="left">6.3.3 
+Requisistos de conducta del sistema</h3><a name="GLO-0067" />
+<p align="left">
+<b> RCS 001 - Ordenación de alumnos :</b>
+<br />Como <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a>
+<br />Quiero que el sistema permita ordenar de distintas formas a los alumnos  
+<br />Para poder hacer una búsqueda de manera más sencilla </p>
+<a name="GLO-0068" />
+<p align="left">
+<b> RCS 002 - Acceso desde múltiples plataformas :</b>
+<br />Como gestora 
+<br />Quiero que el sistema permita trabajar desde mi domicilio 
+<br />Para aprovechar el tiempo disponible </p>
+<a name="GLO-0069" />
+<p align="left">
+<b> RCS 003 - Cambios en examen :</b>
+<br />Como profesor 
+<br />Quiero que el sistema permita modificar los alumnos que se presentan a examen  
+<br />Para poder realizar cualquier cambio necesario </p>
+<a name="GLO-0070" />
+<p align="left">
+<b> RCS 004 - Modificación de la fecha ITV :</b>
+<br />Como profesor de prácticas 
+<br />Quiero que el sistema permita modificar la fecha de la ITV 
+<br />Para poder circular con el vehículo legalmente</p>
+<a name="GLO-0071" />
+<p align="left">
+<b> RCS 005 - Impresión de bonos :</b>
+<br />Como gestora 
+<br />Quiero que el sistema permita la impresión de bonos 
+<br />Para poder agilizar la <a href="#GLO-0024" title="Como director Quiero un sistema de gestión barato y óptimo para poder obtener un mayor rendimiento económico">gestión</a> de las clases prácticas </p>
+<a name="GLO-0072" />
+<p align="left">
+<b> RCS 006 - Eliminación de clientes :</b>
+<br />Como gestora 
+<br />Quiero que el sistema permita eliminar a los clientes 
+<br />Para poder llevar un mejor control </p>
+<a name="GLO-0073" />
+<p align="left">
+<b> RCS 007 - Adición de tarifas :</b>
+<br />Como gestora 
+<br />Quiero que el sistema permita añadir una tarifa
+<br />Para poder ofrecerla a los alumnos</p>
+<a name="GLO-0074" />
+<p align="left">
+<b> RCS 008 - Tarifa sin usar :</b>
+<br />Como gerente  
+<br />Quiero que el sistema permita saber aquellas tarifas sin usar 
+<br />Para poder ofrecerlas a los alumnos </p>
+<a name="GLO-0075" />
+<p align="left">
+<b> RCS 009 - Tipo de alumnos mas frecuentes :</b>
+<br />Como profesor 
+<br />Quiero que el sistema permita conocer los alumnos que están estudiando cada parte del permiso 
+<br />Para que no haya una carga extra de trabajo </p>
+<a name="GLO-0076" />
+<p align="left">
+<b> RCS 010 - Alumnos con más de 15 clases prácticas :</b>
+<br />Como gerente  
+<br />Quiero que el sistema permita seleccionar aquellos alumnos con más de 15 clases prácticas 
+<br />Para saber los alumnos que estarán proximamente preparados para el <a href="#GLO-0027" title="Este proceso es realizado por un alumno, la gestora, un examinador, y la DGT. En primer lugar el alumno rellena el formulario para realizar el examen, que lo recibe la gestora y lo envía a la DGT. La DGT comprueba la disponibilidad de fechas. Si hay fecha próxima, envía un comunicado al examinador y a la gestora. Si no hay fecha, únicamente a la gestora, que se encarga de devolver el aviso al alumno.">examen práctico</a>
+<br />
+</p>
+<a name="GLO-0077" />
+<p align="left">
+<b> RCS 011 - Profesor con más alumnos :</b>
+<br />Como gerente  
+<br />Quiero que el sistema permita conocer el profesor con más alumnos asignados 
+<br />Para poder discernir a que profesor debo asignarle más alumnos </p>
+<a name="GLO-0078" />
+<p align="left">
+<b> RCS 012 - Vehículos con la ITV pasada :</b>Como profesor  
+<br />Quiero que el sistema permita ver los vehículos que tienen la ITV al día 
+<br />Para conocer los vehículos que están a mi disposición 
+<br />
+</p>
+<a name="GLO-0079" />
+<p align="left">
+<b> RCS 013 - Sueldo total a profesores :</b>
+<br />Como directora 
+<br />Quiero que el sistema permita sumar el sueldo de todos los profesores tanto de prácticas o de teoría 
+<br />Para poder gestionar las finanzas de la autoescuela con eficacia </p>
+<a name="GLO-0080" />
+<p align="left">
+<b> RCS 014 - Alumnos totales matriculados en la autoescuela :</b>
+<br />Como gerente  
+<br />Quiero que el sistema permita saber el número total de alumnos matriculados en la autoescuela 
+<br />Para poder ver el número total de alumnos que maneja la autoescuela </p>
+<a name="SEC-0039" />
+<h2 align="left">6.4 
+Requisitos no funcionales del sistema</h2><a name="SEC-0040" />
+<h3 align="left">6.4.1 
+Requisitos de fiabilidad del sistema</h3><a name="PRG-0081" />
+<p>El sistema será desplegado en una plataforma ajena a nuestro control, por lo que no habrían requisitos de fiabilidad.
+<br />El nivel de fiabilidad la proporcionará la plataforma correspondiente.
+<br />Pero se le comunicará a la autoescuela de los diferentes servicios y categorías que ofrece dicha plataforma, para que ellos elijan la más conveniente a su negocio.</p>
+<a name="SEC-0041" />
+<h3 align="left">6.4.2 
+Requisistos de usbilidad del sistema</h3><a name="GLO-0082" />
+<p align="left">
+<b> RUS 001 - Disponibilidad 24h:</b>
+<br />Como <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a>
+<br />Quiero que el sistema esté disponible las 24 horas
+<br />Para poder ser utilizado en cualquier instante.</p>
+<a name="GLO-0083" />
+<p align="left">
+<b> RUS 002 - Fácil manejo:</b>
+<br />Como <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a>
+<br />Quiero que el sistema tenga implementado una interfaz de <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a> fácil de manejar 
+<br />Para un cómodo entendimiento</p>
+<a name="SEC-0042" />
+<h3 align="left">6.4.3 
+Requisitos de mantenibilidad del sistema</h3><a name="GLO-0084" />
+<p align="left">
+<b> RMS 001 - Pruebas:</b>
+<br />Como <a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">director</a>
+<br />Quiero que el sistema sea sometido a diferentes tipos de pruebas antes del despligue 
+<br />Para garantizar su funcionalidad</p>
+<a name="GLO-0085" />
+<p align="left">
+<b> RMS 002 - Integrabilidad:</b>
+<br />Como <a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">director</a>
+<br />Quiero que el sistema se someta a pruebas de integración después de cada mantenimiento o actualización
+<br />Para garantizar el correcto funcionamiento</p>
+<a name="SEC-0043" />
+<h3 align="left">6.4.4 
+Requisitos de eficiencia del sistema</h3><a name="GLO-0086" />
+<p align="left">
+<b> RES 001 - Búsqueda rápida:</b>
+<br />Como <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a>
+<br />Quiero que el sistema realice las búsquedas en menos de dos segundos
+<br />Para evitar perder tiempo por fallos computacionales</p>
+<a name="GLO-0087" />
+<p align="left">
+<b> RES 002 - Sobrecarga de la aplicación:</b>
+<br />Como <a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">director</a>
+<br />Quiero que se limite el número de peticiones a la plicación
+<br />Para no sobrecargarla</p>
+<a name="SEC-0044" />
+<h3 align="left">6.4.5 
+Requisitos de portabilidad del sistema</h3><a name="GLO-0088" />
+<p align="left">
+<b> RPS 001 - Multiplataforma:</b>
+<br />Como <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a>
+<br />Quiero que la aplicación se pueda utilizar en diferentes dispositivos, como el ordenador, la tablet o el teléfono móvil
+<br />Para una mayor facilidad de usar dicha aplicaión</p>
+<a name="SEC-0045" />
+<h3 align="left">6.4.6 
+Requisitos de seguridad del sistema</h3><a name="GLO-0089" />
+<p align="left">
+<b> RSS 001- Seguridad:</b>
+<br />Como <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a>
+<br />Quiero que el sistema cumpla los requisitios de protección 
+<br />Para que no haya ningún problema legal 
+<br />
+</p>
+<a name="GLO-0090" />
+<p align="left">
+<b> RSS 002 - Protección de datos:</b>
+<br />Como <a href="#GLO-0094" title="Actor que representa al usuario de la página web, matriculado en la autoescuela">usuario</a>
+<br />Quiero que el sistema sea lo suficientemente seguro 
+<br />Para no transferir mis datos personales a otras plataformas</p>
+<a name="SEC-0046" />
+<h3 align="left">6.4.7 
+Otros requisitos no funcionales del sistema</h3><a name="PRG-0091" />
+<p>Al haber consultado con la gestora de la autoescuela concordamos en que no hay más requisitos no funcionales, ya están descritos en los diferentes puntos de los anteriores apartados</p>
+<a name="SEC-0047" />
+<h2 align="left">6.5 
+Restricciones técnicas del sistema</h2><a name="GLO-0092" />
+<p align="left">
+<b> RTS 001 - Restricción de hardware:</b>
+<br />Como <a href="#GLO-0042" title="Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado.">Director</a>
+<br />Quiero que el máximo de los alumnos puedan utilizar la aplicación tenagan el dispositivo que tengan, al no poder asegurar que los dispositivos que usarán la aplicación tengan un hardware moderno, habrá que realizarse un software usable por dispositivos no tan modernos. </p>
+<a name="SEC-0048" />
+<h2 align="left">6.6 
+Requisistos de integración del sistema</h2><a name="GLO-0093" />
+<p align="left">
+<b> RIS 001 - Compatibilidad con el panel de información de la DGT:</b>
+<br />Como gestora
+<br />Quiero que el sistema me muestre si ha habido cambios en la legislación de la <a href="#GLO-0017" title="Dirección General del Tráfico">DGT</a>
+<br />Para estar informada de la situación actual</p>
+<a name="SEC-0049" />
+<h2 align="left">6.7 
+Información sobre trazabilidad</h2><a name="GRF-0014" />
+<p align="center">
+<img src=".\Fotos IR\Matriz de trazabilidad.JPG" title=".\Fotos IR\Matriz de trazabilidad.JPG" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Matriz de trazabilidad</p>
+<a name="SEC-0025" />
+<h1 align="left">A 
+Actas de reuniones</h1><a name="GLO-0015" />
+<p align="left">
+<b> Reunión 1:</b>
+<br />
+<br />La gerente nos expuso el uso de las aplicaciones vigentes en la autoescuela, la más importante FacilAutoGestión, que utilizan para gestionar toda la información de alumnos, clientes y empresas relacionadas con la autoescuela.
+<br />Obtuvimos un vistazo general del programa, que incluye:
+<br />- Información de alumnos.
+<br />- Relación tests realizados/aprobados de cada <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a>. (98% de aprobados en el test y 60% aprobados en las prácticas)
+<br />
+<br />Nos proporcionó una serie de estadísticas sobre sus alumnos, los datos más relevantes son los siguientes:
+<br />Tiempo estimado de cada <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> en sacarse el carnet: 1 mes
+<br />Prácticas medias de cada <a href="#GLO-0043" title="Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.">alumno</a> antes del examen: 25 clases
+<br />
+<br />Finalmente, comenzamos con las dificultades que encontraban para el desarrollo de su actividad. Nos expuso las siguientes:
+<br />- Limitación de 6 alumnos prácticos por coche para el examen.
+<br />- No podía usar ninguno de estos símbolos: apóstrofe, coma, paréntesis. El programa respondía con un error.
+<br />- Los bonos solo se podían imprimir uno por folio, por lo que suponía un gasto innecesario y una pérdida de tiempo.
+<br />- Solo puede ver el programa desde la empresa.  No puede ver el programa desde su casa.
+<br />
+<br />Tras esta reunión obtuvimos una buena base para comenzar nuestro proyecto, e intentar conseguir un sistema que ayude a mejorar la calidad del servicio de su autoescuela.
+<br />
+</p>
+<a name="GLO-0032" />
+<p align="left">
+<b> Reunión 2:</b>
+<br />
+<br />En esta segunda reunión con la gerente de la autoescuela, los temas tratados fueron los siguientes:
+<br />
+<br />1.En primer lugar, presentamos los mockups, a los que dio el visto bueno tras la corrección de algunos pequeños detalles como el menú desplegable y el registro.
+<br />
+<br />2.En segundo lugar, comenzamos con unas preguntas básicas sobre requisitos que quiere para su sistema.  Hizo hincapié en la portabilidad del sistema y en la impresión de bonos, así como en la facilidad y la intuitividad del sistema.
+<br />
+<br />3.En tercer lugar, conversamos sobre qué problemas veía en el nuevo software que le estábamos planteando, para el que solo puso una condición: "El sistema que impartamos debe ser paralelo al que ya disponemos actualmente, es decir, quiero que se limite a alumnos y profesores." Tal y como ya describimos en el documento, este sistema tratará de mejorar las deficiencias, pero nunca sustituirlas, ya que la información que maneja mediante otros programas son las relacionadas con la <a href="#GLO-0017" title="Dirección General del Tráfico">dgt</a>, por lo que no podemos acceder a esos datos.
+<br />
+<br />Tras la reunión mantenida, nos disponemos a traducir esta conversación en los distintos requisitos del sistema.
+<br />
+</p>
+<a name="SEC-0026" />
+<h1 align="left">B 
+Documentación relevante</h1><a name="PRG-0016" />
+<p>A día de hoy no tenemos todavía ninguna documentación relevante del establecimiento.</p>
+<a name="SEC-0027" />
+<h1 align="left">C 
+Gloario de acrónimos y abreviaturas</h1><a name="GLO-0017" />
+<p align="left">
+<b> DGT:</b>Dirección General del Tráfico</p>
+</body>
+</html>

@@ -1,0 +1,3372 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns:m="http://schemas.microsoft.com/office/2004/12/omml"
+xmlns="http://www.w3.org/TR/REC-html40" xmlns:ns0="http://rem.lsi.us.es">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 15">
+<meta name=Originator content="Microsoft Word 15">
+<link rel=File-List
+href="Documento%20de%20Análisis%20del%20sistema_REM_Default_Spanish_DRS_archivos/filelist.xml">
+<link rel=Edit-Time-Data
+href="Documento%20de%20Análisis%20del%20sistema_REM_Default_Spanish_DRS_archivos/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Proyecto Documento de Análisis del sistema</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>Antonio Fernández</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>jose delgado serrano</o:LastAuthor>
+  <o:Revision>11</o:Revision>
+  <o:TotalTime>39</o:TotalTime>
+  <o:LastPrinted>2020-01-19T19:24:00Z</o:LastPrinted>
+  <o:Created>2020-01-19T18:49:00Z</o:Created>
+  <o:LastSaved>2020-01-19T19:37:00Z</o:LastSaved>
+  <o:Pages>38</o:Pages>
+  <o:Words>3225</o:Words>
+  <o:Characters>17739</o:Characters>
+  <o:Lines>147</o:Lines>
+  <o:Paragraphs>41</o:Paragraphs>
+  <o:CharactersWithSpaces>20923</o:CharactersWithSpaces>
+  <o:Version>16.00</o:Version>
+ </o:DocumentProperties>
+ <o:OfficeDocumentSettings>
+  <o:AllowPNG/>
+ </o:OfficeDocumentSettings>
+</xml><![endif]-->
+<link rel=themeData
+href="Documento%20de%20Análisis%20del%20sistema_REM_Default_Spanish_DRS_archivos/themedata.thmx">
+<link rel=colorSchemeMapping
+href="Documento%20de%20Análisis%20del%20sistema_REM_Default_Spanish_DRS_archivos/colorschememapping.xml">
+<!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:View>Print</w:View>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:TrackMoves>false</w:TrackMoves>
+  <w:TrackFormatting/>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:ValidateAgainstSchemas/>
+  <w:SaveIfXMLInvalid>false</w:SaveIfXMLInvalid>
+  <w:IgnoreMixedContent>false</w:IgnoreMixedContent>
+  <w:AlwaysShowPlaceholderText>false</w:AlwaysShowPlaceholderText>
+  <w:DoNotPromoteQF/>
+  <w:LidThemeOther>ES</w:LidThemeOther>
+  <w:LidThemeAsian>X-NONE</w:LidThemeAsian>
+  <w:LidThemeComplexScript>X-NONE</w:LidThemeComplexScript>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SplitPgBreakAndParaMark/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+  <m:mathPr>
+   <m:mathFont m:val="Cambria Math"/>
+   <m:brkBin m:val="before"/>
+   <m:brkBinSub m:val="&#45;-"/>
+   <m:smallFrac m:val="off"/>
+   <m:dispDef/>
+   <m:lMargin m:val="0"/>
+   <m:rMargin m:val="0"/>
+   <m:defJc m:val="centerGroup"/>
+   <m:wrapIndent m:val="1440"/>
+   <m:intLim m:val="subSup"/>
+   <m:naryLim m:val="undOvr"/>
+  </m:mathPr></w:WordDocument>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:LatentStyles DefLockedState="false" DefUnhideWhenUsed="false"
+  DefSemiHidden="false" DefQFormat="false" DefPriority="99"
+  LatentStyleCount="375">
+  <w:LsdException Locked="false" Priority="0" QFormat="true" Name="Normal"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 1"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 2"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 3"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 4"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 5"/>
+  <w:LsdException Locked="false" Priority="9" QFormat="true" Name="heading 6"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 7"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 8"/>
+  <w:LsdException Locked="false" Priority="9" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="heading 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index 9"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 1"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 2"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 3"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 4"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 5"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 6"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 7"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 8"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" Name="toc 9"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="header"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footer"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="index heading"/>
+  <w:LsdException Locked="false" Priority="35" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="caption"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of figures"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="envelope return"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="footnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="line number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="page number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote reference"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="endnote text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="table of authorities"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="macro"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="toa heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Bullet 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Number 5"/>
+  <w:LsdException Locked="false" Priority="10" QFormat="true" Name="Title"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Closing"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Signature"/>
+  <w:LsdException Locked="false" Priority="1" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Default Paragraph Font"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="List Continue 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Message Header"/>
+  <w:LsdException Locked="false" Priority="11" QFormat="true" Name="Subtitle"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Salutation"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Date"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text First Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Note Heading"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Body Text Indent 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Block Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="FollowedHyperlink"/>
+  <w:LsdException Locked="false" Priority="22" QFormat="true" Name="Strong"/>
+  <w:LsdException Locked="false" Priority="20" QFormat="true" Name="Emphasis"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Document Map"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Plain Text"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="E-mail Signature"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Top of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Bottom of Form"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal (Web)"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Acronym"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Address"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Cite"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Code"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Definition"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Keyboard"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Preformatted"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Sample"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Typewriter"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="HTML Variable"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Normal Table"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="annotation subject"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="No List"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Outline List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Simple 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Classic 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Colorful 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Columns 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Grid 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 4"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 5"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 7"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table List 8"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table 3D effects 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Contemporary"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Elegant"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Professional"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Subtle 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 2"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Web 3"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Balloon Text"/>
+  <w:LsdException Locked="false" Priority="39" Name="Table Grid"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Table Theme"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Placeholder Text"/>
+  <w:LsdException Locked="false" Priority="1" QFormat="true" Name="No Spacing"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 1"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 1"/>
+  <w:LsdException Locked="false" SemiHidden="true" Name="Revision"/>
+  <w:LsdException Locked="false" Priority="34" QFormat="true"
+   Name="List Paragraph"/>
+  <w:LsdException Locked="false" Priority="29" QFormat="true" Name="Quote"/>
+  <w:LsdException Locked="false" Priority="30" QFormat="true"
+   Name="Intense Quote"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 1"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 1"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 1"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 1"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 1"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 2"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 2"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 2"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 2"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 2"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 2"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 3"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 3"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 3"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 3"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 3"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 3"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 4"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 4"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 4"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 4"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 4"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 4"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 5"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 5"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 5"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 5"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 5"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 5"/>
+  <w:LsdException Locked="false" Priority="60" Name="Light Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="61" Name="Light List Accent 6"/>
+  <w:LsdException Locked="false" Priority="62" Name="Light Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="63" Name="Medium Shading 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="64" Name="Medium Shading 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="65" Name="Medium List 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="66" Name="Medium List 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="67" Name="Medium Grid 1 Accent 6"/>
+  <w:LsdException Locked="false" Priority="68" Name="Medium Grid 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="69" Name="Medium Grid 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="70" Name="Dark List Accent 6"/>
+  <w:LsdException Locked="false" Priority="71" Name="Colorful Shading Accent 6"/>
+  <w:LsdException Locked="false" Priority="72" Name="Colorful List Accent 6"/>
+  <w:LsdException Locked="false" Priority="73" Name="Colorful Grid Accent 6"/>
+  <w:LsdException Locked="false" Priority="19" QFormat="true"
+   Name="Subtle Emphasis"/>
+  <w:LsdException Locked="false" Priority="21" QFormat="true"
+   Name="Intense Emphasis"/>
+  <w:LsdException Locked="false" Priority="31" QFormat="true"
+   Name="Subtle Reference"/>
+  <w:LsdException Locked="false" Priority="32" QFormat="true"
+   Name="Intense Reference"/>
+  <w:LsdException Locked="false" Priority="33" QFormat="true" Name="Book Title"/>
+  <w:LsdException Locked="false" Priority="37" SemiHidden="true"
+   UnhideWhenUsed="true" Name="Bibliography"/>
+  <w:LsdException Locked="false" Priority="39" SemiHidden="true"
+   UnhideWhenUsed="true" QFormat="true" Name="TOC Heading"/>
+  <w:LsdException Locked="false" Priority="41" Name="Plain Table 1"/>
+  <w:LsdException Locked="false" Priority="42" Name="Plain Table 2"/>
+  <w:LsdException Locked="false" Priority="43" Name="Plain Table 3"/>
+  <w:LsdException Locked="false" Priority="44" Name="Plain Table 4"/>
+  <w:LsdException Locked="false" Priority="45" Name="Plain Table 5"/>
+  <w:LsdException Locked="false" Priority="40" Name="Grid Table Light"/>
+  <w:LsdException Locked="false" Priority="46" Name="Grid Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="Grid Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="Grid Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="Grid Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="Grid Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="Grid Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="Grid Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="Grid Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="Grid Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="Grid Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="46" Name="List Table 1 Light"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark"/>
+  <w:LsdException Locked="false" Priority="51" Name="List Table 6 Colorful"/>
+  <w:LsdException Locked="false" Priority="52" Name="List Table 7 Colorful"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 1"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 1"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 1"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 1"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 1"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 1"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 2"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 2"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 2"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 2"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 2"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 2"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 3"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 3"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 3"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 3"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 3"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 3"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 4"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 4"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 4"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 4"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 4"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 4"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 5"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 5"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 5"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 5"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 5"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 5"/>
+  <w:LsdException Locked="false" Priority="46"
+   Name="List Table 1 Light Accent 6"/>
+  <w:LsdException Locked="false" Priority="47" Name="List Table 2 Accent 6"/>
+  <w:LsdException Locked="false" Priority="48" Name="List Table 3 Accent 6"/>
+  <w:LsdException Locked="false" Priority="49" Name="List Table 4 Accent 6"/>
+  <w:LsdException Locked="false" Priority="50" Name="List Table 5 Dark Accent 6"/>
+  <w:LsdException Locked="false" Priority="51"
+   Name="List Table 6 Colorful Accent 6"/>
+  <w:LsdException Locked="false" Priority="52"
+   Name="List Table 7 Colorful Accent 6"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Mention"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Smart Hyperlink"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Hashtag"/>
+  <w:LsdException Locked="false" SemiHidden="true" UnhideWhenUsed="true"
+   Name="Unresolved Mention"/>
+ </w:LatentStyles>
+</xml><![endif]-->
+<style>
+<!--
+ /* Font Definitions */
+ @font-face
+	{font-family:"Cambria Math";
+	panose-1:2 4 5 3 5 4 6 3 2 4;
+	mso-font-charset:0;
+	mso-generic-font-family:roman;
+	mso-font-pitch:variable;
+	mso-font-signature:3 0 0 0 1 0;}
+@font-face
+	{font-family:"Segoe UI";
+	panose-1:2 11 5 2 4 2 4 2 2 3;
+	mso-font-charset:0;
+	mso-generic-font-family:swiss;
+	mso-font-pitch:variable;
+	mso-font-signature:-469750017 -1073683329 9 0 511 0;}
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+h1
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Título 1 Car";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:1;
+	font-size:14.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h2
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Título 2 Car";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:2;
+	font-size:13.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h3
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Título 3 Car";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:3;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h4
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Título 4 Car";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:4;
+	font-size:11.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h5
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Título 5 Car";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:5;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+h6
+	{mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-qformat:yes;
+	mso-style-link:"Título 6 Car";
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	mso-outline-level:6;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	font-weight:bold;}
+a:link, span.MsoHyperlink
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+p
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+p.MsoAcetate, li.MsoAcetate, div.MsoAcetate
+	{mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-link:"Texto de globo Car";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.Ttulo1Car
+	{mso-style-name:"Título 1 Car";
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Título 1";
+	mso-ansi-font-size:16.0pt;
+	mso-bidi-font-size:16.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Ttulo2Car
+	{mso-style-name:"Título 2 Car";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Título 2";
+	mso-ansi-font-size:13.0pt;
+	mso-bidi-font-size:13.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Ttulo3Car
+	{mso-style-name:"Título 3 Car";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Título 3";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#1F3763;
+	mso-themecolor:accent1;
+	mso-themeshade:127;}
+span.Ttulo4Car
+	{mso-style-name:"Título 4 Car";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Título 4";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;
+	font-style:italic;}
+span.Ttulo5Car
+	{mso-style-name:"Título 5 Car";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Título 5";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#2F5496;
+	mso-themecolor:accent1;
+	mso-themeshade:191;}
+span.Ttulo6Car
+	{mso-style-name:"Título 6 Car";
+	mso-style-noshow:yes;
+	mso-style-priority:9;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Título 6";
+	mso-ansi-font-size:12.0pt;
+	mso-bidi-font-size:12.0pt;
+	font-family:"Calibri Light",sans-serif;
+	mso-ascii-font-family:"Calibri Light";
+	mso-ascii-theme-font:major-latin;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:major-fareast;
+	mso-hansi-font-family:"Calibri Light";
+	mso-hansi-theme-font:major-latin;
+	mso-bidi-font-family:"Times New Roman";
+	mso-bidi-theme-font:major-bidi;
+	color:#1F3763;
+	mso-themecolor:accent1;
+	mso-themeshade:127;}
+p.msonormal0, li.msonormal0, div.msonormal0
+	{mso-style-name:msonormal;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-margin-top-alt:auto;
+	margin-right:0cm;
+	mso-margin-bottom-alt:auto;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman",serif;
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;}
+span.TextodegloboCar
+	{mso-style-name:"Texto de globo Car";
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-unhide:no;
+	mso-style-locked:yes;
+	mso-style-link:"Texto de globo";
+	mso-ansi-font-size:9.0pt;
+	mso-bidi-font-size:9.0pt;
+	font-family:"Segoe UI",sans-serif;
+	mso-ascii-font-family:"Segoe UI";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-theme-font:minor-fareast;
+	mso-hansi-font-family:"Segoe UI";
+	mso-bidi-font-family:"Segoe UI";}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+span.GramE
+	{mso-style-name:"";
+	mso-gram-e:yes;}
+.MsoChpDefault
+	{mso-style-type:export-only;
+	mso-default-props:yes;
+	font-size:10.0pt;
+	mso-ansi-font-size:10.0pt;
+	mso-bidi-font-size:10.0pt;}
+@page WordSection1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 3.0cm 70.85pt 3.0cm;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.WordSection1
+	{page:WordSection1;}
+@page WordSection2
+	{size:841.9pt 595.3pt;
+	mso-page-orientation:landscape;
+	margin:3.0cm 70.9pt 3.0cm 70.9pt;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-paper-source:0;}
+div.WordSection2
+	{page:WordSection2;}
+@page WordSection3
+	{size:595.3pt 841.9pt;
+	margin:70.9pt 3.0cm 70.9pt 3.0cm;
+	mso-header-margin:35.45pt;
+	mso-footer-margin:35.45pt;
+	mso-paper-source:0;}
+div.WordSection3
+	{page:WordSection3;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Tabla normal";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-priority:99;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman",serif;}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="1026"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=ES link=blue vlink=purple style='tab-interval:35.4pt'>
+
+<div class=WordSection1>
+
+<h3 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>Proyecto Documento de Análisis del
+sistema<o:p></o:p></span></h3>
+
+<h1 style='text-align:justify'><span style='font-size:20.0pt;font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>Documento de Análisis del Sistema<o:p></o:p></span></h1>
+
+<h3 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>Versión 1.0<o:p></o:p></span></h3>
+
+<h3 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>Fecha 08/12/2019<o:p></o:p></span></h3>
+
+<h3 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>Preparado para:</span><span
+class=MsoHyperlink><span style='font-size:10.0pt'><o:p></o:p></span></span></h3>
+
+<p style='text-align:justify'><u><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif;color:blue'><a href="#ORG-0001" title="Autoescuela La Rasa">Autoescuela
+La Rasa</a></span></u></p>
+
+<p class=MsoNormal style='margin-left:141.6pt;text-align:justify;text-indent:
+35.4pt'><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman"'>Preparado por:<span class=MsoHyperlink><span
+style='color:windowtext;text-decoration:none;text-underline:none'><o:p></o:p></span></span></span></p>
+
+<p style='text-align:justify'><u><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif;color:blue'><a href="#ORG-0002" title="Los Chemas">Los
+Chemas</a></span></u></p>
+
+<p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></p>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman"'>
+
+<hr size=4 width="100%" align=center>
+
+</span></div>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>Índice<o:p></o:p></span></h1>
+
+<table class=MsoNormalTable border=0 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;mso-yfti-tbllook:1184;mso-padding-alt:
+ 0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>1 <o:p></o:p></span></b></p>
+  </td>
+  <td width="100%" colspan=3 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0001">Introducción</a> <o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>1.1
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0002">Alcance del proyecto</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>1.2
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0003">Participantes del proyecto</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt' albgn=left>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>1.2.1
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0004">Organizaciones participantes</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt' albgn=left>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>1.2.2
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0005">Personas participantes</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>1.3
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0006">Copia de objetivos del proyecto</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>2 <o:p></o:p></span></b></p>
+  </td>
+  <td width="100%" colspan=3 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0007">Arquitectura lógica del sistema</a> <o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:7'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>2.1
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0008">Diagramas de la arquitectura del sistema</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:8'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>2.2
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0009">Descripción de la arquitectura del sistema</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:9'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>3 <o:p></o:p></span></b></p>
+  </td>
+  <td width="100%" colspan=3 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0010">Modelo de clases del sistema</a> <o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:10'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>3.1
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0011">Diagramas de clases del sistema</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:11'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>3.2
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0012">Descripción de las clases del sistema</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:12'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>3.3
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0013">Diagramas de estado de las clases del sistema </a><o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:13'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>4 <o:p></o:p></span></b></p>
+  </td>
+  <td width="100%" colspan=3 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0014">Modelo de casos de uso del sistema</a> <o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:14'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>4.1
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0016">Diagramas de secuencia del sistema</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:15'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>4.2
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0017">Descripción de los diagramas de secuencia del sistema</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:16'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>5 <o:p></o:p></span></b></p>
+  </td>
+  <td width="100%" colspan=3 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0015">Interfaz de usuario del sistema</a> <o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:17'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>5.1
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0018">Diagramas de navegación del sistema</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:18'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>5.2
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0019">Esquemas de la interfaz de usuario del sistema</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:19'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>5.3
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0020">Descripción de la interfaz de <span class=SpellE>ususario</span>
+  del sistema</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:20'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>6 <o:p></o:p></span></b></p>
+  </td>
+  <td width="100%" colspan=3 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0021">Interfaz de servicios del sistema </a><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:21'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>6.1
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0022">Diagramas de la interfaz de servicios del sistema</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:22'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>6.2
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0023">Descripción de la interfaz de servicios del sistema</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:23'>
+  <td style='padding:.75pt .75pt .75pt .75pt'></td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>6.3
+  <o:p></o:p></span></p>
+  </td>
+  <td width="100%" colspan=2 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0024">Servicios consumidos por el sistema</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:24'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>7 <o:p></o:p></span></b></p>
+  </td>
+  <td width="100%" colspan=3 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0025">Información sobre trazabilidad</a> <o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:25;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>A <o:p></o:p></span></b></p>
+  </td>
+  <td width="100%" colspan=3 valign=top style='width:100.0%;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#SEC-0026">Glosario de acrónimos y abreviaturas</a> <o:p></o:p></span></b></p>
+  </td>
+ </tr>
+</table>
+
+<div class=MsoNormal align=center style='text-align:center'><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman"'>
+
+<hr size=4 width="100%" align=center>
+
+</span></div>
+
+<h1 style='text-align:justify'><a name=PRG-0001></a><a name=PRG-0002></a><a
+name=PRG-0003></a><span style='font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman"'>1 <span class=GramE>Introducción</span><o:p></o:p></span></h1>
+
+<h2 style='text-align:justify'><a name=SEC-0001></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>1.1 Alcance del
+proyecto<o:p></o:p></span></h2>
+
+<p style='text-align:justify'><a name=SEC-0002></a><b><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif'>Introducción del proyecto:</span></b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'> La autoescuela La Rasa
+es un grupo de profesionales con muchos años de experiencia en el sector de
+enseñanza y aprendizaje en conducción. En 2013 decidieron empezar este proyecto
+con el fin de crear un nuevo concepto de autoescuela, para que sus alumnos
+recibieran la mejor calidad y servicio en su formación. <o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><br>
+Con la implementación de este software se pretende facilitar la inscripción de
+los usuarios en la autoescuela de manera online. También se pretende habilitar
+la opción de gestionar la aplicación tanto en el establecimiento, como en otros
+lugares, además de permitir una mejor coordinación de horarios entre profesores
+y alumnos. <o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GLO-0004></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=369
+height=136 id="_x0000_i1061" src="Fotos%20IR/Portal.jpg"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 1</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Portal<o:p></o:p></span></p>
+
+<h2 style='text-align:justify'><a name=GRF-0001></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>1.2 Participantes
+del proyecto<o:p></o:p></span></h2>
+
+<h3 style='text-align:justify'><a name=SEC-0003></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>1.2.1
+Organizaciones participantes<o:p></o:p></span></h3>
+
+<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;border:solid black 3.0pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='background:#C8E0E0;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><a name=SEC-0004></a><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Organización<o:p></o:p></span></b></p>
+  </td>
+  <td width="100%" valign=top style='width:100.0%;background:#C8E0E0;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Autoescuela
+  La Rasa<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Dirección<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Páez
+  de Rivera<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Teléfono<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>954094466<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Fax<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ninguno<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Comentarios<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ninguno<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-align:justify'><a
+name=ORG-0001></a><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></p>
+
+<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;border:solid black 3.0pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='background:#C8E0E0;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Organización<o:p></o:p></span></b></p>
+  </td>
+  <td width="100%" valign=top style='width:100.0%;background:#C8E0E0;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Los
+  Chemas<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Dirección<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Universidad
+  de Sevilla<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Teléfono<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>612345678<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Fax<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ninguno<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Comentarios<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ninguno<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h3 style='text-align:justify'><a name=ORG-0002></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h3>
+
+<h3 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h3>
+
+<h3 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h3>
+
+<h3 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h3>
+
+<h3 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>1.2.2 Personas participantes<o:p></o:p></span></h3>
+
+<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;border:solid black 3.0pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='background:#C8E0E0;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><a name=STK-0001></a><a
+  name=SEC-0005></a><span style='mso-bookmark:STK-0001'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Participante<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0001'></span>
+  <td width="100%" valign=top style='width:100.0%;background:#C8E0E0;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>María
+  Jiménez Sánchez <o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0001'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Organización<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0001'></span>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#ORG-0001">Autoescuela La Rasa</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Rol<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Gestora
+  y profesora de teoría<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td nowrap valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  desarrollador<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  cliente<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  usuario<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Sí<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Comentarios<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ninguno<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-align:justify'><a
+name=STK-0002><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></a></p>
+
+<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;border:solid black 3.0pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='background:#C8E0E0;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0002'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Participante<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0002'></span>
+  <td width="100%" valign=top style='width:100.0%;background:#C8E0E0;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Elisa
+  Ramírez Pérez <o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0002'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Organización<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0002'></span>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#ORG-0001">Autoescuela La Rasa</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Rol<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Profesora
+  de prácticas<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td nowrap valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  desarrollador<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  cliente<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  usuario<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Sí<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Comentarios<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ninguno<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-align:justify'><a
+name=STK-0003><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></a></p>
+
+<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;border:solid black 3.0pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='background:#C8E0E0;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0003'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Participante<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0003'></span>
+  <td width="100%" valign=top style='width:100.0%;background:#C8E0E0;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ramón
+  Fernández Borrás <o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0003'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Organización<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0003'></span>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#ORG-0001">Autoescuela La Rasa</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Rol<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Profesor
+  de prácticas<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td nowrap valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  desarrollador<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  cliente<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  usuario<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Sí<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Comentarios<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ninguno<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-align:justify'><a
+name=STK-0004><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></a></p>
+
+<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;border:solid black 3.0pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='background:#C8E0E0;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0004'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Participante<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0004'></span>
+  <td width="100%" valign=top style='width:100.0%;background:#C8E0E0;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Sergio
+  Huertas Granadal <o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0004'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Organización<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0004'></span>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#ORG-0001">Autoescuela La Rasa</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Rol<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Director
+  de la autoescuela<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td nowrap valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  desarrollador<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  cliente<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  usuario<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Sí<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Comentarios<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ninguno<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-align:justify'><a
+name=STK-0005><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></a></p>
+
+<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;border:solid black 3.0pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='background:#C8E0E0;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0005'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Participante<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0005'></span>
+  <td width="100%" valign=top style='width:100.0%;background:#C8E0E0;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Carlos
+  Romero Castilla<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0005'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Organización<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0005'></span>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#ORG-0001">Autoescuela La Rasa</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Rol<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Alumno<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td nowrap valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  desarrollador<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  cliente<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  usuario<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Comentarios<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ninguno<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-align:justify'><a
+name=STK-0006><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></a></p>
+
+<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;border:solid black 3.0pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='background:#C8E0E0;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0006'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Participante<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0006'></span>
+  <td width="100%" valign=top style='width:100.0%;background:#C8E0E0;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Juan
+  De la Torre<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0006'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Organización<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0006'></span>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#ORG-0001">Autoescuela La Rasa</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Rol<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Cliente<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td nowrap valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  desarrollador<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  cliente<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Sí<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  usuario<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Comentarios<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ninguno<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-align:justify'><a
+name=STK-0007><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></a></p>
+
+<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;border:solid black 3.0pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='background:#C8E0E0;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0007'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Participante<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0007'></span>
+  <td width="100%" valign=top style='width:100.0%;background:#C8E0E0;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Jose
+  Delgado Serrano<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0007'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Organización<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0007'></span>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#ORG-0002">Los Chemas</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Rol<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Analista<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td nowrap valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  desarrollador<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Sí<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  cliente<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  usuario<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Comentarios<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ninguno<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-align:justify'><a
+name=STK-0008><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></a></p>
+
+<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;border:solid black 3.0pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='background:#C8E0E0;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0008'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Participante<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0008'></span>
+  <td width="100%" valign=top style='width:100.0%;background:#C8E0E0;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Antonio
+  Fernández Manzano<o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0008'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Organización<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0008'></span>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#ORG-0002">Los Chemas</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Rol<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Jefe
+  del proyecto<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td nowrap valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  desarrollador<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Sí<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  cliente<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  usuario<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Comentarios<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ninguno<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<p style='margin:0cm;margin-bottom:.0001pt;text-align:justify'><a
+name=STK-0009><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+display:none;mso-hide:all'><o:p>&nbsp;</o:p></span></a></p>
+
+<table class=MsoNormalTable border=1 cellspacing=3 cellpadding=0 width="100%"
+ style='width:100.0%;mso-cellspacing:1.5pt;border:solid black 3.0pt;mso-yfti-tbllook:
+ 1184;mso-padding-alt:0cm 5.4pt 0cm 5.4pt'>
+ <tr style='mso-yfti-irow:0;mso-yfti-firstrow:yes'>
+  <td valign=top style='background:#C8E0E0;padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0009'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Participante<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0009'></span>
+  <td width="100%" valign=top style='width:100.0%;background:#C8E0E0;
+  padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Chao
+  <span class=SpellE>Hu</span><o:p></o:p></span></b></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:1'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='mso-bookmark:STK-0009'><b><span
+  style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+  "Times New Roman"'>Organización<o:p></o:p></span></b></span></p>
+  </td>
+  <span style='mso-bookmark:STK-0009'></span>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><a
+  href="#ORG-0002">Los Chemas</a> <o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:2'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Rol<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Desarrollador<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:3'>
+  <td nowrap valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  desarrollador<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Sí<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:4'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  cliente<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:5'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Es
+  usuario<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>No<o:p></o:p></span></p>
+  </td>
+ </tr>
+ <tr style='mso-yfti-irow:6;mso-yfti-lastrow:yes'>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><b><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Comentarios<o:p></o:p></span></b></p>
+  </td>
+  <td valign=top style='padding:.75pt .75pt .75pt .75pt'>
+  <p class=MsoNormal style='text-align:justify'><span style='font-size:10.0pt;
+  font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>Ninguno<o:p></o:p></span></p>
+  </td>
+ </tr>
+</table>
+
+<h2 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>1.3 Copia de objetivos del proyecto<o:p></o:p></span></h2>
+
+<p style='text-align:justify'><a name=SEC-0006></a><b><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif'>Objetivos: </span></b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>La Autoescuela La Rasa
+quiere a su disposición un software de uso fácil e intuitivo para sus alumnos,
+de manera que permita gestionar y almacenar todos los datos relacionados sobre
+sus alumnos (los exámenes realizados, clases asistidas, <span class=SpellE>tests</span>
+realizados, exámenes aprobados, ...). De esta forma se pretende facilitar la
+gestión de datos para la gestora de la autoescuela, y que los alumnos también
+puedan acceder a su propia información para una mejor organización y control.<o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='text-align:justify'><a name=GLO-0005></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>2.Arquitectura
+lógica del sistema<o:p></o:p></span></h1>
+
+<h2 style='text-align:justify'><a name=SEC-0007></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>2.1 Diagramas de
+la arquitectura del sistema<o:p></o:p></span></h2>
+
+<p style='text-align:justify'><a name=SEC-0008></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=605
+height=128 id="_x0000_i1060"
+src="Fotos%20IR/Diagrama%20arquitectura%20logica.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 1</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Diagrama de la arquitectura del sistema<o:p></o:p></span></p>
+
+<h2 style='text-align:justify'><a name=GRF-0002></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>2.2 Descripción
+de la arquitectura del sistema<o:p></o:p></span></h2>
+
+<p style='text-align:justify'><a name=SEC-0009></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>La arquitectura del sistema usada es MVC, con
+las capas de Presentación, Persistencia y lógica de negocio. Como vista
+tendremos la página web donde el usuario podrá registrarse, acceder a sus datos.
+Y como controlador tendremos la base de datos SQL.<o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>3.Modelo de clases del sistema<o:p></o:p></span></h1>
+
+<h2 style='text-align:justify'><a name=SEC-0011></a><a name=SEC-0010></a><span
+style='mso-bookmark:SEC-0011'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>3.1 Diagramas de clases del sistema</span></span><span
+style='font-family:"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
+
+<p style='text-align:justify'><a name=PRG-0006></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=600
+height=705 id="_x0000_i1059"
+src="Fotos%20IR/Modelo%20conceptual%20IR%20FINAL.jpg"></span><b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>Figura 1</span></b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>: Diagrama de clases
+del sistema<o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<h2 style='text-align:justify'><a name=GRF-0003></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>3.2 Descripción de las clases del
+sistema<o:p></o:p></span></h2>
+
+<p style='text-align:justify'><a name=SEC-0012></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>En el diagrama encontramos las siguientes
+entidades que componen el sistema: <o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><br>
+<b style='mso-bidi-font-weight:normal'>Empresa:</b> Entidad principal encargada
+de que todo funcione correctamente. Contiene los datos especificados en el
+requisito de información correspondiente, los cuales son: nombre, razón <span
+class=SpellE><span class=GramE>social,ciudad</span>,teléfono</span>.<br>
+<br>
+<b style='mso-bidi-font-weight:normal'>Vehículo:</b> Entidad que representa los
+vehículos usados durante las clases prácticas para preparar a los alumnos de
+cara a su examen práctico Contiene los datos especificados en el requisito de
+información correspondiente, los cuales son: marca, matrícula, seguro, <span
+class=SpellE>fechaITV</span>, estado. <br>
+<br>
+<b style='mso-bidi-font-weight:normal'>Factura:</b> Entidad que representa las
+facturas emitidas en cualquier <span class=SpellE>tramite</span> de la empresa
+y pagadas por los clientes. Contiene los datos especificados en el requisito de
+información correspondiente, los cuales son: número, fecha, <span class=SpellE>tipoUsuario</span>,
+importe, empresa. <br>
+<br>
+<b style='mso-bidi-font-weight:normal'>Cliente</b>: Entidad que representa a
+una persona que acude a la autoescuela con el fin de repasar cualquier tema
+relacionado con la conducción, no necesita estar registrado en la autoescuela.
+Contiene los datos especificados en el requisito de información
+correspondiente, los cuales son: <span class=SpellE><span class=GramE>carné,clases</span></span>,
+importe, <span class=SpellE>clasesPrácticas</span>. <o:p></o:p></span></p>
+
+<p style='text-align:justify'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>Profesor</span></b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>: Entidad
+correspondiente a un profesor, el cual imparte clases teóricas, prácticas o
+ambas. Contiene los datos especificados en el requisito de información
+correspondiente, los cuales son: <span class=SpellE>clasesImpartidas</span>,
+sueldo, <span class=SpellE>pagaExtra</span>, activo, vacaciones, <span
+class=SpellE>numeroDiasBaja</span>, tipo. <br>
+<br>
+<b style='mso-bidi-font-weight:normal'>Alumno</b>: Entidad correspondiente a un
+alumno que recibe tanto clases <u>teóricas</u> como prácticas. Una vez se vea
+capacitado con los conocimientos necesarios se presentará a los
+correspondientes exámenes. Contiene los datos especificados en el requisito de
+información correspondiente, los cuales son: <span class=SpellE>nºmatricula</span>,
+permiso, estado, <span class=SpellE>clasesPrácticas</span>. <o:p></o:p></span></p>
+
+<p style='text-align:justify'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>Examen</span></b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>: Entidad que
+corresponde al examen que deben realizar todos los alumnos que deseen obtener
+el permiso. Se divide en dos: Teórico y Práctico. Contiene los datos
+especificados en el requisito de información correspondiente, los cuales son:
+fecha, <span class=SpellE>nºalumnosPresentados</span>, <span class=SpellE>nºalumnosAptos</span>.
+<br>
+<br>
+<b style='mso-bidi-font-weight:normal'>Bono</b>: Entidad que representa los
+bonos que los alumnos compran en la autoescuela que luego canjean por clases
+prácticas. Contiene los datos especificados en el requisito de información
+correspondiente, los cuales son: sello, <span class=SpellE>nºreferencia</span>,
+importe, duración. <o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><br>
+<b style='mso-bidi-font-weight:normal'>Examinador</b>: Entidad correspondiente
+al examinador, el cual somete a los alumnos a una prueba de conducción y
+decidirá si es apto o no. Contiene los datos especificados en el requisito de
+información correspondiente, los cuales son: nombre, código, observaciones. <o:p></o:p></span></p>
+
+<p style='text-align:justify'><span class=SpellE><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>TipoEstado</span></b></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>: Entidad que
+corresponde a los tipos de estado en los que se puede encontrar un alumno.
+Contiene los datos especificados en el requisito de información correspondiente,
+los cuales son: finalizado, teórico, práctico, baja. <o:p></o:p></span></p>
+
+<p style='text-align:justify'><span class=SpellE><b style='mso-bidi-font-weight:
+normal'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>TipoPermiso</span></b></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>: Entidad que
+corresponde a los tipos de permisos que la autoescuela ofrece. Contiene los
+datos especificados en el requisito de información correspondiente, los cuales
+son: AM, A1, A2, A, B <o:p></o:p></span></p>
+
+<p style='text-align:justify'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>Tarifa</span></b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>: Entidad que
+representan las tarifas impuestas por la autoescuela para poder iniciar las
+clases teóricas, prácticas, exámenes, etc. Contiene los datos especificados en
+el requisito de información correspondiente, los cuales son: artículo, descuento,
+<span class=SpellE>fechaInicio</span>, <span class=SpellE>fechaFin</span>. <o:p></o:p></span></p>
+
+<p style='text-align:justify'><b style='mso-bidi-font-weight:normal'><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>Contrato</span></b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>: Entidad que
+representa el contrato a firmar por el alumno, donde se establecen los términos
+y condiciones. Contiene los datos especificados en el requisito de información
+correspondiente, los cuales son: artículo, referencia, precio, IVA. <br>
+<br>
+<span class=SpellE><b style='mso-bidi-font-weight:normal'>TipoUsuario</b></span>:
+Entidad que representa a un usuario general a vista de la base de datos, que
+después pasar a ser un profesor, cliente o alumno.<o:p></o:p></span></p>
+
+<h2 style='text-align:justify'><a name=PRG-0007></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>3.3 Diagramas de
+estado de las clases del sistema <o:p></o:p></span></h2>
+
+<p style='text-align:justify'><a name=SEC-0013></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=580
+height=306 id="_x0000_i1058"
+src="Fotos%20IR/Diagramas%20de%20estado%20matriculacion.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 1</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Estado matriculación<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0004></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=526
+height=286 id="_x0000_i1057" src="Fotos%20IR/Estado%20Examen.jpg"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 2</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Estado examen<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0005></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=526
+height=286 id="_x0000_i1056" src="Fotos%20IR/Estado%20vehículo.jpg"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 3</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Estado vehículo<o:p></o:p></span></p>
+
+<h1 style='text-align:justify'><a name=GRF-0006></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>4 <span
+class=GramE>Modelo</span> de casos de uso del sistema<o:p></o:p></span></h1>
+
+<h2 style='text-align:justify'><a name=SEC-0014></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>4.1 Diagramas de
+secuencia del sistema<o:p></o:p></span></h2>
+
+<p style='text-align:justify'><a name=SEC-0016></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=267
+height=424 id="_x0000_i1055" src="Fotos%20IR/CasoDeUso1.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 1</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Actualizar datos personales<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0026></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=401
+height=637 id="_x0000_i1054" src="Fotos%20IR/CasoDeUso2.jpg"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 2</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Reserva de clases<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0027></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=401
+height=338 id="_x0000_i1053" src="Fotos%20IR/CasoDeUso3.jpg"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 3</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Matriculación online<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0028></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=401
+height=637 id="_x0000_i1052" src="Fotos%20IR/CasoDeUso4.jpg"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 4</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Dar de baja a un alumno<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0029></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=401
+height=637 id="_x0000_i1051" src="Fotos%20IR/CasoDeUso5.jpg"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 5</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Actualizar datos del estado del examen<o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<h2 style='text-align:justify'><a name=GRF-0030></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>4.2 Descripción
+de los diagramas de secuencia del sistema<o:p></o:p></span></h2>
+
+<p style='text-align:justify'><a name=SEC-0017></a><b><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif'>Actualizar datos personales:</span></b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'> <o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>El
+usuario inicia sesión rellenando el formulario de autenticación con su usuario
+y contraseña. Al haber iniciado sesión el sistema mostrará los servicios de la
+aplicación, donde tendrá que entrar a su propio perfil para actualizar sus
+datos personales y si es el gestor también podrá acceder a perfiles de sus
+alumnos y actualizar dichos datos. Si no sucede ningún error el suceso será
+registrado en el sistema.<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GLO-0009></a><b><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif'>Reserva de clases:</span></b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'> <o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>El
+usuario inicia sesión rellenando el formulario de autenticación con su usuario
+y contraseña. Al haber iniciado sesión el sistema mostrará los servicios de la
+aplicación, donde tendrá que entrar a la tabla de horarios para reservar la
+franja horaria que desea el alumno. Si no sucede ningún error el suceso será
+registrado en el sistema.<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GLO-0010></a><b><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif'>Matriculación online:</span></b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'> <o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>El
+usuario accede al formulario de registro para matricularse en la autoescuela.
+Se introducirán los datos solicitados y si todo es correcto se registrará su
+solicitud de alumno en el sistema.<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GLO-0013></a><b><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif'>Dar de baja a un alumno:</span></b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'> <o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>El
+profesor inicia sesión rellenando el formulario de autenticación con su usuario
+y contraseña. Al haber iniciado sesión el sistema mostrará los servicios de la
+aplicación, donde tendrá que entrar al perfil del alumno deseado para dar de
+baja a dicha persona, esta acción sólo podrá ser realizada si es profesor la
+persona autentificada. Si no sucede ningún error el suceso será registrado en
+el sistema.<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GLO-0011></a><b><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif'>Actualizar datos del estado del examen:</span></b><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'> <o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>El
+profesor inicia sesión rellenando el formulario de autenticación con su usuario
+y contraseña. Al haber iniciado sesión el sistema mostrará los servicios de la
+aplicación, donde tendrá que entrar a los datos del examen para actualizar el
+estado de éste. Si no sucede ningún error el suceso será registrado en el
+sistema.<o:p></o:p></span></p>
+
+<h1 style='text-align:justify'><a name=GLO-0012></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h1>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>5 <span class=GramE>Interfaz</span>
+de usuario del sistema<o:p></o:p></span></h1>
+
+<h2 style='text-align:justify'><a name=SEC-0015></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>5.1 Diagramas de
+navegación del sistema<o:p></o:p></span></h2>
+
+<p style='text-align:justify'><a name=SEC-0018></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=565
+height=521 id="_x0000_i1050"
+src="Fotos%20IR/Diagramas%20de%20navegación%20del%20sistema.jpg"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 1</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Diagramas de navegación del sistema<o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<h2 style='text-align:justify'><a name=GRF-0007></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>5.2 Esquemas de
+la interfaz de usuario del sistema<o:p></o:p></span></h2>
+
+<p style='text-align:justify'><a name=SEC-0019></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=593
+height=603 id="_x0000_i1049" src="Fotos%20IR/Pagina%201.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 1</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 1<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0008></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=593
+height=605 id="_x0000_i1048" src="Fotos%20IR/Pagina%202.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 2</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 2<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0009></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=591
+height=599 id="_x0000_i1047" src="Fotos%20IR/Pagina%203.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 3</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 3<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0010></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=643
+height=583 id="_x0000_i1046" src="Fotos%20IR/Pagina%204.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 4</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 4<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0011></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=643
+height=583 id="_x0000_i1045" src="Fotos%20IR/Pagina%205.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 5</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 5<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0012></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=651
+height=565 id="_x0000_i1044" src="Fotos%20IR/Pagina%206.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 6</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 6<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0013></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=530
+height=559 id="_x0000_i1043" src="Fotos%20IR/Pagina%207.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 7</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 7<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0014></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=492
+height=537 id="_x0000_i1042" src="Fotos%20IR/Pagina%208.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 8</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 8<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0015></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=602
+height=631 id="_x0000_i1041" src="Fotos%20IR/Pagina9.PNG"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 9</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 9<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0016></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=493
+height=567 id="_x0000_i1040" src="Fotos%20IR/Pagina%2010.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 10</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 10<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0017></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=587
+height=525 id="_x0000_i1039" src="Fotos%20IR/Pagina%2011.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 11</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 11<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0018></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=594
+height=530 id="_x0000_i1038" src="Fotos%20IR/Pagina12.PNG"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 12</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 12<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0019></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=590
+height=526 id="_x0000_i1037" src="Fotos%20IR/Pagina13.PNG"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 13</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 13<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0020></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=592
+height=526 id="_x0000_i1036" src="Fotos%20IR/Pagina14.PNG"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 14</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 14<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0021></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=493
+height=536 id="_x0000_i1035" src="Fotos%20IR/Pagina%2015.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 15</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 15<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0022></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=492
+height=565 id="_x0000_i1034" src="Fotos%20IR/Pagina%2016.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 16</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 16<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0023></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=492
+height=547 id="_x0000_i1033" src="Fotos%20IR/Pagina%2017.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 17</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 17<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0024></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=492
+height=537 id="_x0000_i1032" src="Fotos%20IR/Pagina%2018.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 18</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Página 18<o:p></o:p></span></p>
+
+<h2 style='text-align:justify'><a name=GRF-0025></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'><o:p>&nbsp;</o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>5.3 Descripción de la interfaz de
+usuario del sistema<o:p></o:p></span></h2>
+
+<p style='text-align:justify'><a name=SEC-0020></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><br>
+La primera vista es la página principal, a la que puede acceder cualquier tipo
+de usuario.<o:p></o:p></span></p>
+
+<p style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:justify'><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>Desde esta página se
+puede acceder a las páginas de: Vehículos, Sobre nosotros, La autoescuela, y
+Permisos, desplegando el menú principal. Todas estas páginas son de carácter
+informativo. A su vez, podemos acceder al <span class=SpellE>Login</span> y al
+Registro. <o:p></o:p></span></p>
+
+<p style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:justify'><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>En primer lugar, para <span
+class=SpellE>loguearse</span>, necesita un usuario y contraseña. Podemos <span
+class=SpellE>loguearnos</span> como alumno y como profesor. <o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>La
+página de registro nos permite registrarnos como un alumno o como un profesor,
+para lo cual, nos pide unos datos básicos: <span class=SpellE>Dni</span>,
+nombre, apellidos, y otros datos de contacto básicos. <br>
+Primeramente, vamos a describir las vistas de profesor:<o:p></o:p></span></p>
+
+<p style='margin-left:35.4pt;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><span style='mso-spacerun:yes'> </span><o:p></o:p></span></p>
+
+<p style='margin-top:5.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>1. Página principal del profesor, en la que
+aparece una tabla con todos sus alumnos. Puede acceder a su información
+personal necesaria, puede editar la información no personal, y también puede
+eliminarlo de la tabla, lo que significaría, que su paso por la autoescuela ha
+finalizado<o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>. <br>
+2. En dicha vita aparecen los datos de los alumnos introducidos en el registro,
+tales como <span class=SpellE>Dni</span>, nombre, apellidos, teléfono, etc. <o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><br>
+3. El profesor puede acceder a Mi Perfil, en el que podrá modificar sus datos
+personales. <br style='mso-special-character:line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]><o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>Como alumno, tenemos las siguientes vistas: <o:p></o:p></span></p>
+
+<p style='margin-top:5.0pt;margin-right:0cm;margin-bottom:0cm;margin-left:70.8pt;
+margin-bottom:.0001pt;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><br>
+1. Página principal del alumno en la que aparece un horario. Ordenado por
+semanas, el alumno podrá elegir sus días libres para poder asistir a las clases
+prácticas. También podrá acceder a su anterior horario guardado desde esta
+misma vista.<o:p></o:p></span></p>
+
+<p style='margin-left:70.8pt;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><br>
+2. El alumno puede acceder a Mi Perfil, en el que podrá modificar sus datos
+personales. <o:p></o:p></span></p>
+
+<p style='margin-top:0cm;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>Las vistas informativas citadas al comienzo
+proporcionan la información necesaria para que un usuario ajeno a la
+autoescuela pueda conocer todo lo indispensable, ya sean los vehículos que
+utiliza, los permisos ofertados o la localización de la autoescuela. <o:p></o:p></span></p>
+
+<p style='margin-top:0cm;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:0cm;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:0cm;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:0cm;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:0cm;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:0cm;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:0cm;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:0cm;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:0cm;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:0cm;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='margin-top:0cm;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+</div>
+
+<span style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-ansi-language:ES;
+mso-fareast-language:ES;mso-bidi-language:AR-SA'><br clear=all
+style='page-break-before:always;mso-break-type:section-break'>
+</span>
+
+<div class=WordSection2>
+
+<h1 style='text-align:justify'><a name=PRG-0008></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>6.Interfaz de
+servicios del sistema <o:p></o:p></span></h1>
+
+<h2 style='text-align:justify'><a name=SEC-0021></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>6.1 Diagramas de
+la interfaz de servicios del sistema<o:p></o:p></span></h2>
+
+<p style='text-align:justify'><a name=SEC-0022></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=989
+height=378 id="_x0000_i1031"
+src="Fotos%20IR/Diagrama%20de%20la%20interfaz%20de%20servicios%20del%20sistema.jpg"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 1</span></b><a name=GRF-0031><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif'>: Diagrama de la interfaz de servicios
+del siste</span></a><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>ma<o:p></o:p></span></p>
+
+</div>
+
+<span style='font-size:10.0pt;font-family:"Arial",sans-serif;mso-fareast-font-family:
+"Times New Roman";mso-fareast-theme-font:minor-fareast;mso-ansi-language:ES;
+mso-fareast-language:ES;mso-bidi-language:AR-SA'><br clear=all
+style='page-break-before:always;mso-break-type:section-break'>
+</span>
+
+<div class=WordSection3>
+
+<h2 style='text-align:justify'><a name=SEC-0023><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>6.2 Descripción de la interfaz de
+servicios del sistema</span></a><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'><o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>En el diagrama encontramos los
+siguientes servicios con las <span class=GramE>siguiente operaciones</span>: <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><br>
+Servicios Usuarios: <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>ConsultarPerfil</span></span><span class=GramE>(</span>): obtiene
+los datos de un usuario <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>modificarDatos</span></span><span class=GramE>(</span>): modificar
+los datos de un usuario <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE>encontrarUsuarioPorDni</span>:
+obtiene el usuario por el <span class=SpellE><span class=GramE>Dni</span></span><span
+class=GramE>,.</span><o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'><br>
+</span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><br>
+<span class=SpellE>ServiciosClases</span>: <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>consultarHorario</span></span><span class=GramE>(</span>): devuelve
+un listado con el horario preseleccionado<o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'><br>
++ <span class=SpellE><span class=GramE>reservarClase</span></span><span
+class=GramE>(</span>): guarda el horario fijado <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>consultarSemana</span></span><span class=GramE>(</span>): devuelve
+la semana de prácticas <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>encontrarClasesPorSemana</span></span><span class=GramE>(</span>):
+obtiene las clases disponibles en la semana actual. <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><br>
+<span class=SpellE>ServiciosRegistro</span>: <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>consultarProfesoresDisponibles</span></span><span class=GramE>(</span>):
+devuelve un listado con los profesores disponibles para dar clases <br>
++ <span class=SpellE>guardarUsuarioPorTipo</span>(): guarda un usuario según
+sea Alumno o Profesor <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'><br>
+</span><span class=SpellE><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>ServiciosProfesores</span></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>: <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>encontrarMisAlumno</span></span><span class=GramE>(</span>):
+devuelve un listado con los alumnos que le corresponden <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>eliminarAlumno</span></span><span class=GramE>(</span>): elimina un
+alumno que esté asociado a este profesor. <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>consultarInformacionAlumno</span></span><span class=GramE>(</span>):
+devuelve un listado con los datos del alumno. <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>encontrarClasesPorAlumno</span></span><span class=GramE>(</span>):
+devuelve un listado con las clases seleccionadas por el alumno <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>modifcarDatosALumno</span></span><span class=GramE>(</span>):
+modifica los datos de un alumno siempre que no sean privados. <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>apuntarAlumnoExamen</span></span><span class=GramE>(</span>):
+registra un examen en los datos del alumno <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>consultarExamenPorAlumno</span></span><span class=GramE>(</span>):
+devuelve un listado de los exámenes realizados por el alumno <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'><br style='mso-special-character:
+line-break'>
+<![if !supportLineBreakNewLine]><br style='mso-special-character:line-break'>
+<![endif]></span><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></h2>
+
+<h2 style='text-align:justify'><span class=SpellE><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>ServiciosAutoescuela</span></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>: <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>consultarEstadoVehiculo</span></span><span class=GramE>(</span>):
+devuelve la información sobre el estado del vehículo. <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ <span class=SpellE><span
+class=GramE>consultarVehiculos</span></span><span class=GramE>(</span>):
+devuelve un listado con los vehículos de la autoescuela <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif;
+font-weight:normal;mso-bidi-font-weight:bold'>+ consultarPermisos(): devuelve
+un listado con los permisos de la autoescuela.</span><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif'> <o:p></o:p></span></h2>
+
+<h2 style='text-align:justify'><a name=PRG-0014></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>6.3 Servicios
+consumidos por el sistema<o:p></o:p></span></h2>
+
+<p style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:justify'><a
+name=SEC-0024></a><span style='font-size:10.0pt;font-family:"Arial",sans-serif'>Actualmente
+la autoescuela utiliza los servicios de <span class=SpellE>facilAutoGestión</span><a
+name=PRG-0015>. Nuestro sistema utilizará los servicios de este sistema para
+acceder a los datos guardados por la </a><a href="#GLO-0016"
+title="Dirección General de Tráfico">DGT</a>, tales como: Exámenes, Examinadores,
+Notas, es decir, todo lo que está ya protegido por su gestión. <o:p></o:p></span></p>
+
+<p style='margin-bottom:0cm;margin-bottom:.0001pt;text-align:justify'><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><br>
+El sistema únicamente accederá para pedir: <o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><br>
+1. Exámenes próximos de un alumno. <o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><br>
+2. Nota del examen de cada alumno. <o:p></o:p></span></p>
+
+<p style='margin-top:0cm;margin-right:0cm;margin-bottom:0cm;margin-left:35.4pt;
+margin-bottom:.0001pt;text-align:justify'><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'><br>
+3. Datos del examen en cuestión. <o:p></o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<p style='text-align:justify'><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p>&nbsp;</o:p></span></p>
+
+<h1 style='text-align:justify'><span style='font-family:"Arial",sans-serif;
+mso-fareast-font-family:"Times New Roman"'>7 <span class=GramE>Información</span>
+sobre trazabilidad<o:p></o:p></span></h1>
+
+<p style='text-align:justify'><a name=SEC-0025></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=533
+height=318 id="_x0000_i1030" src="Fotos%20IR/MATRIZ%20RI.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 1</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Trazabilidad sobre requisitos de información<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0032></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=530
+height=182 id="_x0000_i1029" src="Fotos%20IR/MATRIZ%20RN.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 2</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Trazabilidad sobre reglas de negocio<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0033></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=530
+height=317 id="_x0000_i1028" src="Fotos%20IR/MATRIZ%20RCS.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 3</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Trazabilidad sobre requisitos de conducta del
+sistema<o:p></o:p></span></p>
+
+<p style='text-align:justify'><a name=GRF-0034></a><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif;mso-no-proof:yes'><img border=0 width=533
+height=150 id="_x0000_i1027" src="Fotos%20IR/MATRIZ%20UC.png"></span><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+<p style='text-align:justify'><b><span style='font-size:10.0pt;font-family:
+"Arial",sans-serif'>Figura 4</span></b><span style='font-size:10.0pt;
+font-family:"Arial",sans-serif'>: Trazabilidad sobre casos de uso<o:p></o:p></span></p>
+
+<h1 style='text-align:justify'><a name=GRF-0035></a><span style='font-family:
+"Arial",sans-serif;mso-fareast-font-family:"Times New Roman"'>A Glosario de
+acrónimos y abreviaturas<o:p></o:p></span></h1>
+
+<p style='text-align:justify'><a name=SEC-0026></a><b><span style='font-size:
+10.0pt;font-family:"Arial",sans-serif'>DGT: </span></b><a name=GLO-0016><span
+style='font-size:10.0pt;font-family:"Arial",sans-serif'>Dirección General de
+Tráfico</span></a><span style='font-size:10.0pt;font-family:"Arial",sans-serif'><o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>

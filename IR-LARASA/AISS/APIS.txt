@@ -1,0 +1,54 @@
+///apixu//// API del tiempo
+APIKey: 100c1ecdbae24f6bb8a102600192204   
+Current weather
+HTTP: http://api.apixu.com/v1/current.json?key=100c1ecdbae24f6bb8a102600192204&q=Paris
+HTTPS: https://api.apixu.com/v1/current.json?key=100c1ecdbae24f6bb8a102600192204&q=Paris
+Forecast weather
+HTTP: http://api.apixu.com/v1/forecast.json?key=100c1ecdbae24f6bb8a102600192204&q=Paris
+HTTPS: https://api.apixu.com/v1/forecast.json?key=100c1ecdbae24f6bb8a102600192204&q=Paris
+
+
+Translate:
+https://tech.yandex.com/translate/doc/dg/concepts/About-docpage/
+trnsl.1.1.20190424T113326Z.17fc731f08e84abd.93606d56943355d2ffef33fe31d68121922f470c
+
+
+
+tripadvisor:
+http://api.tripadvisor.com/api/partner/2.0/location/89575?key=<YOUR KEY HERE>
+rating(GET) //devuelve un int
+num_reviews(GET) //devuelve un int
+write_review(POST) 
+see_all_photos
+see_all_hotels
+see_all_attractions
+see_all_restaurants
+review_rating_count
+location_string
+
+
+/////TWITTER/////
+JwdiWzw0Vg9u9DOcV0kthYPkG (API key)
+
+Hy0VDRw3pQpQZxNP5XBxsZh25psAoc5RHUv2eLzCgZgEcwXew2 (API secret key)
+
+Callback URL:
+https://www.trending-map.appspot.com/oauth2callback/twitter
+
+601062343-UGL8VuYUZ1LX1pnVVaDTWOhzK3fEf0FOTZmsbPs6 (Access token)
+
+WYRekfZ8NOluybD7AXGQ99ATqfcTGqY8ZNZ7IBmxH8PMR (Access token secret)
+
+Foursquare
+
+JKRT1QS4O0BWISZWKESBRO2IKHVFMJZ5ZGDITTJRJJFPVUGM (Api)
+LVBQ4JVYHOJJHQX224RL3M5I0S4Y54NSQDW55CB0I30OZBFF (Secret)
+ 
+////Google maps/////
+
+1086151779273-ejnjh5kuc2gndcqs5liqr0g4r7ndriqo.apps.googleusercontent.com (API)
+
+p8d9NOnoXemqJq9xsuwv43Xv (Secret)
+
+///Text-To-Speech/// (VOICE RSS / http://www.voicerss.org/personel/default.aspx)
+	dff628d820ad4ed2baf1900479c9199e (API key)

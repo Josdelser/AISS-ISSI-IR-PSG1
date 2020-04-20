@@ -1,0 +1,23 @@
+COMO profesora
+QUIERO conocer los alumnos que no han superado los exámenes después de presentarse más de 5 veces
+PARA llevar un mayor seguimiento de estos alumnos
+
+COMO profesor de prácticas
+QUIERO que el vehiculo que me asignan tenga el seguro pasado  
+PARA tener el vehículo en regla
+
+COMO gestora
+QUIERO saber los alumnos que llevan más de 50 clases
+PARA para recomendarle presentarse al examen y obtener sitios vacantes 
+
+COMO gestora 
+QUIERO que el número referencia de Bonos y ProfesorRecibeBono coincidan
+PARA llevar un control de los bonos emitidos
+
+COMO gestora
+QUIERO que cada alumno tenga un contrato asignado
+PARA comprobar que esta apuntado en la autoescuela
+
+COMO gestora 
+QUIERO conocer las tarifas que ningun alumno ha elegido
+PARA renovar

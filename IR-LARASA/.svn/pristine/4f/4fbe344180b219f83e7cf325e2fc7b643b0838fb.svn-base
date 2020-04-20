@@ -1,0 +1,41 @@
+body{
+  background-image: url("http://www.autoescuelalarasa.es/images/fondo.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.fondo{
+    width: 100%;
+    background-color: rgba(143, 209, 229, 0.959);
+    margin:0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    border-radius: 5px;
+  }
+ 
+.titulo{
+  text-align: center;
+  font-size: 300%;
+  color: brown;
+  text-shadow: 0.1em 0.1em 0.05em #333
+}
+
+h2{
+  padding-top: 2%;
+  color: blueviolet;
+  font-weight: bolder;
+  font-size: 190%;
+}
+
+p{
+  background-color: whitesmoke;
+  border-style: solid;
+  border-color: black;
+  border-width: 3px;
+  border-radius: 12px;
+  font-size: 120%;
+  padding: 3%; 
+  margin-bottom: 2%;
+}  

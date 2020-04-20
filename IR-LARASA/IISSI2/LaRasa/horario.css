@@ -1,0 +1,31 @@
+*{
+    text-align: center;
+}
+
+th{
+    background-color: cornflowerblue;
+}
+
+.hora{
+    color:white;
+    background-color: orangered;
+}
+
+td a{
+    color: black;
+    text-decoration: none;
+}
+
+td:hover{
+    background-color: chocolate;
+}
+
+td a:hover{
+    font-weight: bolder;
+
+}
+
+.hora:hover{
+    color:white;
+    background-color: orangered;
+}

@@ -1,0 +1,228 @@
+
+create or replace
+FUNCTION ASSERT_EQUALS (salida BOOLEAN, salida_esperada BOOLEAN) RETURN VARCHAR2 AS
+BEGIN
+    IF (salida=salida_esperada) THEN
+        RETURN 'EXITO';
+    ELSE
+        RETURN 'FALLO';
+    END IF;
+END ASSERT_EQUALS;   
+/
+
+create or replace
+PACKAGE PRUEBAS_VEHICULOS AS
+
+    PROCEDURE inicializar;
+    PROCEDURE insertar
+        (nombre_prueba VARCHAR2, v_Marca VARCHAR, v_Matricula CHAR, v_Seguro CHAR, v_Fecha_ITV Date, v_Estado VARCHAR, salidaEsperada BOOLEAN);
+    PROCEDURE actualizar    
+        (nombre_prueba VARCHAR2, v_Marca VARCHAR, v_Matricula CHAR, v_Seguro CHAR, v_Fecha_ITV Date, v_Estado VARCHAR, salidaEsperada BOOLEAN);
+    PROCEDURE eliminar
+        (nombre_prueba VARCHAR2, v_Matricula CHAR, salidaEsperada BOOLEAN);
+        
+END PRUEBAS_VEHICULOS;
+/
+create or replace
+PACKAGE BODY PRUEBAS_VEHICULOS AS
+
+    PROCEDURE inicializar AS
+    BEGIN
+        DELETE FROM Vehiculos;
+    END inicializar;
+
+    PROCEDURE insertar (nombre_prueba VARCHAR2, v_Marca VARCHAR, v_Matricula CHAR, v_Seguro CHAR, v_Fecha_ITV Date, v_Estado VARCHAR, salidaEsperada BOOLEAN) AS
+        salida BOOLEAN := true;
+        vehiculo vehiculos%ROWTYPE;
+    BEGIN
+    
+        INSERT INTO Vehiculos VALUES (v_Marca, v_Matricula, v_Seguro, v_Fecha_ITV, v_Estado);
+        
+        SELECT MARCA ,
+MATRICULA ,
+SEGURO ,
+FECHA_ITV ,
+ESTADO  INTO vehiculo FROM Vehiculos WHERE Matricula = v_Matricula;
+        If (vehiculo.Marca<>v_Marca AND vehiculo.Matricula<>v_Matricula AND vehiculo.Seguro<>v_Seguro AND vehiculo.Fecha_ITV<>v_Fecha_ITV AND vehiculo.Estado<>v_Estado) THEN
+            salida := false;
+        END IF;
+        COMMIT WORK;
+        
+        DBMS_OUTPUT.put_line(nombre_prueba || ':' || ASSERT_EQUALS(salida, salidaEsperada));
+        
+        EXCEPTION
+        WHEN OTHERS THEN
+            DBMS_OUTPUT.put_line(nombre_prueba || ':' || ASSERT_EQUALS(false, salidaEsperada));
+            ROLLBACK;
+    END insertar;
+    
+    PROCEDURE actualizar (nombre_prueba VARCHAR2, v_Marca VARCHAR, v_Matricula CHAR, v_Seguro CHAR, v_Fecha_ITV Date, v_Estado VARCHAR, salidaEsperada BOOLEAN) AS
+    
+        salida BOOLEAN := true;
+        vehiculo vehiculos%ROWTYPE;
+    BEGIN
+    
+        UPDATE Vehiculos SET Marca = v_Marca, Matricula= v_Matricula, Seguro = v_Seguro, Fecha_ITV = v_Fecha_ITV, Estado = v_Estado WHERE Matricula = v_Matricula;
+        
+        SELECT MARCA ,
+MATRICULA ,
+SEGURO ,
+FECHA_ITV ,
+ESTADO  INTO vehiculo FROM Vehiculos WHERE Matricula = v_Matricula;
+        If (vehiculo.Marca<>v_Marca AND vehiculo.Matricula<>v_Matricula AND vehiculo.Seguro<>v_Seguro AND vehiculo.Fecha_ITV<> v_Fecha_ITV AND vehiculo.Estado<>v_Estado) THEN
+            salida := false;
+        END IF;
+        COMMIT WORK;
+        
+        DBMS_OUTPUT.put_line(nombre_prueba || ':' || ASSERT_EQUALS(salida, salidaEsperada));
+        
+        EXCEPTION
+        WHEN OTHERS THEN
+            DBMS_OUTPUT.put_line(nombre_prueba || ':' || ASSERT_EQUALS(false, salidaEsperada));
+            ROLLBACK;
+    END actualizar;
+    
+    PROCEDURE eliminar (nombre_prueba VARCHAR2, v_Matricula CHAR, salidaEsperada BOOLEAN) AS
+    
+        salida BOOLEAN := true;
+        n_vehiculos INTEGER;
+    BEGIN
+    
+        DELETE FROM Vehiculos WHERE Matricula = v_Matricula;
+        
+        SELECT COUNT(*) INTO n_vehiculos FROM Vehiculos WHERE Matricula = v_Matricula;
+         If (n_vehiculos<>0) THEN
+            salida := false;
+        END IF;
+        COMMIT WORK;
+        
+        DBMS_OUTPUT.put_line(nombre_prueba || ':' || ASSERT_EQUALS(salida, salidaEsperada));
+        
+        EXCEPTION
+        WHEN OTHERS THEN
+            DBMS_OUTPUT.put_line(nombre_prueba || ':' || ASSERT_EQUALS(false, salidaEsperada));
+            ROLLBACK;
+    END eliminar;
+ END;
+ /
+    SET SERVEROUTPUT ON;
+    BEGIN
+        PRUEBAS_VEHICULOS.INICIALIZAR;
+        PRUEBAS_VEHICULOS.INSERTAR('Prueba 1- Inserción depto','Audi', '4157CCC', 'S', TO_DATE('02/02/2019', 'dd/mm/yyyy'),'Vehículo en perfectas condiciones para su uso',true);
+        PRUEBAS_VEHICULOS.ACTUALIZAR ('Prueba 2 - Actualización estado','Audi', '4157CCC', 'S', TO_DATE('02/02/2019', 'dd/mm/yyyy'),'Vehículo mal',true);
+        PRUEBAS_VEHICULOS.ELIMINAR ('Prueba 3 - Eliminar vehiculo', '4157CCC',true);
+    END;
+
+-- Para que funcione el incializar
+--DROP TABLE PROFESORRECIBEBONO;
+create or replace
+FUNCTION ASSERT_EQUALS (salida BOOLEAN, salida_esperada BOOLEAN) RETURN VARCHAR2 AS
+BEGIN
+    IF (salida=salida_esperada) THEN
+        RETURN 'EXITO';
+    ELSE
+        RETURN 'FALLO';
+    END IF;
+END ASSERT_EQUALS;   
+/
+
+create or replace
+PACKAGE PRUEBAS_BONOS AS
+
+    PROCEDURE inicializar;
+    PROCEDURE insertar
+        (nombre_prueba VARCHAR2, v_Sello CHAR, v_N_ref NUMBER, v_Importe NUMBER, v_Duracion NUMBER, v_Alumno CHAR, salidaEsperada BOOLEAN);
+    PROCEDURE actualizar    
+        (nombre_prueba VARCHAR2, v_Sello CHAR, v_N_ref NUMBER, v_Importe NUMBER, v_Duracion NUMBER, v_Alumno CHAR, salidaEsperada BOOLEAN);
+    PROCEDURE eliminar
+        (nombre_prueba VARCHAR2, v_N_ref NUMBER, salidaEsperada BOOLEAN);
+END PRUEBAS_BONOS;
+/
+create or replace
+PACKAGE BODY PRUEBAS_BONOS AS
+
+    PROCEDURE inicializar AS
+    BEGIN
+        DELETE FROM Bonos;
+    END inicializar;
+
+    PROCEDURE insertar (nombre_prueba VARCHAR2, v_Sello CHAR, v_N_ref NUMBER, v_Importe NUMBER, v_Duracion NUMBER, v_Alumno CHAR, salidaEsperada BOOLEAN) AS
+        salida BOOLEAN := true;
+        bono Bonos%ROWTYPE;
+    BEGIN
+        INSERT INTO Bonos VALUES (v_Sello, v_N_ref, v_Importe, v_Duracion, v_Alumno);
+        
+        SELECT Sello ,
+N_ref ,
+Importe ,
+Duracion ,
+Alumno  INTO bono FROM Bonos WHERE N_ref = v_N_ref;
+        If (bono.Sello<>v_Sello AND bono.N_ref<>v_N_ref AND bono.Importe<>v_Importe AND bono.Duracion<>v_Duracion AND bono.Alumno<>v_Alumno) THEN
+            salida := false;
+        END IF;
+        COMMIT WORK;
+        
+        DBMS_OUTPUT.put_line(nombre_prueba || ':' || ASSERT_EQUALS(salida, salidaEsperada));
+        
+        EXCEPTION
+        WHEN OTHERS THEN
+            DBMS_OUTPUT.put_line(nombre_prueba || ':' || ASSERT_EQUALS(false, salidaEsperada));
+            ROLLBACK;
+    END insertar;
+    
+    PROCEDURE actualizar (nombre_prueba VARCHAR2, v_Sello CHAR, v_N_ref NUMBER, v_Importe NUMBER, v_Duracion NUMBER, v_Alumno CHAR, salidaEsperada BOOLEAN) AS
+    
+        salida BOOLEAN := true;
+        bono Bonos%ROWTYPE;
+    BEGIN
+    
+        UPDATE Bonos SET Sello = v_Sello, N_ref= v_N_ref, Importe = v_Importe, Duracion = v_Duracion, Alumno = v_Alumno WHERE N_ref = v_N_ref;
+        
+     SELECT Sello ,
+N_ref ,
+Importe ,
+Duracion ,
+Alumno  INTO bono FROM Bonos WHERE N_ref = v_N_ref;
+        If (bono.Sello<>v_Sello AND bono.N_ref<>v_N_ref AND bono.Importe<>v_Importe AND bono.Duracion<>v_Duracion AND bono.Alumno<>v_Alumno) THEN
+            salida := false;
+        END IF;
+        COMMIT WORK;
+        
+        DBMS_OUTPUT.put_line(nombre_prueba || ':' || ASSERT_EQUALS(salida, salidaEsperada));
+        
+        EXCEPTION
+        WHEN OTHERS THEN
+            DBMS_OUTPUT.put_line(nombre_prueba || ':' || ASSERT_EQUALS(false, salidaEsperada));
+            ROLLBACK;
+    END actualizar;
+    
+    PROCEDURE eliminar (nombre_prueba VARCHAR2, v_N_ref NUMBER, salidaEsperada BOOLEAN) AS
+    
+        salida BOOLEAN := true;
+        n_bonos INTEGER;
+    BEGIN
+    
+        DELETE FROM Bonos WHERE N_ref = v_N_ref;
+        
+        SELECT COUNT(*) INTO n_bonos FROM Bonos WHERE N_ref = v_N_ref;
+         If (n_bonos<>0) THEN
+            salida := false;
+        END IF;
+        COMMIT WORK;
+        
+        DBMS_OUTPUT.put_line(nombre_prueba || ':' || ASSERT_EQUALS(salida, salidaEsperada));
+        
+        EXCEPTION
+        WHEN OTHERS THEN
+            DBMS_OUTPUT.put_line(nombre_prueba || ':' || ASSERT_EQUALS(false, salidaEsperada));
+            ROLLBACK;
+    END eliminar;
+ END;
+ /
+    SET SERVEROUTPUT ON;
+    BEGIN
+        PRUEBAS_BONOS.INICIALIZAR;
+        PRUEBAS_BONOS.INSERTAR('Prueba 1- Inserción bono','S', '45','55', '41', '78324681H',true);
+        PRUEBAS_BONOS.ACTUALIZAR ('Prueba 2 - Actualización Sello','N', '45', '45','41', '78324681H',true);
+        PRUEBAS_BONOS.ELIMINAR ('Prueba 3 - Eliminar Bono', '45',true);
+    END;

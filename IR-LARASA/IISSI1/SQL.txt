@@ -1,0 +1,213 @@
+CREATE TABLE Vehiculos 
+(Marca VARCHAR(50) NOT NULL CHECK (Marca BETWEEN 1 AND 50),
+Matricula CHAR(7) NOT NULL,
+Seguro CHAR(1),
+Fecha_ITV DATE,
+Estado VARCHAR(200),
+PRIMARY KEY (Matricula)
+);
+CREATE TABLE Empresas (
+Id_e NUMBER NOT NULL,
+Nombre VARCHAR(20) NOT NULL,
+Razon_Social VARCHAR(20) NOT NULL,
+Ciudad VARCHAR(50) NOT NULL,
+Telefono CHAR(9),
+--CONSTRAINT fechas CHECK (FechaBaja>FechaAlta),
+PRIMARY KEY (Id_e),
+UNIQUE (Nombre)
+);
+
+CREATE TABLE Contratos
+(
+Articulo VARCHAR(100),
+Referencia NUMBER,
+Precio NUMBER(12,2), 
+Iva CHAR(52),
+Tarifa NUMBER,
+Alumno VARCHAR(20),
+PRIMARY KEY (Referencia),
+FOREIGN KEY(Alumno) REFERENCES Alumnos (Dni),
+FOREIGN KEY(Tarifa) REFERENCES Tarifas (Articulo)
+);
+
+
+--CHECK (TIPO IN ('Piso', 'Local', 'Casa')));
+CREATE TABLE Tarifas
+(
+Id_t NUMBER,
+Articulo VARCHAR(200),
+Descuento NUMBER(12,2), 	
+Fecha_Inicio DATE,
+Fecha_Fin DATE,
+PRIMARY KEY (Id_t),
+UNIQUE (Articulo)
+);
+CREATE TABLE Bonos 
+(
+Sello CHAR(1),
+N_ref NUMBER,
+Importe NUMBER (12,2),
+Duracion NUMBER,
+Alumno VARCHAR(20),
+PRIMARY KEY (N_ref),
+FOREIGN KEY (Alumno) REFERENCES Alumnos (Dni)
+);
+
+CREATE TABLE Examinadores
+(
+Id_examinador NUMBER,
+Nombre VARCHAR(20),
+Codigo VARCHAR(10),
+Observaciones VARCHAR(200),
+PRIMARY KEY (Id_examinador),
+UNIQUE (Nombre)
+);
+
+CREATE TABLE Examenes
+(
+Id_ex NUMBER,
+Fecha DATE,
+Alum_present NUMBER,
+Alum_aptos NUMBER,
+Examinador NUMBER,
+PRIMARY KEY (Id_ex),
+FOREIGN KEY (Examinador) REFERENCES Examinadores (Id_examinador)
+);
+
+CREATE TABLE Facturas
+(
+Numero NUMBER,
+Fecha DATE,
+Usuario VARCHAR(20),
+Importe NUMBER(12,2),
+Empresa VARCHAR(50),
+PRIMARY KEY (Numero),
+FOREIGN KEY (Empresa) REFERENCES Empresas (Nombre),
+FOREIGN KEY (TipoUsuario) REFERENCES Clientes (Nombre)
+);
+CREATE TABLE Alumnos
+(
+Nombre VARCHAR(20),
+Apellidos VARCHAR(100),
+Dni CHAR(9),
+Telefono CHAR(9),
+Fecha_Nac Date,
+Correo VARCHAR(100),
+Num_Matricula NUMBER,
+Permiso TIPOPERMISO,
+Estado TIPOESTADO,
+Clases_Practicas NUMBER,
+Tarifa NUMBER,
+Profesor VARCHAR(20),
+PRIMARY KEY (Dni),
+UNIQUE (Nombre),
+FOREIGN KEY (Tarifa) REFERENCES Tarifas (Id_t),
+FOREIGN KEY (Profesor) REFERENCES Profesores (Nombre)
+);
+CREATE TABLE Profesores
+(
+Nombre VARCHAR(20),
+Apellidos VARCHAR(100),
+Dni CHAR(9),
+Telefono CHAR(9),
+Fecha_Nac Date,
+Correo VARCHAR(100),
+Clases_Imp NUMBER,
+Sueldo NUMBER(12,2),
+Paga_Extra NUMBER(12,2),
+Activo CHAR(1),
+Vacaciones NUMBER,
+Dias_Baja NUMBER,
+Tipo VARCHAR(10),
+Matricula_Vehiculo CHAR(7),
+PRIMARY KEY (Dni),
+UNIQUE (Nombre),
+FOREIGN KEY (Matricula_Vehiculo) REFERENCES Vehiculos (Matricula)
+);
+CREATE TABLE Clientes
+(
+Nombre VARCHAR(20),
+Apellidos VARCHAR(100),
+Dni CHAR(9),
+Telefono CHAR(9),
+Fecha_Nac Date,
+Correo VARCHAR(100),
+Carnet CHAR(1),
+Clases NUMBER,
+Importe NUMBER(12,2),
+Clases_Pract NUMBER,
+Profesor VARCHAR(20),
+PRIMARY KEY (Dni),
+UNIQUE (Nombre),
+FOREIGN KEY (Profesor) REFERENCES Profesores (Nombre)
+);
+
+CREATE TABLE ProfesorRecibeBono 
+(
+Id_r NUMBER,
+DniProfesor CHAR(9),
+N_referencia NUMBER,
+PRIMARY KEY (Id_r),
+UNIQUE(DniProfesor),
+UNIQUE(N_referencia),
+FOREIGN KEY (DniProfesor) REFERENCES Profesores(Dni),
+FOREIGN KEY (N_referencia) REFERENCES Bonos(N_ref)
+);
+
+
+CREATE TABLE AlumnoRealizaExamen 
+(
+Id_realiza NUMBER,
+DniAlumno CHAR(9),
+Id_ex NUMBER,
+PRIMARY KEY (Id_realiza),
+UNIQUE(DniAlumno),
+UNIQUE(Id_ex),
+FOREIGN KEY (DniAlumno) REFERENCES Alumnos(Dni),
+FOREIGN KEY (Id_ex) REFERENCES Examenes(Id_ex)
+);
+
+???Para meter datos¿¿¿
+
+INSERT INTO Empleados VALUES ('12345678A', 'Pepe', 'Perez', 'Avda. Paz','Sevilla', '41009', 'Sevilla', TO_DATE('01/01/2018', 'dd/mm/yyyy'), null,1000,null,3);
+
+INSERT INTO Empresas VALUES ('12345678', 'Anemia.S.L', 'gasolina', 'Guatemala', '631942195');
+INSERT INTO Empresas VALUES ('894686914', 'ADDACARRITO', 'Miguel Toro', 'US', '613849120'); 
+INSERT INTO Empresas VALUES ('1312312', 'TARFIA', 'Mala Vida', 'Sevilla', '631948301'); 
+INSERT INTO Empresas VALUES ('00434', 'GALLO', 'polvorón', 'Estepa', '758291402'); 
+INSERT INTO Empresas VALUES ('984351218', 'ANGELA', 'PADILLA', 'MI CAMA', '656421240');  
+
+INSERT INTO Tarifas VALUES ('12345', 'Descuento Teórico', '21,21', TO_DATE('06/11/1999', 'dd/mm/yyyy'),TO_DATE('02/07/2040', 'dd/mm/yyyy'));
+INSERT INTO Tarifas VALUES ('452234', 'Descuento Teórico+Práctico', '50', TO_DATE('22/06/2015', 'dd/mm/yyyy'),TO_DATE('09/07/2016', 'dd/mm/yyyy'));
+INSERT INTO Tarifas VALUES ('09876', 'Descuento por acompañante ', '10,1', TO_DATE('31/01/2006', 'dd/mm/yyyy'),TO_DATE('02/07/2010', 'dd/mm/yyyy'));
+INSERT INTO Tarifas VALUES ('15467', 'Descuento folletos', '45,6', TO_DATE('15/08/2009', 'dd/mm/yyyy'),TO_DATE('14/11/20011', 'dd/mm/yyyy'));
+INSERT INTO Tarifas VALUES ('0198327', 'Descuento por guapo', '32,99', TO_DATE('11/04/2015', 'dd/mm/yyyy'),TO_DATE('13/10/2016', 'dd/mm/yyyy'));
+
+
+
+
+
+
+INSERT INTO Bonos VALUES ('S', '742398798', '31,42', '45', 'Dani');
+INSERT INTO Bonos VALUES ('S', '5452', '45,4', '30', 'Juanlu');
+INSERT INTO Bonos VALUES ('N', '78798', '99,99', '45', 'Bella');
+INSERT INTO Bonos VALUES ('S', '09812312', '32,5', '60', 'Marta');
+INSERT INTO Bonos VALUES ('N', '423', '32,2', '90', 'Paco');
+
+
+
+INSERT INTO ProfesorRecibeBono VALUES ( '2321', '65749104R', '51627');
+INSERT INTO ProfesorRecibeBono VALUES ( '432432', '46019645P', '');
+INSERT INTO ProfesorRecibeBono VALUES ( '15214', '43124312A', '51627');
+INSERT INTO ProfesorRecibeBono VALUES ( '253141', '32184632M', '51627');
+INSERT INTO ProfesorRecibeBono VALUES ( '8761', '87523409W', '51627');
+
+
+INSERT INTO  AlumnoRealizaExamen VALUES ('312','46371859K', '23443');
+INSERT INTO  AlumnoRealizaExamen VALUES ('7654','67583931B', '9824');
+INSERT INTO  AlumnoRealizaExamen VALUES ('9876','39204359L', '6542');
+INSERT INTO  AlumnoRealizaExamen VALUES ('1341','12350943Ñ', '634');
+INSERT INTO  AlumnoRealizaExamen VALUES ('523521','36278349N', '1241');
+
+
+

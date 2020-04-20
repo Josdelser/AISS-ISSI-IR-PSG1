@@ -1,0 +1,29 @@
+
+create or replace trigger trigger_vehiculo_profesor_1
+before insert or update on Profesores
+for each row
+declare
+v_Dni char(9) := :new.Dni;
+cuenta number;
+
+begin
+select count(*) Matricula_Vehiculo into cuenta from Profesores where Tipo='Prácticas' and Dni = v_Dni; 
+if cuenta > 1 then RAISE_APPLICATION_ERROR(-200001,'Solo puede haber un coche asignado a cada profesor de prácticas');
+end if;
+end;	
+
+
+create or replace TRIGGER TR_VEHICULOS_PROFESORES
+BEFORE INSERT OR UPDATE ON Vehiculos
+FOR EACH ROW
+DECLARE
+ v_Matricula CHAR(7);
+ v_Matricula_Vehiculo CHAR(7);
+
+BEGIN
+ SELECT Matricula INTO v_Matricula FROM Vehiculos WHERE Matricula = v_Matricula;
+ SELECT Matricula_Vehiculo INTO v_Matricula_Vehiculo FROM Profesores WHERE Tipo='Practicas' AND Matricula_Vehiculo = v_Matricula_Vehiculo;
+ IF v_Matricula != v_Matricula_Vehiculo THEN RAISE_APPLICATION_ERROR(-20001, 
+ 'La matricula del vehiculo debe coincidir con la matricula del vehiculo asociado al profesor de tipo practicas');
+ END IF;
+END;

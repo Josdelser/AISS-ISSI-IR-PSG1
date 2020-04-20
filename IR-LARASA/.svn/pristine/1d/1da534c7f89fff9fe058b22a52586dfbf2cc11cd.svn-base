@@ -1,0 +1,3870 @@
+<?xml version="1.0" encoding="iso-8859-1" ?>
+<!DOCTYPE rem:requirementsProject SYSTEM "C:\Program Files (x86)\REM 1.2.2\xml\REM_1_2_2.dtd">
+<rem:requirementsProject
+xmlns:rem="http://rem.lsi.us.es">
+<rem:name>Proyecto IR 2º entregable REM</rem:name>
+<rem:c_requirementsSpecification oid = "CRS-0001">
+<rem:name>Documento de Requisitos del Sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+	 <rem:preparedFor organizations = "ORG-0001 "/>
+	 <rem:preparedBy organizations = "ORG-0002 "/>
+<rem:paragraph
+ oid = "PRG-0001">
+<rem:name>
+Portada</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text></rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0002">
+<rem:name>
+Lista de control de cambios</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text></rem:text>
+</rem:paragraph>
+<rem:paragraph
+ oid = "PRG-0003">
+<rem:name>
+Índice y lista de tablas y figuras</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text></rem:text>
+</rem:paragraph>
+<rem:section
+ oid = "SEC-0001">
+<rem:name>
+Introducción</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>1 </rem:number>
+<rem:section
+ oid = "SEC-0002">
+<rem:name>
+Alcance del proyecto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>1</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.1 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0004">
+<rem:name>
+<rem:ref oid="GLO-0004">Introducción del proyecto</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La autoescuela La Rasa es un grupo de profesionales con muchos años de experiencia en el sector de enseñanza y <rem:ref oid="GLO-0022">aprendizaje</rem:ref> en conducción. En 2013 decidieron empezar este proyecto con el fin de crear un nuevo concepto de autoescuela, para que sus alumnos recibieran la mejor calidad y servicio en su formación.<br/><br/>Con la implementación de este software se pretende facilitar la inscripción de los usuarios en la autoescuela de manera online. También se pretende habilitar la opción de gestionar la aplicación tanto en el establecimiento, como en otros lugares, además de permitir una mejor coordinación de horarios entre profesores y alumnos. Finalmente también se busca optimizar el formato para crear bonos de tamaños más adecuados. <br/></rem:text>
+</rem:glossaryItem>
+<rem:graphicFile
+ oid = "GRF-0001">
+<rem:name>
+Portal de la autoescuela</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\Portal.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+<rem:section
+ oid = "SEC-0003">
+<rem:name>
+Participantes en el proyecto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>2</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.2 </rem:number>
+<rem:section
+ oid = "SEC-0004">
+<rem:name>
+Organizaciones participantes</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>1.2.1 </rem:number>
+<rem:organization
+ oid = "ORG-0001">
+<rem:name>
+Autoescuela La Rasa</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Autoescuela con la que colaboramos</rem:comments>
+<rem:address>Paez de Rivera</rem:address>
+<rem:telephone>954094466</rem:telephone>
+<rem:fax>Ninguno</rem:fax>
+</rem:organization>
+<rem:organization
+ oid = "ORG-0002">
+<rem:name>
+Los Chemas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Grupo de desarrollo</rem:comments>
+<rem:address>Universidad de Sevilla</rem:address>
+<rem:telephone>612345678</rem:telephone>
+<rem:fax>Ninguno</rem:fax>
+</rem:organization>
+</rem:section>
+<rem:section
+ oid = "SEC-0005">
+<rem:name>
+Personas participantes</rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>1.2.2 </rem:number>
+<rem:stakeholder
+ oid = "STK-0001">
+<rem:name>
+María Jiménez Sánchez </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Cargo administrativo</rem:comments>
+<rem:stakeholderRole>Gestora y profesora de teoría</rem:stakeholderRole>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0002">
+<rem:name>
+Elisa Ramírez Pérez </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Enseñanza de clases prácticas</rem:comments>
+<rem:stakeholderRole>Profesora de prácticas</rem:stakeholderRole>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0003">
+<rem:name>
+Ramón Fernández Borrás </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Enseñanza de clases prácticas</rem:comments>
+<rem:stakeholderRole>Profesor de prácticas</rem:stakeholderRole>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0004">
+<rem:name>
+Sergio Huertas Granadal </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Máximo representante de la autoescuela</rem:comments>
+<rem:stakeholderRole><rem:ref oid="GLO-0042">Director</rem:ref> de la autoescuela</rem:stakeholderRole>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0008">
+<rem:name>
+Carlos Romero Castilla</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole><rem:ref oid="GLO-0043">Alumno</rem:ref></rem:stakeholderRole>
+<rem:isUser/>
+<rem:worksFor organization = "ORG-0001"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0009">
+<rem:name>
+Juan De la Torre</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:stakeholderRole><rem:ref oid="GLO-0044">Cliente</rem:ref></rem:stakeholderRole>
+<rem:isCustomer/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0005">
+<rem:name>
+Jose Delgado Serrano</rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Analista del proyecto</rem:comments>
+<rem:stakeholderRole>Analista</rem:stakeholderRole>
+<rem:isDeveloper/>
+<rem:worksFor organization = "ORG-0002"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0006">
+<rem:name>
+Antonio Fernández Manzano</rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Jefe del proyecto</rem:comments>
+<rem:stakeholderRole>Jefe del proyecto</rem:stakeholderRole>
+<rem:isDeveloper/>
+<rem:worksFor organization = "ORG-0002"/>
+</rem:stakeholder>
+<rem:stakeholder
+ oid = "STK-0007">
+<rem:name>
+Chao Hu</rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Desarrollador del proyecto</rem:comments>
+<rem:stakeholderRole>Desarrollador</rem:stakeholderRole>
+<rem:isDeveloper/>
+<rem:worksFor organization = "ORG-0002"/>
+</rem:stakeholder>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0006">
+<rem:name>
+<rem:ref oid="GLO-0005">Objetivos</rem:ref> del proyecto</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>3</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>1.3 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0005">
+<rem:name>
+<rem:ref oid="GLO-0005">Objetivos</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La Autoescuela La Rasa quiere a su disposición un software de uso fácil e intuitivo para sus alumnos, de manera que permita gestionar y almacenar todos los datos relacionados sobre sus alumnos (los exámenes realizados, clases asistidas, tests realizados, exámenes aprobados, ...). De esta forma se pretende facilitar la <rem:ref oid="GLO-0024">gestión</rem:ref> de datos para la gestora de la autoescuela, y que los alumnos también puedan acceder a su propia información para una mejor organización y control.</rem:text>
+</rem:glossaryItem>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0007">
+<rem:name>
+Información sobre el dominio del problema</rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>2 </rem:number>
+<rem:section
+ oid = "SEC-0008">
+<rem:name>
+Introducción sobre el dominio del problema</rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>1</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.1 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0006">
+<rem:name>
+<rem:ref oid="GLO-0006">Introducción del problema</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La Autoescuela La Rasa todavía no dispone de ninguna forma de <rem:ref oid="GLO-0029">matriculación</rem:ref> online. Acutalmente sólo pueden realizarla de manera manual por el método tradicional de firma de contrato presencial, con el consiguiente gasto que implica el desplazamiento y el uso de papel. Uno de los probemas expuestos por autoescuela es la pérdida de tiempo en este proceso, por lo que le convendría tener una opción para agilizar y facilitar la matrícula de los alumnos. <br/><br/>Las clases teóricas son impartidas por una profesora con un horario ya predeterminado, aunque en la autoescuela existe la posibilidad de flexibilizar este mismo horario, avisando con una cierta antelación. En este apartado nuestro software no entrará.<br/><br/>Las clases prácticas las imparten dos profesores, únicamente centrados en este dominio, es decir, no imparten clases teóricas. La duración de cada práctica es concertada con el profesor, teniendo siempre un continuo contacto con el <rem:ref oid="GLO-0043">alumno</rem:ref> para conocer sus preferencias. Sin embargo, el horario que el <rem:ref oid="GLO-0043">alumno</rem:ref> prefiere no siempre está disponible, por lo que una vista previa de las franjas horarias disponibles para la enseñanza de las prácticas es también uno de los <rem:ref oid="GLO-0005">objetivos</rem:ref> primordiales.<br/><br/>Además, la autoescuela quiere mejorar la utilización de los bienes requeridos para la creación de bonos, estos son papel y tinta, dado que el formato que tienen para la impresión de bonos necesita una cantidad de hojas de papel considerable. Esto conlleva a tener que realizar un nuevo formato modificando el tamaño de los bonos para poder aprovechar de manera más razonable la cantidad de folios usados.<br/><br/>Teniendo en cuenta los <rem:ref oid="GLO-0005">objetivos</rem:ref> planteados, el software a desarrollar se encargaría de gestionar la información relacionada a los alumnos, que incluiría su consulta y modificación, mejorar el formato de los bonos y compenetrar de manera más eficiente los horarios entre profesores y alumnos.<br/></rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0009">
+<rem:name>
+Glosario de términos del dominio del problema</rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>2</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>2.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0007">
+<rem:name>
+Glosario de términos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Accidente: Suceso imprevisto que tiene lugar en el desarrollo de las clases prácticas, en el que se ven involucrados uno o más vehículos. Normalmente sucede por un fallo de algún conductor/a o debido a una avería de uno o varios vehículos.<br/><br/><rem:ref oid="GLO-0043">Alumno</rem:ref>/a: <rem:ref oid="GLO-0044">Cliente</rem:ref> que está asistiendo a clases teóricas o clases prácticas en la autoescuela.<br/><br/>Avería: Fallo en el vehículo usado para impartir las clases prácticas, puede ser tanto un fallo mecánico como eléctrico.<br/><br/>Bono de Práctica: Cupón / ticket que le permite al <rem:ref oid="GLO-0043">alumno</rem:ref>/a dar la <rem:ref oid="GLO-0030">clase práctica</rem:ref> con su respectivo profesor/a de prácticas.<br/><br/>Clases Prácticas: Clases impartidas por el profesor/a en el vehículo de la autoescuela. Puede variar su duración entre 30&apos;, 45&apos;, 1h, donde se enseña al <rem:ref oid="GLO-0043">alumno</rem:ref> a manejar el vehículo por la vía pública cumpliendo todas sus normas para poder superar el <rem:ref oid="GLO-0027">examen práctico</rem:ref>.<br/><br/>Clases Teóricas: Clases impartidas por el profesor/a en la autoescuela de cara al <rem:ref oid="GLO-0028">examen teórico</rem:ref> donde se explican distintos temas enfocados hacia el ámbito de las normas de circulación y conducción en la vía pública.<br/><br/>Conductor/a: Persona que circula con un vehículo por las carreteras de la vía pública.<br/><br/>Examen Oficial: Prueba que debe realizar el <rem:ref oid="GLO-0043">alumno</rem:ref>/a para obtener el permiso correspondiente, realizado en la <rem:ref oid="GLO-0017">DGT</rem:ref>. Se divide en <rem:ref oid="GLO-0028">examen teórico</rem:ref> y práctico. La calificación será siempre de APTO o NO APTO.<br/><br/><rem:ref oid="GLO-0027">Examen Práctico</rem:ref>: Examen que se realiza en el coche de la autoescuela donde un examinador/a de la <rem:ref oid="GLO-0017">DGT</rem:ref> valorará si eres apto para la circulación en las carreteras de la vía pública. El profesor/a de prácticas te acompañará y actuará si lo cree necesario. Si el profesor/a tiene que intervenir el <rem:ref oid="GLO-0043">alumno</rem:ref>/a será calificado automáticamente como no apto. <br/><br/><rem:ref oid="GLO-0028">Examen Teórico</rem:ref>: Examen que consta de 20 o 30 preguntas de las cuales solo puedes fallar un 10% como máximo para superar la prueba y al cual te preparas realizando unos test y asistiendo a las clases teóricas impartidas en la autoescuela. Una vez aprobado se podrá proceder a comenzar a preparar el <rem:ref oid="GLO-0027">examen práctico</rem:ref>.<br/><br/>Expediente de Prácticas: Documento que permite tener un seguimiento de las clases prácticas de cada <rem:ref oid="GLO-0043">alumno</rem:ref>/a que se archiva junto a los bonos de prácticas correspondientes a cada <rem:ref oid="GLO-0043">alumno</rem:ref>. <br/><br/><rem:ref oid="GLO-0017">DGT</rem:ref>: Las siglas significan Dirección General de Tráfico y es donde se presentará el <rem:ref oid="GLO-0043">alumno</rem:ref>/a a los exámenes oficiales.<br/><br/>Peatón: Persona que transita por la vía pública.<br/><br/>Permiso de Conducción / Carnet: Documento oficial que se obtiene tras haber aprobado las distintas fases del examen y que te permite circular por las carreteras de la vía pública. Dependiendo del tipo de permiso obtenido se podrá circular con solo determinados vehículos. Los permisos impartidos son: B, AM, A1, A2, A.<br/><br/>Profesor/a: Trabajador de la autoescuela que imparte clases teóricas o prácticas.<br/><br/>Temario: Contenido que se debe aprender de cara al examen oficial.<br/><br/>Test: Simulación del <rem:ref oid="GLO-0028">examen teórico</rem:ref> que se hace recogiendo anteriores preguntas que han aparecido en exámenes oficiales anteriores. Puede contener, dependiendo del permiso, de 20 o 30 preguntas. Para superar el test debes tener un porcentaje de acierto igual o mayor del 90%.<br/><br/>Vehículo: Herramienta de utilización en las clases prácticas para el desarrollo del <rem:ref oid="GLO-0022">aprendizaje</rem:ref> del <rem:ref oid="GLO-0043">alumno</rem:ref> para la circulación en vía pública. Existen diferentes tipos de vehículos entre los que se encuentran: turismos, camiones, ciclomotores, motocicletas, autocaravanas...<br/><br/>Vía Pública:  Conjunto de carreteras y vías por donde se puede transitar cumpliendo ciertas normas preestablecidas. <br/></rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0010">
+<rem:name>
+Descripcion de la situación actual</rem:name>
+<rem:version>
+<rem:major>3</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>3 </rem:number>
+<rem:section
+ oid = "SEC-0011">
+<rem:name>
+Pros y contras de la situación actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.1 </rem:number>
+<rem:section
+ oid = "SEC-0012">
+<rem:name>
+Fortalezas de la situación actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>1</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.1.1 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0008">
+<rem:name>
+<rem:ref oid="GLO-0008">FOR-001</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>El sistema actual lleva los registros de manera local y en la propia autoescuela evitando así cualquier fallo debido a la conexión o al servidor. Además, la gestora mete en un programa que le gestiona parte de la autoescuela todos los registros para evitar problemas si se diese el caso de que se perdiesen los papeles.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0009">
+<rem:name>
+<rem:ref oid="GLO-0009">FOR-002</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Las clases práctica también se llevan de manera local lo cual hace que la gestora se organice mejor y pueda avisar con antelación a los profesores de prácticas.</rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0013">
+<rem:name>
+Debilidades de la situación actual</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>2</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.1.2 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0010">
+<rem:name>
+<rem:ref oid="GLO-0010">DEB-001</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Debido a que todo se lleva de manera manual pueden ocurrir varios fallos humanos a la hora de pasar al programa los registros, también pueden extraviarse algunos registros y causar problemas.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0011">
+<rem:name>
+<rem:ref oid="GLO-0011">DEB-002</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A raíz de que las clases prácticas se lleven de manera local puede ser que algún <rem:ref oid="GLO-0043">alumno</rem:ref> tenga que cancelar o cambiar alguna cita es un proceso muy lento, ya que tendría que llamar a la autoescuela o ir hasta allí, y luego la gestora volver a cuadrar el horario.</rem:text>
+</rem:glossaryItem>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0014">
+<rem:name>
+Modelos de proceso de negocio actuales</rem:name>
+<rem:version>
+<rem:major>3</rem:major>
+<rem:minor>2</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.2 </rem:number>
+<rem:section
+ oid = "SEC-0015">
+<rem:name>
+Descripción de actores de negocio actuales</rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>1</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.2.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0012">
+<rem:name>
+Descripción de actores</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><rem:ref oid="GLO-0043">Alumno</rem:ref>: persona externa que recibe enseñanzas de un profesor, tanto prácticas como teóricas.<br/><br/><rem:ref oid="GLO-0044">Cliente</rem:ref>: persona externa, con permiso de conducir vigente, que recibe enseñanzas prácticas de un profesor.<br/><br/><rem:ref oid="GLO-0017">DGT</rem:ref>: organismo autónomo del Gobierno español dependiente del Ministerio del Interior responsable de la ejecución de la política vial en las vías de titularidad estatal de España.<br/><br/><rem:ref oid="GLO-0042">Director</rem:ref>: persona que dirige la empresa.<br/><br/>Gestora: persona que administra y controla toda la información de la empresa.<br/><br/>Página web: lugar donde queda guardada toda la información útil para el usuario.<br/><br/>Profesor: persona que imparte clases dentro de la organización.<br/><br/><br/></rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0016">
+<rem:name>
+Descripción de procesos de negocios actuales</rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>2</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.2.2 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0030">
+<rem:name>
+<rem:ref oid="GLO-0030">Clase práctica</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/><br/>En este proceso intervienen el <rem:ref oid="GLO-0043">alumno</rem:ref>, la gestora y el profesor. El <rem:ref oid="GLO-0043">alumno</rem:ref> compra un bono, elaborada por la gestora. El profesor al recibir el bono ya imparte la lcase y sella el bono para entregársela a la gestora como que el <rem:ref oid="GLO-0043">alumno</rem:ref> ya ha dado la clase de ese bono. Por último la gestora actualiza el perfil del <rem:ref oid="GLO-0043">alumno</rem:ref> al haber cursado una clase más.</rem:text>
+</rem:glossaryItem>
+<rem:graphicFile
+ oid = "GRF-0002">
+<rem:name>
+<rem:ref oid="GLO-0030">Clase práctica</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\ClasePractica-Page-2.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:glossaryItem
+ oid = "GLO-0026">
+<rem:name>
+<rem:ref oid="GLO-0026">Clase teórica</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/><br/>En este proceso intervienen el <rem:ref oid="GLO-0043">alumno</rem:ref> que elige el horario y se lo comunica al profesor. El otro actor protagonista, actualiza el perfil del <rem:ref oid="GLO-0043">alumno</rem:ref> con la nueva clase dada.<br/><br/></rem:text>
+</rem:glossaryItem>
+<rem:graphicFile
+ oid = "GRF-0003">
+<rem:name>
+<rem:ref oid="GLO-0026">Clase teórica</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\ClaseTeorica.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:glossaryItem
+ oid = "GLO-0027">
+<rem:name>
+<rem:ref oid="GLO-0027">Examen práctico</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/><br/>Este proceso es realizado por un <rem:ref oid="GLO-0043">alumno</rem:ref>, la gestora, un examinador, y la <rem:ref oid="GLO-0017">DGT</rem:ref>.<br/>En primer lugar el <rem:ref oid="GLO-0043">alumno</rem:ref> rellena el formulario para realizar el examen, que lo recibe la gestora y lo envía a la <rem:ref oid="GLO-0017">DGT</rem:ref>.<br/>La <rem:ref oid="GLO-0017">DGT</rem:ref> comprueba la disponibilidad de fechas. Si hay fecha próxima, envía un comunicado al examinador y a la gestora. Si no hay fecha, únicamente a la gestora, que se encarga de devolver el aviso al <rem:ref oid="GLO-0043">alumno</rem:ref>.</rem:text>
+</rem:glossaryItem>
+<rem:graphicFile
+ oid = "GRF-0004">
+<rem:name>
+<rem:ref oid="GLO-0027">Examen práctico</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\ExamenPractico.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:glossaryItem
+ oid = "GLO-0028">
+<rem:name>
+<rem:ref oid="GLO-0028">Examen teórico</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/><br/>En este proceso interviene el <rem:ref oid="GLO-0043">alumno</rem:ref> que solicita fecha de examen. Para ello envia el formulario correspondiente a la gestora, que se encarga de tramitarlo hacia la <rem:ref oid="GLO-0017">DGT</rem:ref>, donde se comprueba las fechas disponibles. Una vez comprobado, notifica de vuelta a la gestora, que se encarga de responder al <rem:ref oid="GLO-0043">alumno</rem:ref> con la fecha del examen.</rem:text>
+</rem:glossaryItem>
+<rem:graphicFile
+ oid = "GRF-0005">
+<rem:name>
+<rem:ref oid="GLO-0028">Examen teórico</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\ExamenTeorico (1).png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:glossaryItem
+ oid = "GLO-0029">
+<rem:name>
+<rem:ref oid="GLO-0029">Matriculación</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>En este proceso intervienen el <rem:ref oid="GLO-0043">alumno</rem:ref> que rellena el formulario de <rem:ref oid="GLO-0029">matriculación</rem:ref>, la gestora que es la encargada tanto de su elaboración como de validar, y además de dar de alta dicho formulario. Por último la <rem:ref oid="GLO-0017">DGT</rem:ref> recibe el formulario y prosigue con el proceso fuera del alcance de la autoescuela.</rem:text>
+</rem:glossaryItem>
+<rem:graphicFile
+ oid = "GRF-0006">
+<rem:name>
+<rem:ref oid="GLO-0029">Matriculación</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\Nuevo matriculacion.png]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0017">
+<rem:name>
+Entorno tecnológico actual</rem:name>
+<rem:version>
+<rem:major>3</rem:major>
+<rem:minor>3</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>3.3 </rem:number>
+<rem:section
+ oid = "SEC-0018">
+<rem:name>
+Descripción del entorno de hardware actual</rem:name>
+<rem:version>
+<rem:major>3</rem:major>
+<rem:minor>1</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.3.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0013">
+<rem:name>
+Entorno hardware</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La autoescuela dispone de ordenadores propios, uno personal para la gestora y varios de ellos para los alumnos que vayan allí a preparase el <rem:ref oid="GLO-0028">examen teórico</rem:ref>. También cuenta con un proyector para dar las clases teóricas de grupo</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0007">
+<rem:name>
+Aula de las clases teóricas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\Aula.jpeg]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0008">
+<rem:name>
+Ordenador principal administrativo</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\Ordenador.png]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+<rem:section
+ oid = "SEC-0019">
+<rem:name>
+Descripción del entorno de software actual</rem:name>
+<rem:version>
+<rem:major>3</rem:major>
+<rem:minor>2</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>3.3.2 </rem:number>
+<rem:paragraph
+ oid = "PRG-0014">
+<rem:name>
+Entorno software</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>La autoescuela cuenta con un programa de privado llamado Fácil-<rem:ref oid="GLO-0024">Gestión</rem:ref>, la cual le gestiona algunos recurso, pero los tiene que introducir la gestora de manera manual y solo se puede usar en el ordenador de la gestora, derivando en que cualquier cambio en los datos de algún <rem:ref oid="GLO-0043">alumno</rem:ref> le suponga una gran pérdida de tiempo.</rem:text>
+</rem:paragraph>
+<rem:graphicFile
+ oid = "GRF-0009">
+<rem:name>
+Programa software</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\programa recorte.jpeg]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0020">
+<rem:name>
+Necesidades de negocio</rem:name>
+<rem:version>
+<rem:major>4</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>4 </rem:number>
+<rem:section
+ oid = "SEC-0021">
+<rem:name>
+<rem:ref oid="GLO-0005">Objetivos</rem:ref> de negocio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.1 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0018">
+<rem:name>
+<rem:ref oid="GLO-0018">Sistema atractivo</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0042">director</rem:ref> de la autoescuela<br/>Quiero tener un <rem:ref oid="GLO-0018">sistema atractivo</rem:ref><br/>Para atraer a clientes y obtener más beneficios por ello</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0019">
+<rem:name>
+<rem:ref oid="GLO-0019">Sistema intuitivo</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gerente<br/>Quiero poder gestionar un <rem:ref oid="GLO-0019">sistema intuitivo</rem:ref><br/>Para realizar mejor mis tareas</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0020">
+<rem:name>
+<rem:ref oid="GLO-0020">Sistema optimizado</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gerente <br/>Quiero un <rem:ref oid="GLO-0020">sistema optimizado</rem:ref><br/>Para gestionar la aplicación de forma más eficiente</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0021">
+<rem:name>
+<rem:ref oid="GLO-0021">Popularidad en Internet</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0042">director</rem:ref> de la autoescuela<br/>Quiero una forma extra de darse a conocer en Internet<br/>Para que las personas puedan conocer todos los datos de nuestra autoescuela.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0022">
+<rem:name>
+<rem:ref oid="GLO-0022">Aprendizaje</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0043">alumno</rem:ref> <br/>Quiero una herramienta de <rem:ref oid="GLO-0022">aprendizaje</rem:ref> <br/>Para poder obtener el carné</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0023">
+<rem:name>
+<rem:ref oid="GLO-0023">conexión estable</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como profesor<br/>Quiero un sistema de <rem:ref oid="GLO-0023">conexión estable</rem:ref><br/>Para poder dar correctamente las clases</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0024">
+<rem:name>
+<rem:ref oid="GLO-0024">Gestión</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0042">director</rem:ref> <br/>Quiero un sistema de <rem:ref oid="GLO-0024">gestión</rem:ref> barato y óptimo <br/>para poder obtener un mayor rendimiento económico<br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0025">
+<rem:name>
+<rem:ref oid="GLO-0025">Sistema portable</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gerente<br/>Quiero un <rem:ref oid="GLO-0025">sistema portable</rem:ref> <br/>Para poder trabajar deade casa</rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0022">
+<rem:name>
+Modelos de procesos de negocio a implantar</rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>4.2 </rem:number>
+<rem:section
+ oid = "SEC-0023">
+<rem:name>
+Descripción de actores de negocio a implantar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>4.2.1 </rem:number>
+<rem:actor
+ oid = "ACT-0001">
+<rem:name>
+<rem:ref oid="GLO-0042">Director</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0006 "/>
+<rem:sources stakeholders ="STK-0006 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>a la persona que drige la empresa, en este caso la autoescuela</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0002">
+<rem:name>
+Gestora</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0005 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>a la persona que administra y controla toda la información de la empresa</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0003">
+<rem:name>
+Página web</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0007 "/>
+<rem:sources stakeholders ="STK-0007 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>al lugar donde queda guardada toda la información útil para el usuario</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0004">
+<rem:name>
+<rem:ref oid="GLO-0043">Alumno</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0006 "/>
+<rem:sources stakeholders ="STK-0006 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>a la persona externa que recibe enseñanzas de un profesor, tanto prácticas como teóricas</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0005">
+<rem:name>
+<rem:ref oid="GLO-0017">DGT</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0005 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>al organismo autónomo del Gobierno español dependiente del Ministerio del Interior responsable de la ejecución de la política vial en las vías de titularidad estatal de España</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0006">
+<rem:name>
+Profesor</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0007 "/>
+<rem:sources stakeholders ="STK-0007 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>a la persona que imparte clases dentro de la organización</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0007">
+<rem:name>
+<rem:ref oid="GLO-0044">Cliente</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0006 "/>
+<rem:sources stakeholders ="STK-0006 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>a la persona externa, con permiso de conducir vigente, que recibe enseñanzas prácticas de un profesor</rem:actorRole>
+</rem:actor>
+<rem:actor
+ oid = "ACT-0008">
+<rem:name>
+<rem:ref oid="GLO-0045">Persona Ajena</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0005 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:actorRole>Este actor representa una apersona ajena a la autoescuela</rem:actorRole>
+</rem:actor>
+</rem:section>
+<rem:section
+ oid = "SEC-0024">
+<rem:name>
+Descripción de procesos de negocio a implantar</rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>4.2.2 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0010">
+<rem:name>
+Enviar horario</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\EnviarHorario.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0011">
+<rem:name>
+Imprimir bono</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\ImprimirBono.png]]>
+</rem:fileName>
+</rem:graphicFile>
+<rem:graphicFile
+ oid = "GRF-0012">
+<rem:name>
+<rem:ref oid="GLO-0029">Matriculación</rem:ref> online</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\MatriculacionOnline.png]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0028">
+<rem:name>
+Descripción de los subsistemas del sistema a desarrollar</rem:name>
+<rem:version>
+<rem:major>5</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>5 </rem:number>
+<rem:paragraph
+ oid = "PRG-0031">
+<rem:name>
+Subsistemas a desarrollar</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Sólo habrá un sistema principal por lo que no será necesario implementar ningún otro subsistema. </rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0029">
+<rem:name>
+Catálogo de requisitos del sistema a desarrollar </rem:name>
+<rem:version>
+<rem:major>6</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>6 </rem:number>
+<rem:section
+ oid = "SEC-0030">
+<rem:name>
+Requisitos generales del sistema</rem:name>
+<rem:version>
+<rem:major>6</rem:major>
+<rem:minor>1</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.1 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0033">
+<rem:name>
+<rem:ref oid="GLO-0033">Gestión del profesorado</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>La base de datos llevará a cabo la distinción de profesores prácticos de los teóricos, las clases impartidas, el sueldo, las pagas extras, la actividad actual (distinción entre profesor que está de alta y de baja) y las vacaciones. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0034">
+<rem:name>
+<rem:ref oid="GLO-0034">Gestión de clases</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>El sistema de información permitirá registrar según las distintas clases: el número de prácticas dadas y el profesor que las imparte. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0035">
+<rem:name>
+<rem:ref oid="GLO-0035">Gestión de matriculación</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> <br/>El sistema permitirá la <rem:ref oid="GLO-0029">matriculación</rem:ref> online de un <rem:ref oid="GLO-0043">alumno</rem:ref> de manera rápida. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0036">
+<rem:name>
+<rem:ref oid="GLO-0036">Gestión del cliente</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>La base de datos mostrará las clases que le imparten al <rem:ref oid="GLO-0044">cliente</rem:ref>, el importe recibido. También diferenciará entre clases teóricas y prácticas que se le darán al <rem:ref oid="GLO-0044">cliente</rem:ref> y distinguirá si el usuario ya obtuvo el carné o no.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0037">
+<rem:name>
+<rem:ref oid="GLO-0037">Gestión del alumno</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Se conocerá con el sistema de información: el número de matrícula del <rem:ref oid="GLO-0043">alumno</rem:ref>, el permiso al que está matriculado para su obtención, el estado en que está dicho <rem:ref oid="GLO-0043">alumno</rem:ref> (parte teórica, práctica, finalizado o baja) y el número de clases prácticas realizadas. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0038">
+<rem:name>
+<rem:ref oid="GLO-0038">Gestión de bonos</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>La base de datos dará a conocer si éste está sellado, si el número de referencia es correcto, su importe y la duración de la práctica a la que se puede acudir con dicho bono. </rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0031">
+<rem:name>
+Casos de uso del sistema </rem:name>
+<rem:version>
+<rem:major>6</rem:major>
+<rem:minor>2</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.2 </rem:number>
+<rem:section
+ oid = "SEC-0032">
+<rem:name>
+Diagrama de casos de uso del sistema </rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>1</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.2.1 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0013">
+<rem:name>
+Diagrama de casos de uso del sistema </rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\Diagrama de casos de uso del sistema.jpg]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+<rem:section
+ oid = "SEC-0033">
+<rem:name>
+Especificación de actores del sistema </rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>2</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.2.2 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0042">
+<rem:name>
+<rem:ref oid="GLO-0042">Director</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Actor que representa la máxima autoridad de la autoescuela; toma las grandes decisiones y obtiene una gran parte del beneficio generado. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0039">
+<rem:name>
+<rem:ref oid="GLO-0039">Gestor</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Actor que representa la persona la cual dirige toda la <rem:ref oid="GLO-0024">gestión</rem:ref> del programa informático, como la actualización de la base de datos o las estadísticas de los alumnos.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0040">
+<rem:name>
+<rem:ref oid="GLO-0040">Profesor teórico</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Actor que representa a quien imparte clases teóricas en las aulas de la autoescuela.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0041">
+<rem:name>
+<rem:ref oid="GLO-0041">Profesor Práctico</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Actor que representa a quien imparte clases prácticas en los vehículos que les corresponde.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0043">
+<rem:name>
+<rem:ref oid="GLO-0043">Alumno</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Actor que representa una persona la cual está matriculada en la autoescuela con el objetivo de sacarse el permiso de conducir.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0044">
+<rem:name>
+<rem:ref oid="GLO-0044">Cliente</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Actor que representa una persona la cual no está matriculada en la autoescuela pero asiste a clases de la misma.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0045">
+<rem:name>
+<rem:ref oid="GLO-0045">Persona ajena</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text> Actor que tiene el derecho de consultar la información de la autoescuela para una posible <rem:ref oid="GLO-0029">matriculación</rem:ref> o asistir a clases de ella.</rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0034">
+<rem:name>
+Especificación de casos de uso del sistema </rem:name>
+<rem:version>
+<rem:major>2</rem:major>
+<rem:minor>3</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.2.3 </rem:number>
+<rem:useCase
+ oid = "UC-0001">
+<rem:name>
+Actualización de datos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0007 "/>
+<rem:sources stakeholders ="STK-0007 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0003"/>
+<rem:stability value = "SBV-0003"/>
+<rem:triggeringEvent>
+el <rem:ref oid="GLO-0043">alumno</rem:ref> desee actualizar su propia información</rem:triggeringEvent>
+<rem:precondition>
+El <rem:ref oid="GLO-0043">alumno</rem:ref> tiene información errónea o anticuada en el sistema</rem:precondition>
+<rem:postcondition>
+La información es actualizada y correctamente registrada en el sistema</rem:postcondition>
+<rem:frequency>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0005"/>
+</rem:frequency>
+<rem:step oid = "STP-0004">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+ actualiza sus datos</rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0002">
+<rem:condition>
+El formulario no es completado de la manera correcta</rem:condition>
+<rem:systemAction>
+<rem:description>
+no actualiza la información</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0002">
+<rem:name>
+Reserva de clases</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0006 "/>
+<rem:sources stakeholders ="STK-0006 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0003"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+el <rem:ref oid="GLO-0043">alumno</rem:ref> desee reservar clases prácticas</rem:triggeringEvent>
+<rem:precondition>
+El <rem:ref oid="GLO-0043">alumno</rem:ref> quiere reservar clases para un horario cómodo para él</rem:precondition>
+<rem:postcondition>
+La <rem:ref oid="GLO-0030">clase práctica</rem:ref> es reservada y se actualiza en el sistema, mostrando ese bloque de tiempo como ya ocupado</rem:postcondition>
+<rem:frequency>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
+</rem:frequency>
+<rem:step oid = "STP-0006">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0004">
+<rem:description>
+reserva clases prácticas</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0003">
+<rem:name>
+Consultar información sobre la autoescuela</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0005 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0004"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+una persona quiere consultar información sobre la autoescuela.</rem:triggeringEvent>
+<rem:precondition>
+Alguien quiere saber información sobre la autoescuela</rem:precondition>
+<rem:postcondition>
+El sistema responde y muestra la información solicitada</rem:postcondition>
+<rem:frequency>
+<rem:value>
+10
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
+</rem:frequency>
+<rem:step oid = "STP-0007">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0007">
+<rem:description>
+consulta información de la autoescuela</rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0004">
+<rem:name>
+<rem:ref oid="GLO-0029">Matriculación</rem:ref> Online</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0007 "/>
+<rem:sources stakeholders ="STK-0007 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+una <rem:ref oid="GLO-0045">persona ajena</rem:ref> quiere matricularse a la autoescuela</rem:triggeringEvent>
+<rem:precondition>
+Una persona quiere matricularse a la autoescuela</rem:precondition>
+<rem:postcondition>
+Realiza la matrícula online correctamente y el sistema responde a ello</rem:postcondition>
+<rem:frequency>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0008"/>
+</rem:frequency>
+<rem:step oid = "STP-0009">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0008">
+<rem:description>
+realiza la <rem:ref oid="GLO-0029">matriculación</rem:ref> para la autoescuela</rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0005">
+<rem:condition>
+el formulario de <rem:ref oid="GLO-0029">matriculación</rem:ref> no es rellenado correctamente o no es completado</rem:condition>
+<rem:systemAction>
+<rem:description>
+no realiza la <rem:ref oid="GLO-0029">matriculación</rem:ref></rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0005">
+<rem:name>
+Actualizar perfil</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0006 "/>
+<rem:sources stakeholders ="STK-0006 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0003"/>
+<rem:urgency value = "URV-0003"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+un profesor quiera actualizar el perfil de un alumono o de sí mismo</rem:triggeringEvent>
+<rem:precondition>
+Un profesor desea actualizar el perfil de alguien</rem:precondition>
+<rem:postcondition>
+El perfil fue modificado y actualizado correctamente</rem:postcondition>
+<rem:frequency>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0005"/>
+</rem:frequency>
+<rem:step oid = "STP-0010">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0002">
+<rem:description>
+actualiza el perfil de un <rem:ref oid="GLO-0043">alumno</rem:ref></rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0006">
+<rem:name>
+Seguimiento del <rem:ref oid="GLO-0043">alumno</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0005 "/>
+<rem:sources stakeholders ="STK-0005 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0004"/>
+<rem:urgency value = "URV-0004"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+el profesor quiera hacer un seguimiento más específico de sus alumnos, con números y estadísticas</rem:triggeringEvent>
+<rem:precondition>
+El profesor desea realizar un seguimiento más específico de un <rem:ref oid="GLO-0043">alumno</rem:ref></rem:precondition>
+<rem:postcondition>
+El sistema responde con cifras y estadísticas del <rem:ref oid="GLO-0043">alumno</rem:ref></rem:postcondition>
+<rem:frequency>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0007"/>
+</rem:frequency>
+<rem:step oid = "STP-0011">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0006">
+<rem:description>
+consulta información específica de un <rem:ref oid="GLO-0043">alumno</rem:ref></rem:description>
+</rem:actorAction>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+<rem:useCase
+ oid = "UC-0007">
+<rem:name>
+Actualizar base de datos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:authors stakeholders ="STK-0007 "/>
+<rem:sources stakeholders ="STK-0007 "/>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:importance value = "IMV-0002"/>
+<rem:urgency value = "URV-0002"/>
+<rem:status value = "STV-0002"/>
+<rem:stability value = "SBV-0004"/>
+<rem:triggeringEvent>
+el profesor necesita cambiar o actualizar cualquier información</rem:triggeringEvent>
+<rem:precondition>
+Hay información a renovar en la base de datos o la información actual es anticuada</rem:precondition>
+<rem:postcondition>
+La base de datos registra los nuevos datos correctamente</rem:postcondition>
+<rem:frequency>
+<rem:value>
+1
+</rem:value>
+<rem:timeUnit value = "TUV-0005"/>
+</rem:frequency>
+<rem:step oid = "STP-0012">
+<rem:number>1</rem:number>
+<rem:actorAction actor = "ACT-0002">
+<rem:description>
+actualiza la base de datos con información nueva</rem:description>
+</rem:actorAction>
+<rem:stepException oid = "STX-0004">
+<rem:condition>
+no se rellena el formulario de manera correcta o  no es completado </rem:condition>
+<rem:systemAction>
+<rem:description>
+no actualiza la base de datos</rem:description>
+</rem:systemAction>
+<rem:termination value = "TEV-0003"/>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:stepException>
+<rem:comments>
+Ninguno</rem:comments>
+</rem:step>
+</rem:useCase>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0035">
+<rem:name>
+ Requisitos funcionales del sistema </rem:name>
+<rem:version>
+<rem:major>6</rem:major>
+<rem:minor>3</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.3 </rem:number>
+<rem:section
+ oid = "SEC-0036">
+<rem:name>
+Requisitos de información del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.3.1 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0046">
+<rem:name>
+<rem:ref oid="GLO-0046">RI 001 - Información de los alumnos </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como profesor <br/>Quiero disponer de la información de mis alumnos [(Nº Matrícula, permiso, estado, clases prácticas)(el <rem:ref oid="GLO-0043">alumno</rem:ref> elige una tarifa, firma un contrato, es enseñado por un profesor, al que entrega un bono comprado por él, con el fin de realizar un examen)]<br/>Para poder apuntarlos al examen. </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0047">
+<rem:name>
+<rem:ref oid="GLO-0047">RI 002 - Información sobre los horarios </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como directora de la autoescuela <br/>Quiero disponer de las horas de trabajo de mis empleados [(Profesor(clasesImpartidas), Bono(Duracion))(El profesor recibe un bono, enseña a un <rem:ref oid="GLO-0043">alumno</rem:ref>, e imparte clase a un <rem:ref oid="GLO-0044">cliente</rem:ref>)] <br/>Para llevar un control exhaustivo de las horas trabajadas </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0048">
+<rem:name>
+<rem:ref oid="GLO-0048">RI 003 - Información sobre fechas de exámenes </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0043">alumno</rem:ref> <br/>Quiero conocer la fecha de los exámenes[(Examen(Fecha))(El examen es realizado por un <rem:ref oid="GLO-0043">alumno</rem:ref>, y supervisado por un examinador)]  <br/>Para elegir la que mejor me convenga </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0049">
+<rem:name>
+<rem:ref oid="GLO-0049">RI 004 - Información sobre ingresos </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0042">director</rem:ref> <br/>Quiero disponer de los ingresos generados[(Factura(Importe))(La factura es pagada por un <rem:ref oid="GLO-0044">cliente</rem:ref>, y abonada por una empresa)] <br/>Para llevar un control de la liquidez de la autoescuela </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0050">
+<rem:name>
+<rem:ref oid="GLO-0050">RI 005 - Información sobre profesores </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como usuario <br/>Quiero conocer los profesores entre los que puedo elegir [(nombre, apellidos, dni, teléfono, fecha de nacimiento y correo)] <br/>Para seleccionar al que prefiera <br/> </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0051">
+<rem:name>
+<rem:ref oid="GLO-0051">RI 006 - Información sobre el vehículo </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0043">alumno</rem:ref> <br/>Quiero conocer el estado del vehículo que voy a usar para las prácticas[(marca, matrícula. Seguro, fechaITV, estado)(El vehículo es usado por un usuario, y corresponde a un profesor de prácticas)]<br/>Para asegurarme de dar las clases con un vehículo en buenas condiciones </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0052">
+<rem:name>
+<rem:ref oid="GLO-0052">RI 007 - Información sobre persmisos de conducir </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como usuario <br/>Quiero conocer los tipos de permisos que imparte la autoescuela[(AM,A1,A2,A,B)(Permiso es un tipo enumerado)] <br/>Para poder elegir el adecuado</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0053">
+<rem:name>
+<rem:ref oid="GLO-0053">RI 008 - Información sobre el número de alumnos </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gestora <br/>Quiero conocer el número de alumnos de los distintos permisos[(TipoPermiso)AM,A1,A2,A,BTipoEnum] <br/>Para saber el número de profesores que voy a necesitar </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0054">
+<rem:name>
+<rem:ref oid="GLO-0054">RI 009 - Información sobre las clases impartidas</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como profesor <br/>Quiero conocer el número de clases que voy a impartir[(Profesor)ClasesImpartidas-Integer] <br/>Para optimizar el tiempo empleado[Profesor enseña a <rem:ref oid="GLO-0043">Alumno</rem:ref>, Profesor imparte a <rem:ref oid="GLO-0044">Cliente</rem:ref>] </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0055">
+<rem:name>
+<rem:ref oid="GLO-0055">RI 010 - Información sobre aprobados </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0042">director</rem:ref> <br/>Quiero conocer el porcentaje de aprobados [Examen(NºAlumnosAptos)] <br/>Para controlar el rendimiento de los profesores[<rem:ref oid="GLO-0043">Alumno</rem:ref> realiza Examen]</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0056">
+<rem:name>
+<rem:ref oid="GLO-0056">RI 011 - Información sobre vacaciones </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como profesor <br/>Quiero conocer el número de días de vacaciones de las que dispongo[Profesor(Vacaciones)] <br/>Para poder organizar los días a lo largo del año </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0057">
+<rem:name>
+<rem:ref oid="GLO-0057">RI 012 - Información sobre tarifas </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0043">alumno</rem:ref> <br/>Quiero disponer de las tarifas que ofrece la autoescuela <br/>Para elegir la que más se adapate a mi situación[<rem:ref oid="GLO-0043">Alumno</rem:ref> elige Tarifa, Contrato tiene Tarifa] </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0058">
+<rem:name>
+<rem:ref oid="GLO-0058">RI 013 - Información de importes </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0043">alumno</rem:ref> <br/>Quiero conocer el importe total pagado[Contrato(Precio), Tarifa(Descuento), Bono(Importe)] <br/>Para controlar el dinero invertido[<rem:ref oid="GLO-0043">Alumno</rem:ref> elige Tarifa, Contrato tiene Tarifa, <rem:ref oid="GLO-0043">Alumno</rem:ref> compra Bono, Profesor recibe Bono] </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0059">
+<rem:name>
+<rem:ref oid="GLO-0059">RI 014 - Información sobre el sueldo y pagas extras </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como profesor <br/>Quiero acceder a la información de mis pagas extras[Profesor(PagaExtra), Profesor(Sueldo)] <br/>Para llevar un control sobre mi sueldo </rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0037">
+<rem:name>
+Requisitos de reglas de negocio del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.3.2 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0060">
+<rem:name>
+<rem:ref oid="GLO-0060">RN 001 - Uso del vehículo </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0042">director</rem:ref> <br/>Quiero que el vehículo solo pueda pertenecer al profesor de prácticas<br/>Para garantizar un uso correcto </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0061">
+<rem:name>
+<rem:ref oid="GLO-0061">RN 002 - Entrega de bonos </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0042">director</rem:ref> <br/>Quiero que el bono solo pueda ser entregado a un profesor de prácticas <br/>Para que no haya un exceso de bonos </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0062">
+<rem:name>
+<rem:ref oid="GLO-0062">RN 003 - Control de vacaciones </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gestora <br/>Quiero que los días de vaciones sean máximo de 30 días<br/>Para que cumpla lo estipulado por el contrato </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0063">
+<rem:name>
+<rem:ref oid="GLO-0063">RN 004 - Días de baja </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gestora <br/>Quiero que los días de baja sean máximo 60 días, salvo excepciones<br/>Para tener un control sobre los trabajadores </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0064">
+<rem:name>
+<rem:ref oid="GLO-0064">RN 005 - Clases impartidas </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0042">director</rem:ref> <br/>Quiero que se cumpla: las clases máximas impartidas sean 40 clases/semana <br/>Para garantizar que cumple lo estipulado por ley </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0065">
+<rem:name>
+<rem:ref oid="GLO-0065">RN 006 - Tarifa única </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0042">director</rem:ref> <br/>Quiero que a cada contrato se le asigne una sola tarifa <br/>Para administrar los descuentos elegidos por los alumnos</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0066">
+<rem:name>
+<rem:ref oid="GLO-0066">RN 007 - Alumnos examinados </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gestora <br/>Quiero que el <rem:ref oid="GLO-0043">alumno</rem:ref> solo pueda presentarse a examen si ha aprobado el teórico <br/>Para llevar un control sobre el alumnado <br/></rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0038">
+<rem:name>
+Requisistos de conducta del sistema</rem:name>
+<rem:version>
+<rem:major>3</rem:major>
+<rem:minor>3</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.3.3 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0067">
+<rem:name>
+<rem:ref oid="GLO-0067">RCS 001 - Ordenación de alumnos </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como usuario  <br/>Quiero que el sistema permita ordenar de distintas formas a los alumnos  <br/>Para poder hacer una búsqueda de manera más sencilla </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0068">
+<rem:name>
+<rem:ref oid="GLO-0068">RCS 002 - Acceso desde múltiples plataformas </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gestora <br/>Quiero que el sistema permita trabajar desde mi domicilio <br/>Para aprovechar el tiempo disponible </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0069">
+<rem:name>
+<rem:ref oid="GLO-0069">RCS 003 - Cambios en examen </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como profesor <br/>Quiero que el sistema permita modificar los alumnos que se presentan a examen  <br/>Para poder realizar cualquier cambio necesario </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0070">
+<rem:name>
+<rem:ref oid="GLO-0070">RCS 004 - Modificación de la fecha ITV </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como profesor de prácticas <br/>Quiero que el sistema permita modificar la fecha de la ITV <br/>Para poder circular con el vehículo legalmente</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0071">
+<rem:name>
+<rem:ref oid="GLO-0071">RCS 005 - Impresión de bonos </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gestora <br/>Quiero que el sistema permita la impresión de bonos <br/>Para poder agilizar la <rem:ref oid="GLO-0024">gestión</rem:ref> de las clases prácticas </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0072">
+<rem:name>
+<rem:ref oid="GLO-0072">RCS 006 - Eliminación de clientes </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gestora <br/>Quiero que el sistema permita eliminar a los clientes <br/>Para poder llevar un mejor control </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0073">
+<rem:name>
+<rem:ref oid="GLO-0073">RCS 007 - Adición de tarifas </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gestora <br/>Quiero que el sistema permita añadir una tarifa<br/>Para poder ofrecerla a los alumnos</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0074">
+<rem:name>
+<rem:ref oid="GLO-0074">RCS 008 - Tarifa sin usar </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gerente  <br/>Quiero que el sistema permita saber aquellas tarifas sin usar <br/>Para poder ofrecerlas a los alumnos </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0075">
+<rem:name>
+<rem:ref oid="GLO-0075">RCS 009 - Tipo de alumnos mas frecuentes </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como profesor <br/>Quiero que el sistema permita conocer los alumnos que están estudiando cada parte del permiso <br/>Para que no haya una carga extra de trabajo </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0076">
+<rem:name>
+<rem:ref oid="GLO-0076">RCS 010 - Alumnos con más de 15 clases prácticas </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gerente  <br/>Quiero que el sistema permita seleccionar aquellos alumnos con más de 15 clases prácticas <br/>Para saber los alumnos que estarán proximamente preparados para el <rem:ref oid="GLO-0027">examen práctico</rem:ref> <br/> </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0077">
+<rem:name>
+<rem:ref oid="GLO-0077">RCS 011 - Profesor con más alumnos </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gerente  <br/>Quiero que el sistema permita conocer el profesor con más alumnos asignados <br/>Para poder discernir a que profesor debo asignarle más alumnos </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0078">
+<rem:name>
+<rem:ref oid="GLO-0078">RCS 012 - Vehículos con la ITV pasada </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Como profesor  <br/>Quiero que el sistema permita ver los vehículos que tienen la ITV al día <br/>Para conocer los vehículos que están a mi disposición <br/> </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0079">
+<rem:name>
+<rem:ref oid="GLO-0079">RCS 013 - Sueldo total a profesores </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como directora <br/>Quiero que el sistema permita sumar el sueldo de todos los profesores tanto de prácticas o de teoría <br/>Para poder gestionar las finanzas de la autoescuela con eficacia </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0080">
+<rem:name>
+<rem:ref oid="GLO-0080">RCS 014 - Alumnos totales matriculados en la autoescuela </rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gerente  <br/>Quiero que el sistema permita saber el número total de alumnos matriculados en la autoescuela <br/>Para poder ver el número total de alumnos que maneja la autoescuela </rem:text>
+</rem:glossaryItem>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0039">
+<rem:name>
+Requisitos no funcionales del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.4 </rem:number>
+<rem:section
+ oid = "SEC-0040">
+<rem:name>
+Requisitos de fiabilidad del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.1 </rem:number>
+<rem:paragraph
+ oid = "PRG-0081">
+<rem:name>
+Requisitos de fiabilidad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>El sistema será desplegado en una plataforma ajena a nuestro control, por lo que no habrían requisitos de fiabilidad.<br/>El nivel de fiabilidad la proporcionará la plataforma correspondiente.<br/>Pero se le comunicará a la autoescuela de los diferentes servicios y categorías que ofrece dicha plataforma, para que ellos elijan la más conveniente a su negocio.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0041">
+<rem:name>
+Requisistos de usbilidad del sistema</rem:name>
+<rem:version>
+<rem:major>4</rem:major>
+<rem:minor>2</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.2 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0082">
+<rem:name>
+<rem:ref oid="GLO-0082">RUS 001 - Disponibilidad 24h</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como usuario<br/>Quiero que el sistema esté disponible las 24 horas<br/>Para poder ser utilizado en cualquier instante.</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0083">
+<rem:name>
+<rem:ref oid="GLO-0083">RUS 002 - Fácil manejo</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como usuario<br/>Quiero que el sistema tenga implementado una interfaz de usuario fácil de manejar <br/>Para un cómodo entendimiento</rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0042">
+<rem:name>
+Requisitos de mantenibilidad del sistema</rem:name>
+<rem:version>
+<rem:major>4</rem:major>
+<rem:minor>3</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.3 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0084">
+<rem:name>
+<rem:ref oid="GLO-0084">RMS 001 - Pruebas</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0042">director</rem:ref><br/>Quiero que el sistema sea sometido a diferentes tipos de pruebas antes del despligue <br/>Para garantizar su funcionalidad</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0085">
+<rem:name>
+<rem:ref oid="GLO-0085">RMS 002 - Integrabilidad</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0042">director</rem:ref><br/>Quiero que el sistema se someta a pruebas de integración después de cada mantenimiento o actualización<br/>Para garantizar el correcto funcionamiento</rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0043">
+<rem:name>
+Requisitos de eficiencia del sistema</rem:name>
+<rem:version>
+<rem:major>4</rem:major>
+<rem:minor>4</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.4 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0086">
+<rem:name>
+<rem:ref oid="GLO-0086">RES 001 - Búsqueda rápida</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como usuario <br/>Quiero que el sistema realice las búsquedas lo más rápido posible<br/>Para evitar perder tiempo por fallos computacionales</rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0087">
+<rem:name>
+<rem:ref oid="GLO-0087">RES 002 - Sobrecarga de la aplicación</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0042">director</rem:ref><br/>Quiero que se limite el número de peticiones a la plicación<br/>Para no sobrecargarla</rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0044">
+<rem:name>
+Requisitos de portabilidad del sistema</rem:name>
+<rem:version>
+<rem:major>4</rem:major>
+<rem:minor>5</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.5 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0088">
+<rem:name>
+<rem:ref oid="GLO-0088">RPS 001 - Multiplataforma</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como usuario<br/>Quiero que la aplicación se pueda utilizar en diferentes dispositivos, como el ordenador, la tablet o el teléfono móvil<br/>Para una mayor facilidad de usar dicha aplicaión</rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0045">
+<rem:name>
+Requisitos de seguridad del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.6 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0089">
+<rem:name>
+<rem:ref oid="GLO-0089">RSS 001- Seguridad</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como usuario <br/>Quiero que el sistema cumpla los requisitios de protección <br/>Para que no haya ningún problema legal <br/> </rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0090">
+<rem:name>
+<rem:ref oid="GLO-0090">RSS 002 - Protección de datos</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como usuario<br/>Quiero que el sistema sea lo suficientemente seguro <br/>Para no transferir mis datos personales a otras plataformas</rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0046">
+<rem:name>
+Otros requisitos no funcionales del sistema</rem:name>
+<rem:version>
+<rem:major>4</rem:major>
+<rem:minor>7</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>3</rem:level>
+<rem:number>6.4.7 </rem:number>
+<rem:paragraph
+ oid = "PRG-0091">
+<rem:name>
+Otros requisitos no funcionales</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Al haber consultado con la gestora de la autoescuela concordamos en que no hay más requisitos no funcionales, ya están descritos en los diferentes puntos de los anteriores apartados</rem:text>
+</rem:paragraph>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0047">
+<rem:name>
+Restricciones técnicas del sistema</rem:name>
+<rem:version>
+<rem:major>6</rem:major>
+<rem:minor>5</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.5 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0092">
+<rem:name>
+<rem:ref oid="GLO-0092">RTS 001 - Restricción de hardware</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como <rem:ref oid="GLO-0042">Director</rem:ref><br/>Quiero que el máximo de los alumnos puedan utilizar la aplicación tenagan el dispositivo que tengan, al no poder asegurar que los dispositivos que usarán la aplicación tengan un hardware moderno, habrá que realizarse un software usable por dispositivos no tan modernos. </rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0048">
+<rem:name>
+Requisistos de integración del sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.6 </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0093">
+<rem:name>
+<rem:ref oid="GLO-0093">RIS 001 - Compatibilidad con el panel de información de la DGT</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/>Como gestora<br/>Quiero que el sistema me muestre si ha habido cambios en la legislación de la <rem:ref oid="GLO-0017">DGT</rem:ref><br/>Para estar informada de la situación actual</rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0049">
+<rem:name>
+Información sobre trazabilidad</rem:name>
+<rem:version>
+<rem:major>6</rem:major>
+<rem:minor>7</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>2</rem:level>
+<rem:number>6.7 </rem:number>
+<rem:graphicFile
+ oid = "GRF-0014">
+<rem:name>
+Matriz de trazabilidad</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>8</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:fileName>
+<![CDATA[.\Fotos IR\Matriz de trazabilidad.JPG]]>
+</rem:fileName>
+</rem:graphicFile>
+</rem:section>
+</rem:section>
+<rem:section
+ oid = "SEC-0025">
+<rem:name>
+Actas de reuniones</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>A </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0015">
+<rem:name>
+<rem:ref oid="GLO-0015">Reunión 1</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/><br/>La gerente nos expuso el uso de las aplicaciones vigentes en la autoescuela, la más importante FacilAutoGestión, que utilizan para gestionar toda la información de alumnos, clientes y empresas relacionadas con la autoescuela.<br/>Obtuvimos un vistazo general del programa, que incluye:<br/>- Información de alumnos.<br/>- Relación tests realizados/aprobados de cada <rem:ref oid="GLO-0043">alumno</rem:ref>. (98% de aprobados en el test y 60% aprobados en las prácticas)<br/><br/>Nos proporcionó una serie de estadísticas sobre sus alumnos, los datos más relevantes son los siguientes:<br/>Tiempo estimado de cada <rem:ref oid="GLO-0043">alumno</rem:ref> en sacarse el carnet: 1 mes<br/>Prácticas medias de cada <rem:ref oid="GLO-0043">alumno</rem:ref> antes del examen: 25 clases<br/><br/>Finalmente, comenzamos con las dificultades que encontraban para el desarrollo de su actividad. Nos expuso las siguientes:<br/>- Limitación de 6 alumnos prácticos por coche para el examen.<br/>- No podía usar ninguno de estos símbolos: apóstrofe, coma, paréntesis. El programa respondía con un error.<br/>- Los bonos solo se podían imprimir uno por folio, por lo que suponía un gasto innecesario y una pérdida de tiempo.<br/>- Solo puede ver el programa desde la empresa.  No puede ver el programa desde su casa.<br/><br/>Tras esta reunión obtuvimos una buena base para comenzar nuestro proyecto, e intentar conseguir un sistema que ayude a mejorar la calidad del servicio de su autoescuela.<br/></rem:text>
+</rem:glossaryItem>
+<rem:glossaryItem
+ oid = "GLO-0032">
+<rem:name>
+<rem:ref oid="GLO-0032">Reunión 2</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>12</rem:month>
+<rem:day>7</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text><br/><br/>En esta segunda reunión con la gerente de la autoescuela, los temas tratados fueron los siguientes:<br/><br/>1.En primer lugar, presentamos los mockups, a los que dio el visto bueno tras la corrección de algunos pequeños detalles como el menú desplegable y el registro.<br/><br/>2.En segundo lugar, comenzamos con unas preguntas básicas sobre requisitos que quiere para su sistema.  Hizo hincapié en la portabilidad del sistema y en la impresión de bonos, así como en la facilidad y la intuitividad del sistema.<br/><br/>3.En tercer lugar, conversamos sobre qué problemas veía en el nuevo software que le estábamos planteando, para el que solo puso una condición: &quot;El sistema que impartamos debe ser paralelo al que ya disponemos actualmente, es decir, quiero que se limite a alumnos y profesores.&quot; Tal y como ya describimos en el documento, este sistema tratará de mejorar las deficiencias, pero nunca sustituirlas, ya que la información que maneja mediante otros programas son las relacionadas con la <rem:ref oid="GLO-0017">dgt</rem:ref>, por lo que no podemos acceder a esos datos.<br/><br/>Tras la reunión mantenida, nos disponemos a traducir esta conversación en los distintos requisitos del sistema.<br/></rem:text>
+</rem:glossaryItem>
+</rem:section>
+<rem:section
+ oid = "SEC-0026">
+<rem:name>
+Documentación relevante</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>B </rem:number>
+<rem:paragraph
+ oid = "PRG-0016">
+<rem:name>
+Documentación relevante</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>A día de hoy no tenemos todavía ninguna documentación relevante del establecimiento.</rem:text>
+</rem:paragraph>
+</rem:section>
+<rem:section
+ oid = "SEC-0027">
+<rem:name>
+Gloario de acrónimos y abreviaturas</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>27</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:level>1</rem:level>
+<rem:number>C </rem:number>
+<rem:glossaryItem
+ oid = "GLO-0017">
+<rem:name>
+<rem:ref oid="GLO-0017">DGT</rem:ref></rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>31</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno</rem:comments>
+<rem:text>Dirección General del Tráfico</rem:text>
+</rem:glossaryItem>
+</rem:section>
+</rem:c_requirementsSpecification>
+<rem:d_requirementsSpecification oid = "DRS-0002">
+<rem:name>Documento de Análisis del Sistema</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:d_requirementsSpecification>
+<rem:defectsSpecification oid = "DFS-0003">
+<rem:name>Registro de Conflictos y Defectos</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:defectsSpecification>
+<rem:changeRequestsSpecification oid = "CHS-0004">
+<rem:name>Registro de Peticiones de Cambio</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2019</rem:year>
+<rem:month>10</rem:month>
+<rem:day>25</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Ninguno
+</rem:comments>
+</rem:changeRequestsSpecification>
+<rem:trace source = "UC-0001"  target = "UC-0007" >
+<rem:isChecked/>
+</rem:trace>
+<rem:trace source = "UC-0007"  target = "UC-0001" >
+<rem:isChecked/>
+</rem:trace>
+<rem:predefinedValueTypes>
+<rem:predefinedValueType
+ oid = "PVT-0001">
+<rem:name>
+Real</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Real numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0003">
+<rem:name>
+Natural</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Natural numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0004">
+<rem:name>
+String</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Alphanumeric strings</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0002">
+<rem:name>
+Integer</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type</rem:comments>
+<rem:description>
+Integer numbers</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0006">
+<rem:name>
+Time</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type (non-standard)</rem:comments>
+<rem:description>
+Hour:minutes:seconds</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+<rem:predefinedValueType
+ oid = "PVT-0005">
+<rem:name>
+Date</rem:name>
+<rem:version>
+<rem:major>1</rem:major>
+<rem:minor>0</rem:minor>
+<rem:date>
+<rem:year>2000</rem:year>
+<rem:month>10</rem:month>
+<rem:day>30</rem:day>
+</rem:date>
+</rem:version>
+<rem:comments>
+Predefined OCL type (non-standard)</rem:comments>
+<rem:description>
+Dates</rem:description>
+<rem:definition>
+(null)
+</rem:definition>
+</rem:predefinedValueType>
+</rem:predefinedValueTypes>
+<rem:predefinedValues>
+<rem:changeRequestStatusValue oid = "CRV-0003">
+<rem:name>pendiente de aprobar/rechazar</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0001">
+<rem:name>PD</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0002">
+<rem:name>pendiente de análisis</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0006">
+<rem:name>rechazado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0005">
+<rem:name>verificado</rem:name>
+</rem:changeRequestStatusValue>
+<rem:changeRequestStatusValue oid = "CRV-0004">
+<rem:name>pendiente de realización</rem:name>
+</rem:changeRequestStatusValue>
+<rem:conflictStatusValue oid = "CSV-0002">
+<rem:name>no resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0003">
+<rem:name>en proceso de negociación</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0001">
+<rem:name>PD</rem:name>
+</rem:conflictStatusValue>
+<rem:conflictStatusValue oid = "CSV-0004">
+<rem:name>resuelto</rem:name>
+</rem:conflictStatusValue>
+<rem:defectStatusValue oid = "DSV-0003">
+<rem:name>en proceso de negociación</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0004">
+<rem:name>eliminado</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0001">
+<rem:name>PD</rem:name>
+</rem:defectStatusValue>
+<rem:defectStatusValue oid = "DSV-0002">
+<rem:name>no eliminado</rem:name>
+</rem:defectStatusValue>
+<rem:defectTypeValue oid = "DTV-0005">
+<rem:name>No verificabilidad</rem:name>
+<rem:description>
+<![CDATA[No se puede comprobar que el sistema satisface el requisito o requisitos]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0002">
+<rem:name>Ambigüedad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos, aunque comprensibles, tienen más de una interpretación posible]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0006">
+<rem:name>Inconsistencia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son consistentes, es decir, presentan contradicciones internas o entre varios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0009">
+<rem:name>Dependiente del diseño</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos incluyen elementos dependientes del diseño del sistema]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0015">
+<rem:name>Nivel incorrecto de detalle</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están expresados con el nivel adecuado de detalle, es decir, son demasiado abstractos o demasiado detallados]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0011">
+<rem:name>Imprecisión</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no se expresan de forma precisa, es decir, usando cantidades numéricas siempre que sea posible con el nivel adecuado de precisión]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0016">
+<rem:name>No rastreabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están trazados hacia sus orígenes, bien requisitos de nivel superior (objetivos), bien clientes y usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0013">
+<rem:name>Prioridad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen establecida su prioridad, es decir, su importancia y su urgencia]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0004">
+<rem:name>Incomprensibilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser entendidos por algún lector]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0008">
+<rem:name>Verbosidad excesiva</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos pueden expresarse de forma más concisa sin alterar su significado]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0014">
+<rem:name>Estabilidad no establecida</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no tienen estimada su estabilidad]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0017">
+<rem:name>Organización incorrecta</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no están organizados correctamente según la normativa aplicada o el documento no contiene las secciones obligatorias]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0003">
+<rem:name>No necesidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no son necesarios porque no contribuyen a satisfacer ninguna necesidad de clientes o usuarios]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0012">
+<rem:name>Incompleción</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no describen todo lo que el sistema se supone que deberá hacer, no describen las respuestas del sistema a todas las posibles situaciones o incluyen elementos por determinar (PD)]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0007">
+<rem:name>No implementabilidad</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos no pueden ser implementados con la tecnología actual o dentro de un coste razonable]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0010">
+<rem:name>Redundancia</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos son redundantes o contienen elementos redundantes]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0001">
+<rem:name>PD</rem:name>
+<rem:description>
+<![CDATA[Por Determinar]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:defectTypeValue oid = "DTV-0023">
+<rem:name>Otro</rem:name>
+<rem:description>
+<![CDATA[El requisito o requisitos presentan otro tipo de defecto]]>
+</rem:description>
+</rem:defectTypeValue>
+<rem:importanceValue oid = "IMV-0002">
+<rem:name>vital</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0004">
+<rem:name>quedaría bien</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0001">
+<rem:name>PD</rem:name>
+</rem:importanceValue>
+<rem:importanceValue oid = "IMV-0003">
+<rem:name>importante</rem:name>
+</rem:importanceValue>
+<rem:stabilityValue oid = "SBV-0001">
+<rem:name>PD</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0002">
+<rem:name>baja</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0003">
+<rem:name>media</rem:name>
+</rem:stabilityValue>
+<rem:stabilityValue oid = "SBV-0004">
+<rem:name>alta</rem:name>
+</rem:stabilityValue>
+<rem:statusValue oid = "STV-0003">
+<rem:name>pendiente de verificación</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0002">
+<rem:name>en construcción</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0004">
+<rem:name>pendiente de validación</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0001">
+<rem:name>PD</rem:name>
+</rem:statusValue>
+<rem:statusValue oid = "STV-0005">
+<rem:name>validado</rem:name>
+</rem:statusValue>
+<rem:terminationValue oid = "TEV-0003">
+<rem:name>queda sin efecto</rem:name>
+</rem:terminationValue>
+<rem:terminationValue oid = "TEV-0002">
+<rem:name>continúa</rem:name>
+</rem:terminationValue>
+<rem:terminationValue oid = "TEV-0001">
+<rem:name>PD</rem:name>
+</rem:terminationValue>
+<rem:timeUnitValue oid = "TUV-0002">
+<rem:name>año(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0001">
+<rem:name>PD</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0005">
+<rem:name>mes(es)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0007">
+<rem:name>semana(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0014">
+<rem:name>milisegundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0011">
+<rem:name>segundo(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0009">
+<rem:name>hora(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0008">
+<rem:name>día(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0010">
+<rem:name>minuto(s)</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0012">
+<rem:name>décima(s) de segundo</rem:name>
+</rem:timeUnitValue>
+<rem:timeUnitValue oid = "TUV-0013">
+<rem:name>centésima(s) de segundo</rem:name>
+</rem:timeUnitValue>
+<rem:urgencyValue oid = "URV-0002">
+<rem:name>inmediatamente</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0001">
+<rem:name>PD</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0003">
+<rem:name>hay presión</rem:name>
+</rem:urgencyValue>
+<rem:urgencyValue oid = "URV-0004">
+<rem:name>puede esperar</rem:name>
+</rem:urgencyValue>
+</rem:predefinedValues>
+</rem:requirementsProject>

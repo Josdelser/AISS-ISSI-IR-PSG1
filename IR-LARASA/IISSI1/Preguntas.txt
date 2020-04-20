@@ -1,0 +1,4 @@
+Numero telefono
+Pueden ser los alumnos prensantados el maximo de un check
+LEN
+Primary key, foreign key, alternative key

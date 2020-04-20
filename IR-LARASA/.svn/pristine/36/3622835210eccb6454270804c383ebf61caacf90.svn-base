@@ -1,0 +1,265 @@
+DROP TABLE ALUMNOREALIZAEXAMEN;
+DROP TABLE PROFESORRECIBEBONO;
+DROP TABLE FACTURAS;
+DROP TABLE BONOS;
+DROP TABLE CONTRATOS;
+DROP TABLE CLIENTES;
+DROP TABLE ALUMNOS;
+DROP TABLE PROFESORES;
+DROP TABLE EXAMENES;
+DROP TABLE EXAMINADORES;
+DROP TABLE TARIFAS;
+DROP TABLE EMPRESAS;
+DROP TABLE VEHICULOS;
+
+
+CREATE TABLE Vehiculos 
+(
+Marca VARCHAR(50) NOT NULL,
+Matricula CHAR(7) NOT NULL,
+Seguro CHAR(1) NOT NULL,
+Fecha_ITV DATE NOT NULL,
+Estado VARCHAR(200) NOT NULL,
+PRIMARY KEY (Matricula)
+);
+
+CREATE TABLE Empresas 
+(
+Id_e NUMBER NOT NULL,
+Nombre VARCHAR(20) NOT NULL,
+Razon_Social VARCHAR(20),
+Ciudad VARCHAR(50) NOT NULL,
+Telefono CHAR(9) NOT NULL,
+PRIMARY KEY (Id_e),
+UNIQUE (Nombre)
+);
+
+CREATE TABLE Tarifas
+(
+Id_t NUMBER NOT NULL,
+Articulo VARCHAR(200) NOT NULL,
+Descuento NUMBER(12,2) NOT NULL, 
+Fecha_Inicio DATE NOT NULL,
+Fecha_Fin DATE NOT NULL,
+CONSTRAINT fechas CHECK (Fecha_Inicio<Fecha_Fin),
+PRIMARY KEY (Id_t),
+UNIQUE (Articulo)
+);
+
+CREATE TABLE Examinadores
+(
+Id_examinador NUMBER NOT NULL,
+Nombre VARCHAR(20) NOT NULL,
+Codigo VARCHAR(10) NOT NULL,
+Observaciones VARCHAR(200),
+PRIMARY KEY (Id_examinador),
+UNIQUE (Nombre)
+);
+
+CREATE TABLE Examenes
+(
+Id_ex NUMBER NOT NULL,
+Fecha DATE NOT NULL,
+Alum_present NUMBER NOT NULL,
+Alum_aptos NUMBER NOT NULL,
+Examinador NUMBER NOT NULL,
+PRIMARY KEY (Id_ex),
+FOREIGN KEY (Examinador) REFERENCES Examinadores (Id_examinador)
+);
+
+CREATE TABLE Profesores
+(
+Nombre VARCHAR(20) NOT NULL,
+Apellidos VARCHAR(100) NOT NULL,
+Dni CHAR(9) NOT NULL,
+Telefono CHAR(9) NOT NULL,
+Fecha_Nac Date NOT NULL,
+Correo VARCHAR(100),
+Clases_Imp NUMBER NOT NULL,
+Sueldo NUMBER(12,2) NOT NULL,
+Paga_Extra NUMBER(12,2),
+Activo CHAR(1) NOT NULL,
+Vacaciones NUMBER NOT NULL,
+Dias_Baja NUMBER,
+Tipo VARCHAR(10) NOT NULL CHECK(Tipo IN('Prácticas','Teóricas')),
+Matricula_Vehiculo CHAR(7) NOT NULL,
+PRIMARY KEY (Dni),
+UNIQUE (Nombre),
+FOREIGN KEY (Matricula_Vehiculo) REFERENCES Vehiculos (Matricula)
+);
+
+CREATE TABLE Alumnos
+(
+Nombre VARCHAR(20) NOT NULL,
+Apellidos VARCHAR(100) NOT NULL,
+Dni CHAR(9) NOT NULL,
+Telefono CHAR(9) NOT NULL,
+Fecha_Nac Date NOT NULL,
+Correo VARCHAR(100) NOT NULL,
+Num_Matricula NUMBER NOT NULL,
+Permiso VARCHAR(100) NOT NULL CHECK( Permiso IN ('AM','A1','A2','A','B')),
+Estado VARCHAR(100) NOT NULL CHECK (Estado IN ('Finalizado','Teórico','Práctico', 'Baja')),
+Clases_Practicas NUMBER NOT NULL,
+Tarifa NUMBER NOT NULL,
+Profesor CHAR(9) NOT NULL,
+PRIMARY KEY (Dni),
+UNIQUE (Nombre),
+FOREIGN KEY (Tarifa) REFERENCES Tarifas (Id_t),
+FOREIGN KEY (Profesor) REFERENCES Profesores (Dni)
+);
+
+CREATE TABLE Clientes
+(
+Nombre VARCHAR(20) NOT NULL,
+Apellidos VARCHAR(100) NOT NULL,
+Dni CHAR(9) NOT NULL,
+Telefono CHAR(9),
+Fecha_Nac Date NOT NULL,
+Correo VARCHAR(100),
+Carnet CHAR(1) NOT NULL,
+Clases NUMBER  NOT NULL,
+Importe NUMBER(12,2) NOT NULL,
+Clases_Pract NUMBER NOT NULL,
+Profesor CHAR(9) NOT NULL,
+PRIMARY KEY (Dni),
+UNIQUE (Nombre),
+FOREIGN KEY (Profesor) REFERENCES Profesores (Dni)
+);
+
+CREATE TABLE Contratos
+(
+Articulo VARCHAR(200) NOT NULL,
+Referencia NUMBER NOT NULL,
+Precio NUMBER(12,2) NOT NULL, 
+Iva VARCHAR(5) NOT NULL,
+Tarifa NUMBER NOT NULL,
+Alumno CHAR(9) NOT NULL,
+PRIMARY KEY (Referencia),
+FOREIGN KEY(Alumno) REFERENCES Alumnos (Dni),
+FOREIGN KEY(Tarifa) REFERENCES Tarifas (Id_t)
+);
+
+CREATE TABLE Bonos 
+(
+Sello CHAR(1) NOT NULL,
+N_ref NUMBER NOT NULL,
+Importe NUMBER (12,2) NOT NULL,
+Duracion NUMBER NOT NULL,
+Alumno CHAR(9) NOT NULL,
+PRIMARY KEY (N_ref),
+FOREIGN KEY (Alumno) REFERENCES Alumnos (Dni)
+);
+
+CREATE TABLE Facturas
+(
+Numero NUMBER NOT NULL,
+Fecha DATE NOT NULL,
+Usuario CHAR(9) NOT NULL,
+Importe NUMBER(12,2) NOT NULL,
+Empresa NUMBER NOT NULL,
+PRIMARY KEY (Numero),
+FOREIGN KEY (Empresa) REFERENCES Empresas (Id_e),
+FOREIGN KEY (Usuario) REFERENCES Clientes (Dni)
+);
+
+CREATE TABLE ProfesorRecibeBono 
+(
+Id_r NUMBER NOT NULL,
+DniProfesor CHAR(9) NOT NULL,
+N_referencia NUMBER NOT NULL,
+PRIMARY KEY (Id_r),
+UNIQUE(DniProfesor),
+UNIQUE(N_referencia),
+FOREIGN KEY (DniProfesor) REFERENCES Profesores(Dni),
+FOREIGN KEY (N_referencia) REFERENCES Bonos(N_ref)
+);
+
+CREATE TABLE AlumnoRealizaExamen 
+(
+Id_realiza NUMBER NOT NULL,
+DniAlumno CHAR(9) NOT NULL,
+Id_ex NUMBER NOT NULL,
+PRIMARY KEY (Id_realiza),
+UNIQUE(DniAlumno),
+UNIQUE(Id_ex),
+FOREIGN KEY (DniAlumno) REFERENCES Alumnos(Dni),
+FOREIGN KEY (Id_ex) REFERENCES Examenes(Id_ex)
+);
+
+INSERT INTO Vehiculos VALUES ('Audi', '4157HJL', 'S', TO_DATE('02/02/2019', 'dd/mm/yyyy'),'Vehículo en perfectas condiciones para su uso');
+INSERT INTO Vehiculos VALUES ('Volswagen', '5177DGR', 'S', TO_DATE('03/04/2019', 'dd/mm/yyyy'),'Vehículo en perfectas condiciones para su uso');
+INSERT INTO Vehiculos VALUES ('Toyota', '7237HJL', 'S', TO_DATE('12/02/2019', 'dd/mm/yyyy'),'Vehículo en perfectas condiciones para su uso');
+INSERT INTO Vehiculos VALUES ('Audi', '4128FJV', 'S', TO_DATE('22/10/2019', 'dd/mm/yyyy'),'Vehículo en perfectas condiciones para su uso');
+INSERT INTO Vehiculos VALUES ('Suzuki', '1127GJM', 'S', TO_DATE('21/05/2019', 'dd/mm/yyyy'),'Rueda delatera derecha con presión baja, pero apto para su uso');
+
+INSERT INTO Empresas VALUES (1,'Anemia.S.L', 'gasolina', 'Guatemala', '631942195');
+INSERT INTO Empresas VALUES (2,'ADDACARRITO', 'Miguel Toro', 'US', '613849120');
+INSERT INTO Empresas VALUES (3,'TARFIA', 'Mala Vida', 'Sevilla', '631948301');
+INSERT INTO Empresas VALUES (4,'GALLO', 'polvorón', 'Estepa', '758291402');
+INSERT INTO Empresas VALUES (5,'ANGELA', 'PADILLA', 'MI CAMA', '656421240');
+
+INSERT INTO Tarifas VALUES (1,'Descuento Teórico', '21,21', TO_DATE('06/11/1999', 'dd/mm/yyyy'),TO_DATE('02/07/2040', 'dd/mm/yyyy'));
+INSERT INTO Tarifas VALUES (2,'Descuento Teórico+Práctico', '50', TO_DATE('22/06/2015', 'dd/mm/yyyy'),TO_DATE('09/07/2016', 'dd/mm/yyyy'));
+INSERT INTO Tarifas VALUES (3,'Descuento por acompañante', '10,1', TO_DATE('31/01/2006', 'dd/mm/yyyy'),TO_DATE('02/07/2010', 'dd/mm/yyyy'));
+INSERT INTO Tarifas VALUES (4,'Descuento folletos', '45,6', TO_DATE('15/08/2009', 'dd/mm/yyyy'),TO_DATE('14/11/2011', 'dd/mm/yyyy'));
+INSERT INTO Tarifas VALUES (5,'Descuento por guapo', '32,99', TO_DATE('11/04/2015', 'dd/mm/yyyy'),TO_DATE('13/10/2016', 'dd/mm/yyyy'));
+
+INSERT INTO Examinadores VALUES (1,'Carmen', 'asdg1237','la bella del salón');
+INSERT INTO Examinadores VALUES (2,'Carlos', 'zxcyugt12', 'puntúa de manera rara');
+INSERT INTO Examinadores VALUES (3,'Josema', 'uytuyta74', 'le gustan las cabras');
+INSERT INTO Examinadores VALUES (4,'Chema', 'asd7yihg', 'es muy estricto');
+INSERT INTO Examinadores VALUES (5,'Pablo', 'asuidhu887', 'buen examinador');
+
+INSERT INTO Examenes VALUES (1,TO_DATE('06/11/1998', 'dd/mm/yyyy'), '20', '12',1);
+INSERT INTO Examenes VALUES (2,TO_DATE('12/08/2014', 'dd/mm/yyyy'), '32', '20',2);
+INSERT INTO Examenes VALUES (3,TO_DATE('06/03/2018', 'dd/mm/yyyy'), '26', '15',3);
+INSERT INTO Examenes VALUES (4,TO_DATE('23/11/2008', 'dd/mm/yyyy'), '29', '19',4);
+INSERT INTO Examenes VALUES (5,TO_DATE('28/05/2016', 'dd/mm/yyyy'), '16', '15',5);
+
+INSERT INTO Profesores VALUES ('JuanCarlos', 'Cáliz Maroto', '24356712K', '619642737', TO_DATE('27/04/1988', 'dd/mm/yyyy'), 'juanitoca@gmail.com', '876', '1200,00', '300,00', 'S', '8', '4', 'Prácticas', '4157HJL');
+INSERT INTO Profesores VALUES ('Paula', 'Molina Alonso', '71824584T', '612408142', TO_DATE('01/04/1956', 'dd/mm/yyyy'), 'paulina@gmail.com', '95', '1000,00', '250,00', 'N', '13', '3', 'Teóricas', '7237HJL');
+INSERT INTO Profesores VALUES ('Juanjo', 'Ferrero Rocher', '23498107Q', '691256623', TO_DATE('16/07/1975', 'dd/mm/yyyy'), 'Juanito@hotmail.com', '147', '1200,00', '300,00', 'S', '6', '5', 'Prácticas', '5177DGR');
+INSERT INTO Profesores VALUES ('Aitana', 'Barba Roque', '34581294O', '712818761', TO_DATE('22/11/1981', 'dd/mm/yyyy'), 'aitañona@gmail.com', '410', '1000,00', '250', 'S', '10', '1', 'Teóricas', '1127GJM');
+INSERT INTO Profesores VALUES ('David', 'Lozano De La Torre', '52734812L', '612398781', TO_DATE('12/10/1991', 'dd/mm/yyyy'), 'DavidPetit@hotmail.com', '10', '1000,00','300,00', 'S', '0', '0', 'Teóricas', '4128FJV');
+
+INSERT INTO Alumnos VALUES ('Sonia', 'Padilla Granadal', '12349861F', '683742184', TO_DATE('06/11/1993', 'dd/mm/yyyy'), 'tumorenita@htomail.com', '26384762', 'AM', 'Teórico', '0',1, '71824584T');
+INSERT INTO Alumnos VALUES ('Jorge', 'Martínez Méndez', '78324681H', '612349790', TO_DATE('14/08/1994', 'dd/mm/yyyy'), 'jorgitoguapete@gmail.com', '87234691', 'B', 'Práctico', '5',2, '24356712K');
+INSERT INTO Alumnos VALUES ('Antonia', 'Fernández Mari', '23857697J', '612409711', TO_DATE('06/12/1988', 'dd/mm/yyyy'), 'Antonia@gmail.com', '23467587', 'A1', 'Finalizado', '13',3, '23498107Q');
+INSERT INTO Alumnos VALUES ('Juanjo', 'Alonso Huertas', '51325781V', '612080031', TO_DATE('21/02/2000', 'dd/mm/yyyy'), 'juanito@gmail.com', '12437869', 'B', 'Finalizado', '17',4, '23498107Q');
+INSERT INTO Alumnos VALUES ('María', 'Merchan López', '72935691S', '661298712', TO_DATE('24/05/1976', 'dd/mm/yyyy'), 'marieta@hotmail.com','698237654' , 'B', 'Baja', '8',5, '52734812L');
+
+INSERT INTO Clientes VALUES ('María', 'Franco CuloAbierto', '93617824U', '712301846', TO_DATE('18/09/1972', 'dd/mm/yyyy'), 'franquito@gmail.com', 'S', '0', '300,00', '10', '71824584T');
+INSERT INTO Clientes VALUES ('Dani', 'Chen Hu ', '38723648B', '691496921', TO_DATE('02/10/1988', 'dd/mm/yyyy'), 'dani@hotmail.com', 'S', '3', '80,00', '4', '24356712K');
+INSERT INTO Clientes VALUES ('Lourdes', 'Martínez Ruiz', '56896182E', '612837421', TO_DATE('08/03/1981', 'dd/mm/yyyy'), 'lour@gmail.com', 'N', '21', '130,00', '0', '71824584T');
+INSERT INTO Clientes VALUES ('Martin', 'Alonso Borrás', '76123924Y', '692391612', TO_DATE('20/11/1950', 'dd/mm/yyyy'), 'Marti@gmail.com', 'S', '0', '40,00', '6', '52734812L');
+INSERT INTO Clientes VALUES ('Marina', 'Ming Tian', '12164589F', '612859324', TO_DATE('29/10/1986', 'dd/mm/yyyy'), 'marinita01@gmail.com', 'S', '0', '80,00', '9', '24356712K');
+
+INSERT INTO Contratos VALUES ('Descuento Teórico', '1245741', '150', '21',1,'12349861F');
+INSERT INTO Contratos VALUES ('Descuento Teórico+Práctico', '1324785', '150','21',2,'78324681H');
+INSERT INTO Contratos VALUES ('Descuento por guapo', '2147184', '150','21',3,'23857697J');
+INSERT INTO Contratos VALUES ('Descuento por acompañante', '0124742', '150', '21',4,'51325781V');
+INSERT INTO Contratos VALUES ('Descuento folletos', '9875423', '150', '21',5,'72935691S');
+
+INSERT INTO Bonos VALUES ('S', '742398798', '31,42',1, '78324681H');
+INSERT INTO Bonos VALUES ('S', '5452', '45,4',2, '78324681H');
+INSERT INTO Bonos VALUES ('N', '78798', '99,99',3, '23857697J');
+INSERT INTO Bonos VALUES ('S', '09812312', '32,5',4, '23857697J');
+INSERT INTO Bonos VALUES ('N', '423', '32,2',5, '51325781V');
+
+INSERT INTO Facturas VALUES (1, TO_DATE('09/01/2012', 'dd/mm/yyyy'), '93617824U', '123,00',1);
+INSERT INTO Facturas VALUES (2, TO_DATE('27/02/1999', 'dd/mm/yyyy'), '38723648B', '88,00',2);
+INSERT INTO Facturas VALUES (3, TO_DATE('11/11/2011', 'dd/mm/yyyy'), '76123924Y', '215,50',3);
+INSERT INTO Facturas VALUES (4, TO_DATE('02/10/2016', 'dd/mm/yyyy'), '56896182E', '188,00',4);
+INSERT INTO Facturas VALUES (5, TO_DATE('13/07/2007', 'dd/mm/yyyy'), '12164589F', '93,00',5);
+
+INSERT INTO ProfesorRecibeBono VALUES (1,'24356712K','742398798');
+INSERT INTO ProfesorRecibeBono VALUES (2,'71824584T', '5452');
+INSERT INTO ProfesorRecibeBono VALUES (3,'23498107Q', '78798');
+INSERT INTO ProfesorRecibeBono VALUES (4,'34581294O', '09812312');
+INSERT INTO ProfesorRecibeBono VALUES (5,'52734812L', '423');
+
+INSERT INTO  AlumnoRealizaExamen VALUES (1,'12349861F',1);
+INSERT INTO  AlumnoRealizaExamen VALUES (2,'78324681H',2);
+INSERT INTO  AlumnoRealizaExamen VALUES (3,'72935691S',3);
+INSERT INTO  AlumnoRealizaExamen VALUES (4,'51325781V',4);
+INSERT INTO  AlumnoRealizaExamen VALUES (5,'23857697J',5);

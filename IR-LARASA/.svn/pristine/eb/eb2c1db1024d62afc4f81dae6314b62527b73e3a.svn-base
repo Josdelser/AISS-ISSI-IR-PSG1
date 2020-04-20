@@ -1,0 +1,1056 @@
+<html xmlns:rem="http://rem.lsi.us.es">
+<head>
+<title>Proyecto Documento de Análisis del sistema</title>
+<style type="text/css">
+<!--
+            body {
+                font-family: arial,verdana;
+                font-size: 10pt;
+                text-align: justify
+            }
+
+            h1 { font-size: 14pt }
+            h2 { font-size: 13pt }
+            h3 { font-size: 12pt }
+            h4 { font-size: 11pt }
+            h5 { font-size: 10pt }
+            h6 { font-size: 10pt }
+
+            h1.cover { font-size: 20pt }
+
+            tr { font-size: 10pt }
+
+            table { border: black solid; }
+            table.TOC { border: none; }
+            ul {
+                margin-top:    0pt;
+                margin-bottom: 0pt;
+                margin-left:   12pt
+            }
+        -->
+</style>
+</head>
+<body>
+<center>
+<h3>Proyecto Documento de Análisis del sistema</h3>
+<p />
+<h1 class="cover">Documento de Análisis del Sistema</h1>
+<p />
+<h3>Versión 1.0</h3>
+<h3>Fecha 08/12/2019</h3>
+<p />
+<h3>Preparado para:</h3>
+<a href="#ORG-0001" title="Autoescuela La Rasa">
+<p>
+Autoescuela La Rasa</p>
+</a>
+<p />
+<h3>Preparado por:</h3>
+<a href="#ORG-0002" title="Los Chemas">
+<p>
+Los Chemas</p>
+</a>
+<p />
+</center>
+<hr size="4" />
+<p />
+<h1 align="left">Índice</h1>
+<p />
+<table border="0" width="100%" class="TOC">
+<tr>
+<th align="left" valign="top">1 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0001">
+Introducción</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0002">
+Alcance del proyecto</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0003">
+Participantes del proyecto</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.2.1 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0004">
+Organizaciones participantes</a>
+</td>
+</tr>
+<tr><td /><td />
+<td albgn="left" valign="top">1.2.2 </td>
+<td align="left" valign="top" width="100%">
+<a href="#SEC-0005">
+Personas participantes</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">1.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0006">
+Copia de objetivos del proyecto</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">2 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0007">
+Arquitectura lógica del sistema</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0008">
+Diagramas de la arquitectura del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">2.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0009">
+Descripción de la arquitectura del sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">3 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0010">
+Modelo de clases del sistema</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0011">
+Diagramas de clases del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0012">
+Descripción de las clases del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">3.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0013">
+Diagramas de estado de las clases del sistema </a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">4 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0014">
+Modelo de casos de uso del sistema</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0016">
+Diagramas de secuencia del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">4.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0017">
+Descripción de los diagramas de secuencia del sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">5 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0015">
+Interfaz de usuario del sistema</a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0018">
+Diagramas de navegación del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0019">
+Esquemas de la interfaz de usuario del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">5.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0020">
+Descripción de la interfaz de ususario del sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">6 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0021">
+Interfaz de servicios del sistema </a>
+</th>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.1 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0022">
+Diagramas de la interfaz de servicios del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.2 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0023">
+Descripción de la interfaz de servicios del sistema</a>
+</td>
+</tr>
+<tr><td />
+<td align="left" valign="top">6.3 </td>
+<td align="left" valign="top" width="100%" colspan="2">
+<a href="#SEC-0024">
+Servicios consumidos por el sistema</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">7 </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0025">
+Información sobre trazabilidad</a>
+</th>
+</tr>
+<tr>
+<th align="left" valign="top">A </th>
+<th align="left" valign="top" width="100%" colspan="3">
+<a href="#SEC-0026">
+Glosario de acrónimos y abreviaturas</a>
+</th>
+</tr>
+</table>
+<p />
+<hr size="4" />
+<p />
+<a name="PRG-0001" />
+<p>
+</p>
+<a name="PRG-0002" />
+<p>
+</p>
+<a name="PRG-0003" />
+<p>
+</p>
+<a name="SEC-0001" />
+<h1 align="left">1 
+Introducción</h1><a name="SEC-0002" />
+<h2 align="left">1.1 
+Alcance del proyecto</h2><a name="GLO-0004" />
+<p align="left">
+<b> Introducción del proyecto:</b>La autoescuela La Rasa es un grupo de profesionales con muchos años de experiencia en el sector de enseñanza y aprendizaje en conducción. En 2013 decidieron empezar este proyecto con el fin de crear un nuevo concepto de autoescuela, para que sus alumnos recibieran la mejor calidad y servicio en su formación.
+<br />
+<br />Con la implementación de este software se pretende facilitar la inscripción de los usuarios en la autoescuela de manera online. También se pretende habilitar la opción de gestionar la aplicación tanto en el establecimiento, como en otros lugares, además de permitir una mejor coordinación de horarios entre profesores y alumnos. </p>
+<a name="GRF-0001" />
+<p align="center">
+<img src=".\Fotos IR\Portal.jpg" title=".\Fotos IR\Portal.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Portal</p>
+<a name="SEC-0003" />
+<h2 align="left">1.2 
+Participantes del proyecto</h2><a name="SEC-0004" />
+<h3 align="left">1.2.1 
+Organizaciones participantes</h3><a name="ORG-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+Autoescuela La Rasa</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">Paez de Rivera</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">954094466</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="ORG-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Organización</th>
+<th align="left" valign="top" width="100%">
+Los Chemas</th>
+</tr>
+<tr>
+<th align="left" valign="top">Dirección</th>
+<td align="left" valign="top" colspan="1">Universidad de Sevilla</td>
+</tr>
+<tr>
+<th align="left" valign="top">Teléfono</th>
+<td align="left" valign="top" colspan="1">612345678</td>
+</tr>
+<tr>
+<th align="left" valign="top">Fax</th>
+<td align="left" valign="top" colspan="1">Ninguno</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0005" />
+<h3 align="left">1.2.2 
+Personas participantes</h3><a name="STK-0001" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+María Jiménez Sánchez </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Gestora y profesora de teoría</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0002" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Elisa Ramírez Pérez </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Profesora de prácticas</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0003" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Ramón Fernández Borrás </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Profesor de prácticas</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0004" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Sergio Huertas Granadal </th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Director de la autoescuela</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0005" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Carlos Romero Castilla</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Alumno</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0006" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Juan De la Torre</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0001">
+Autoescuela La Rasa</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Cliente</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0007" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Jose Delgado Serrano</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Los Chemas</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Analista</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0008" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Antonio Fernández Manzano</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Los Chemas</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Jefe del proyecto</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="STK-0009" />
+<table border="1" width="100%">
+<tr bgcolor="#c8e0e0">
+<th align="left" valign="top">Participante</th>
+<th align="left" valign="top" width="100%">
+Chao Hu</th>
+</tr>
+<tr><th align="left" valign="top">Organización</th>
+<td align="left" valign="top">
+<a href="#ORG-0002">
+Los Chemas</a>
+</td>
+</tr>
+<tr>
+<th align="left" valign="top">Rol</th>
+<td align="left" valign="top" colspan="1">Desarrollador</td>
+</tr>
+<tr><th align="left" valign="top" nowrap="1">Es desarrollador</th>
+<td align="left" valign="top">Sí</td>
+</tr>
+<tr><th align="left" valign="top">Es cliente</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr><th align="left" valign="top">Es usuario</th>
+<td align="left" valign="top">No</td>
+</tr>
+<tr>
+<th align="left" valign="top">Comentarios</th>
+<td align="left" valign="top" colspan="1">
+Ninguno</td>
+</tr>
+</table>
+<p />
+<a name="SEC-0006" />
+<h2 align="left">1.3 
+Copia de objetivos del proyecto</h2><a name="GLO-0005" />
+<p align="left">
+<b> Objetivos:</b>La Autoescuela La Rasa quiere a su disposición un software de uso fácil e intuitivo para sus alumnos, de manera que permita gestionar y almacenar todos los datos relacionados sobre sus alumnos (los exámenes realizados, clases asistidas, tests realizados, exámenes aprobados, ...). De esta forma se pretende facilitar la gestión de datos para la gestora de la autoescuela, y que los alumnos también puedan acceder a su propia información para una mejor organización y control.</p>
+<a name="SEC-0007" />
+<h1 align="left">2 
+Arquitectura lógica del sistema</h1><a name="SEC-0008" />
+<h2 align="left">2.1 
+Diagramas de la arquitectura del sistema</h2><a name="GRF-0002" />
+<p align="center">
+<img src=".\Fotos IR\Diagrama arquitectura logica.png" title=".\Fotos IR\Diagrama arquitectura logica.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Diagrama de la arquitectura del sistema</p>
+<a name="SEC-0009" />
+<h2 align="left">2.2 
+Descripción de la arquitectura del sistema</h2><a name="PRG-0006" />
+<p>La arquitectura del sistema usada es MVC, con las capas de Presentación, Persistencia y lógica de negocio. Como vista tendremos la página web donde el usuario podrá registrarse, acceder a sus datos? Y como controlador tendremos la base de datos SQL.</p>
+<a name="SEC-0010" />
+<h1 align="left">3 
+Modelo de clases del sistema</h1><a name="SEC-0011" />
+<h2 align="left">3.1 
+Diagramas de clases del sistema</h2><a name="GRF-0003" />
+<p align="center">
+<img src=".\Fotos IR\Modelo conceptual IR FINAL.jpg" title=".\Fotos IR\Modelo conceptual IR FINAL.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Diagrama de clases del sistema</p>
+<a name="SEC-0012" />
+<h2 align="left">3.2 
+Descripción de las clases del sistema</h2><a name="PRG-0007" />
+<p>En el diagrama encontramos las siguientes entidades que componen el sistema:
+<br />
+<br />Empresa: Entidad principal encargada de que todo funcione correctamente.  Contiene los datos especificados en el requisito de información correspondiente, los cuales son: nombre, razón social, ciudad, teléfono.
+<br />
+<br />Vehículo: Entidad que representa los vehículos usados durante las clases prácticas para preparar a los alumnos de cara a su examen práctico Contiene los datos especificados en el requisito de información correspondiente, los cuales son: marca, matrícula, seguro, fechaITV, estado.
+<br />
+<br />Factura: Entidad que representa las facturas emitidas en cualquier tramite de la empresa y pagadas por los clientes. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: número, fecha, tipoUsario, importe, empresa. 
+<br />
+<br />Cliente: Entidad que representa a una persona que acude a la autoescuela con el fin de repasar cualquier tema relacionado con la conducción, no necesita estar registrado en la autoescuela. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: carné, clases, importe, clasesPrácticas.
+<br />
+<br />Profesor: Entidad correspondiente a un profesor, el cual imparte clases teóricas, prácticas o ambas. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: clasesImpartidas, sueldo, pagaExtra, activo, vacaciones, numeroDiasBaja, tipo.
+<br />
+<br />Alumno: Entidad correspondiente a un alumno que recibe tanto clases teoricas como prácticas. Una vez se vea capacitado con los conocimientos necesarios se presentará a los correspondientes exámenes. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: nºmatricula, permiso, estado, clasesPrácticas.
+<br />
+<br />Examen: Entidad que corresponde al examen que deben realizar todos los alumnos que deseen obtener el permiso. Se divide en dos: Teórico y Práctico. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: fecha, nºalumnosPresentados, nºalumnosAptos.
+<br />
+<br />Bono: Entidad que representa los bonos que los alumnos compran en la autoescuela que luego canjean por clases prácticas. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: sello, nºreferencia, importe, duración.
+<br />
+<br />Examinador: Entidad correspondiente al examinador, el cual somete a los alumnos a una prueba de conducción y decidirá si es apto o no. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: nombre, código, observaciones.
+<br />
+<br />TipoEstado: Entidad que corresponde a los tipos de estado en los que se puede encontrar un alumno. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: finalizado, teórico, práctico, baja.
+<br />
+<br />TipoPermiso: Entidad que corresponde a los tipos de permisos que la autoescuela ofrece. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: AM, A1, A2, A, B
+<br />
+<br />Tarifa: Entidad que representan las tarifas impuestas por la autoescuela para poder iniciar las clases teóricas, prácticas, exámenes?etc. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: artículo, descuento, fechaInicio, fechaFin.
+<br />
+<br />Contrato: Entidad que representa el contrato a firmar por el alumno, donde se establecen los términos y condiciones. Contiene los datos especificados en el requisito de información correspondiente, los cuales son: artículo, referencia, precio, IVA.
+<br />
+<br />TipoUsuario: Entidad que representa a un usuario general a vista de la base de datos, que después pasar a ser un profesor, cliente o alumno.
+<br />
+</p>
+<a name="SEC-0013" />
+<h2 align="left">3.3 
+Diagramas de estado de las clases del sistema </h2><a name="GRF-0004" />
+<p align="center">
+<img src=".\Fotos IR\Diagramas de estado matriculacion.png" title=".\Fotos IR\Diagramas de estado matriculacion.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Estado matriculación</p>
+<a name="GRF-0005" />
+<p align="center">
+<img src=".\Fotos IR\Estado Examen.jpg" title=".\Fotos IR\Estado Examen.jpg" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                
+Estado examen</p>
+<a name="GRF-0006" />
+<p align="center">
+<img src=".\Fotos IR\Estado vehículo.jpg" title=".\Fotos IR\Estado vehículo.jpg" />
+</p>
+<p align="center">
+<b>Figura 3</b>:
+                
+Estado vehículo</p>
+<a name="SEC-0014" />
+<h1 align="left">4 
+Modelo de casos de uso del sistema</h1><a name="SEC-0016" />
+<h2 align="left">4.1 
+Diagramas de secuencia del sistema</h2><a name="GRF-0026" />
+<p align="center">
+<img src=".\Fotos IR\CasoDeUso1.png" title=".\Fotos IR\CasoDeUso1.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                 Actualizar datos personales</p>
+<a name="GRF-0027" />
+<p align="center">
+<img src=".\Fotos IR\CasoDeUso2.jpg" title=".\Fotos IR\CasoDeUso2.jpg" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                 Reserva de clases</p>
+<a name="GRF-0028" />
+<p align="center">
+<img src=".\Fotos IR\CasoDeUso3.jpg" title=".\Fotos IR\CasoDeUso3.jpg" />
+</p>
+<p align="center">
+<b>Figura 3</b>:
+                 Matriculación online</p>
+<a name="GRF-0029" />
+<p align="center">
+<img src=".\Fotos IR\CasoDeUso4.jpg" title=".\Fotos IR\CasoDeUso4.jpg" />
+</p>
+<p align="center">
+<b>Figura 4</b>:
+                 Dar de baja a un alumno</p>
+<a name="GRF-0030" />
+<p align="center">
+<img src=".\Fotos IR\CasoDeUso5.jpg" title=".\Fotos IR\CasoDeUso5.jpg" />
+</p>
+<p align="center">
+<b>Figura 5</b>:
+                 Actualizar datos del estado del examen</p>
+<a name="SEC-0017" />
+<h2 align="left">4.2 
+Descripción de los diagramas de secuencia del sistema</h2><a name="GLO-0009" />
+<p align="left">
+<b> Actualizar datos personales:</b>
+<br />El usuario inicia sesión rellenando el formulario de autenticación con su usuario y contraseña. Al haber iniciado sesión el sistema mostrará los servicios de la aplicación, donde tendrá que entrar a su propio perfil para actualizar sus datos personales y si es el gestor también  podrá acceder a perfiles de sus alumnos y actualizar dichos datos. Si no sucede ningún error el suceso será registrado en el sistema.</p>
+<a name="GLO-0010" />
+<p align="left">
+<b> Reserva de clases:</b>
+<br />El usuario inicia sesión rellenando el formulario de autenticación con su usuario y contraseña. Al haber iniciado sesión el sistema mostrará los servicios de la aplicación, donde tendrá que entrar a la tabla de horariosl para reservar la franja horaria que desea el alumno. Si no sucede ningún error el suceso será registrado en el sistema.</p>
+<a name="GLO-0013" />
+<p align="left">
+<b> Matriculación online:</b>
+<br />El usuario accede al formulario de registro para matricularse en la autoescuela. Se introducirán los datos solicitados y si todo es correcto se registrará su solicitud de alumno en el sistema.</p>
+<a name="GLO-0011" />
+<p align="left">
+<b> Dar de baja a un alumno:</b>
+<br />El profesor inicia sesión rellenando el formulario de autenticación con su usuario y contraseña. Al haber iniciado sesión el sistema mostrará los servicios de la aplicación, donde tendrá que entrar al perfil del alumno deseado para dar de baja a dicha persona, esta acción sólo podrá ser realizada si es profesor la persona autentificada. Si no sucede ningún error el suceso será registrado en el sistema.</p>
+<a name="GLO-0012" />
+<p align="left">
+<b> Actualizar datos del estado del examen:</b>
+<br />El profesor inicia sesión rellenando el formulario de autenticación con su usuario y contraseña. Al haber iniciado sesión el sistema mostrará los servicios de la aplicación, donde tendrá que entrar a los datos del examen para actualizar el estado de éste. Si no sucede ningún error el suceso será registrado en el sistema.</p>
+<a name="SEC-0015" />
+<h1 align="left">5 
+Interfaz de usuario del sistema</h1><a name="SEC-0018" />
+<h2 align="left">5.1 
+Diagramas de navegación del sistema</h2><a name="GRF-0007" />
+<p align="center">
+<img src=".\Fotos IR\Diagramas de navegación del sistema.jpg" title=".\Fotos IR\Diagramas de navegación del sistema.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Diagramas de navegación del sistema</p>
+<a name="SEC-0019" />
+<h2 align="left">5.2 
+Esquemas de la interfaz de usuario del sistema</h2><a name="GRF-0008" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 1.png" title=".\Fotos IR\Pagina 1.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Página 1</p>
+<a name="GRF-0009" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 2.png" title=".\Fotos IR\Pagina 2.png" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                
+Página 2</p>
+<a name="GRF-0010" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 3.png" title=".\Fotos IR\Pagina 3.png" />
+</p>
+<p align="center">
+<b>Figura 3</b>:
+                
+Página 3</p>
+<a name="GRF-0011" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 4.png" title=".\Fotos IR\Pagina 4.png" />
+</p>
+<p align="center">
+<b>Figura 4</b>:
+                
+Página 4</p>
+<a name="GRF-0012" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 5.png" title=".\Fotos IR\Pagina 5.png" />
+</p>
+<p align="center">
+<b>Figura 5</b>:
+                
+Página 5</p>
+<a name="GRF-0013" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 6.png" title=".\Fotos IR\Pagina 6.png" />
+</p>
+<p align="center">
+<b>Figura 6</b>:
+                
+Página 6</p>
+<a name="GRF-0014" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 7.png" title=".\Fotos IR\Pagina 7.png" />
+</p>
+<p align="center">
+<b>Figura 7</b>:
+                
+Página 7</p>
+<a name="GRF-0015" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 8.png" title=".\Fotos IR\Pagina 8.png" />
+</p>
+<p align="center">
+<b>Figura 8</b>:
+                
+Página 8</p>
+<a name="GRF-0016" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 9.png" title=".\Fotos IR\Pagina 9.png" />
+</p>
+<p align="center">
+<b>Figura 9</b>:
+                
+Página 9</p>
+<a name="GRF-0017" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 10.png" title=".\Fotos IR\Pagina 10.png" />
+</p>
+<p align="center">
+<b>Figura 10</b>:
+                
+Página 10</p>
+<a name="GRF-0018" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 11.png" title=".\Fotos IR\Pagina 11.png" />
+</p>
+<p align="center">
+<b>Figura 11</b>:
+                
+Página 11</p>
+<a name="GRF-0019" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 12.png" title=".\Fotos IR\Pagina 12.png" />
+</p>
+<p align="center">
+<b>Figura 12</b>:
+                
+Página 12</p>
+<a name="GRF-0020" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 13.png" title=".\Fotos IR\Pagina 13.png" />
+</p>
+<p align="center">
+<b>Figura 13</b>:
+                
+Página 13</p>
+<a name="GRF-0021" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 14.png" title=".\Fotos IR\Pagina 14.png" />
+</p>
+<p align="center">
+<b>Figura 14</b>:
+                
+Página 14</p>
+<a name="GRF-0022" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 15.png" title=".\Fotos IR\Pagina 15.png" />
+</p>
+<p align="center">
+<b>Figura 15</b>:
+                
+Página 15</p>
+<a name="GRF-0023" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 16.png" title=".\Fotos IR\Pagina 16.png" />
+</p>
+<p align="center">
+<b>Figura 16</b>:
+                
+Página 16</p>
+<a name="GRF-0024" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 17.png" title=".\Fotos IR\Pagina 17.png" />
+</p>
+<p align="center">
+<b>Figura 17</b>:
+                
+Página 17</p>
+<a name="GRF-0025" />
+<p align="center">
+<img src=".\Fotos IR\Pagina 18.png" title=".\Fotos IR\Pagina 18.png" />
+</p>
+<p align="center">
+<b>Figura 18</b>:
+                
+Página 18</p>
+<a name="SEC-0020" />
+<h2 align="left">5.3 
+Descripción de la interfaz de ususario del sistema</h2><a name="PRG-0008" />
+<p>
+<br />La primera vista es la página principal, a la que puede acceder cualquier tipo de usuario.
+<br />Desde esta página se puede acceder a las páginas de: Vehículos, Sobre nosotros, La autoescuela, y Permisos, desplegando el menú principal. Todas estas páginas son de carácter informativo. A su vez, podemos acceder al Login y al Registro.
+<br />En primer lugar, para loguearse, necesita un usuario y contraseña. Podemos loguearnos como alumno y como profesor.
+<br />La página de registro nos permite registrarnos como un alumno o como un profesor, para lo cual, nos pide unos datos básicos: Dni, nombre, apellidos, y otros datos de contacto básicos.
+<br />Primeramente, vamos a describir las vistas de profesor:
+<br />1. Página principal del profesor, en la que aparece una tabla con todos sus alumnos. Puede acceder a su información personal necesaria, puede editar la información no personal, y también puede eliminarlo de la tabla, lo que significaría, que su paso por la autoescuela ha finalizado.
+<br />2. En dicha vita aparecen los datos del alumnos introducidos en el registro, tales como Dni, nombre, apellidos, teléfono, etc.
+<br />3. El profesor puede acceder a Mi Perfil, en el que podrá modificar sus datos personales.
+<br />Como alumno, tenemos las siguientes vistas:
+<br />1. Página principal del alumno en la que aparece un horario. Ordenado por semanas, el alumno podrá elegir sus días libres para poder asistir a las clases prácticas. También podrá acceder a su anterior horario guardado desde esta misma vista.
+<br />2. EL alumno puede acceder a Mi Perfil, en el que podrá modificar sus datos personales.
+<br />
+<br />Las vistas informativas citadas al comienzo proporcionan la información necesaria para que un usuario ajeno a la autoescuela pueda conocer todo lo indispensable, ya sean los vehículos que utiliza, los permisos ofertados o la localización de la autoescuela.
+<br />
+</p>
+<a name="SEC-0021" />
+<h1 align="left">6 
+Interfaz de servicios del sistema </h1><a name="SEC-0022" />
+<h2 align="left">6.1 
+Diagramas de la interfaz de servicios del sistema</h2><a name="GRF-0031" />
+<p align="center">
+<img src=".\Fotos IR\Diagrama de la interfaz de servicios del sistema.jpg" title=".\Fotos IR\Diagrama de la interfaz de servicios del sistema.jpg" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Diagrama de la interfaz de servicios del sistema</p>
+<a name="SEC-0023" />
+<h2 align="left">6.2 
+Descripción de la interfaz de servicios del sistema</h2><a name="PRG-0014" />
+<p>En el diagrama encontramos los siguientes servicios con las siguiente operaciones:
+<br />
+<br />Servicios Usuarios:
+<br />+ ConsultarPerfil(): obtiene los datos de un usuario
+<br />+ modificarDatos(): modificar los datos de un usuario
+<br />+ encontrarUsuarioPorDni: obtiene el usuario por el Dni,.
+<br />
+<br />ServiciosClases:
+<br />+ consultarHorario(): devuelve un listado con el horario preseleccionado
+<br />+ reservarClase(): guarda el horario fijado
+<br />+ consultarSemana(): devuelve la semana de prácticas
+<br />+ encontrarClasesPorSemana(): obtiene las clases disponibles en la semana actual.
+<br />
+<br />ServiciosRegistro:
+<br />+ consultarProfesoresDisponibles(): devuelve un listado con los profesores disponibles para dar clases
+<br />+ guardarUsuarioPorTipo(): guarda un usuario según sea Alumno o Profesor
+<br />
+<br />ServiciosProfesores:
+<br />+ encontrarMisAlumno(): devuelve un listado con los alumnos que le corresponden
+<br />+ eliminarAlumno(): elimina un alumno que esté asociado a este profesor.
+<br />+ consultarInformacionAlumno(): devuelve un listado con los datos del alumno.
+<br />+ encontrarClasesPorAlumno(): devuelve un listado con las clases seleccionadas por el alumno
+<br />+ modifcarDatosALumno(): modifica los datos de un alumno siempre que no sean privados.
+<br />+ apuntarAlumnoExamen(): registra un examen en los datos del alumno
+<br />+ consultarExamenPorAlumno(): devuelve un listado de los exámenes realizados por el alumno
+<br />
+<br />ServiciosAutoescuela:
+<br />+ consultarEstadoVehiculo(): devuelve la información sobre el estado del vehículo.
+<br />+ consultarVehiculos(): devuelve un listado con los vehículos de la autoescuela
+<br />+ consultarPermisos(): devuelve un listado con los permisos de la autoescuela.
+<br />
+</p>
+<a name="SEC-0024" />
+<h2 align="left">6.3 
+Servicios consumidos por el sistema</h2><a name="PRG-0015" />
+<p>Actualmente la autoescuela utiliza los servicios de facilAutoGestión. Nuestro sistema utilizará los servicios de este sistema para acceder a los datos guardados por la <a href="#GLO-0016" title="Dirección General de Tráfico">DGT</a>, tales como: Exámenes, Examinadores, Notas, es decir, todo lo que está ya protegido por su gestión.
+<br />
+<br />El sistema únicamente accederá para pedir:
+<br />1. Exámenes próximos de un alumno.
+<br />2. Nota del examen de cada alumno.
+<br />3. Datos del examen en cuestión.
+<br />
+</p>
+<a name="SEC-0025" />
+<h1 align="left">7 
+Información sobre trazabilidad</h1><a name="GRF-0032" />
+<p align="center">
+<img src=".\Fotos IR\MATRIZ RI.png" title=".\Fotos IR\MATRIZ RI.png" />
+</p>
+<p align="center">
+<b>Figura 1</b>:
+                
+Trazabilidad sobre requisitos de información</p>
+<a name="GRF-0033" />
+<p align="center">
+<img src=".\Fotos IR\MATRIZ RN.png" title=".\Fotos IR\MATRIZ RN.png" />
+</p>
+<p align="center">
+<b>Figura 2</b>:
+                
+Trazabilidad sobre reglas denegocio</p>
+<a name="GRF-0034" />
+<p align="center">
+<img src=".\Fotos IR\MATRIZ RCS.png" title=".\Fotos IR\MATRIZ RCS.png" />
+</p>
+<p align="center">
+<b>Figura 3</b>:
+                
+Trazabilidad sobre requisistos de conducta del sistema</p>
+<a name="GRF-0035" />
+<p align="center">
+<img src=".\Fotos IR\MATRIZ UC.png" title=".\Fotos IR\MATRIZ UC.png" />
+</p>
+<p align="center">
+<b>Figura 4</b>:
+                
+Trazabilidad sobre casos de uso</p>
+<a name="SEC-0026" />
+<h1 align="left">A 
+Glosario de acrónimos y abreviaturas</h1><a name="GLO-0016" />
+<p align="left">
+<b> DGT:</b>Dirección General de Tráfico</p>
+</body>
+</html>
